@@ -10,9 +10,8 @@ const Introducao: React.FC = () => {
     <div className="relative z-10">
       <h1
         className={`text-4xl font-bold mb-6 text-${theme.primary} flex items-center border-b border-${theme.primaryDark} pb-2`}
-      >
-        <span className="mr-2">🌉</span>
-        <GlitchText>Bem Vindos</GlitchText>
+          >
+              <GlitchText>Nova São Paulo - 2133</GlitchText>
       </h1>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
@@ -30,7 +29,7 @@ const Introducao: React.FC = () => {
           <div className={`text-${theme.accent1} font-mono text-sm`}>
             STATUS
           </div>
-          <div className="text-white text-lg font-bold">INDEPENDENTE</div>
+                  <div className="text-white text-sm md:text-md font-bold">INDEPENDENTE</div>
         </div>
         <div
           className={`bg-black p-3 rounded-lg border border-${theme.accent2Dark} text-center`}

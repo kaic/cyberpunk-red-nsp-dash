@@ -53,7 +53,7 @@ const Rules: React.FC = () => {
   return (
     <div className="relative z-10">
       <h1 className="text-4xl font-bold mb-6 text-green-400 flex items-center border-b border-green-900 pb-2">
-        <span className="mr-2">⚡</span>
+        <span className="mr-2">🎲</span>
         <GlitchText>Rules</GlitchText>
       </h1>
 
