@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import GlitchText from "../components/GlitchText";
 import Link from "next/link";
@@ -50,7 +52,7 @@ const Introducao: React.FC = () => {
 
                   <div className="flex justify-end">
                       <Link
-                          href="/capitulos?chapter=1"
+                          href="/intro"
                           className="inline-block bg-green-900/50 hover:bg-green-900 text-green-400 py-2 px-4 rounded-lg border border-green-700"
                       >
                           Ler Capítulo Inicial →
