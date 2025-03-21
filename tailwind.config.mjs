@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        'pulse-slow': 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'pulse-slower': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'pulse-very-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      },
       colors: {
         // Define a custom 'neon' color palette
         neon: {

@@ -1,17 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Link from "next/link";
 import GlitchText from "../components/GlitchText";
-import { neonTheme as theme } from "../theme";
 
 const CapituloUmIntroducao: React.FC = () => {
-  // Estado para renderização client-side
-  const [isClient, setIsClient] = useState(false);
-  
-  // Executar apenas no cliente
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-  
   return (
     <div className="p-6 relative z-10">
       <div className="flex justify-between items-center mb-6">

@@ -9,8 +9,8 @@ const Introducao: React.FC = () => {
   return (
     <div className="relative z-10">
           <h1 className={`text-4xl font-bold mb-6 text-${theme.primary} flex items-center border-b border-${theme.primaryDark} pb-2`}>
-              <span className="mr-2">🏛️</span>
-              <GlitchText>NOVA SÃO PAULO 2133</GlitchText>
+              <span className="mr-2">🌉</span>
+              <GlitchText>Bem Vindos</GlitchText>
           </h1>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">

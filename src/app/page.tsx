@@ -7,6 +7,7 @@ import Gangues from "./sections/Gangues";
 import DefaultSection from "./sections/DefaultSection";
 import Lore from "./sections/Lore";
 import Rules from "./sections/Rules";
+import GlitchText from "./components/GlitchText";
 
 export default function Home() {
   const [activeSection, setActiveSection] = React.useState("introducao");
@@ -74,22 +75,19 @@ export default function Home() {
               className="cursor-pointer flex items-center group"
               onClick={() => handleNavigation("introducao")}
             >
-              {/* Main title with enhanced cyberpunk styling */}
-              <div className="relative">
                 <span
-                  className="text-2xl md:text-3xl font-orbitron font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 transition-all duration-300 group-hover:from-pink-400 group-hover:to-cyan-500"
+                className="text-2xl font-orbitron font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 transition-all duration-300 group-hover:from-pink-400 group-hover:to-cyan-500"
                   data-text="NOVA SÃO PAULO"
                 >
                   NOVA SÃO PAULO
                 </span>
                 {/* Text shadow/glow effect */}
-                <span className="absolute -inset-1 bg-cyan-500/20 blur-md opacity-75 group-hover:opacity-100 transition-opacity duration-300 rounded-lg -z-10"></span>
-              </div>
+              <span className="absolute -inset-1 bg-cyan-500/20 blur-md opacity-75 group-hover:opacity-100 transition-opacity duration-300 rounded-lg -z-10"></span>
 
               <div className="relative mx-2 flex items-center">
                 {/* Year with multi-layered glow effect */}
-                <span className="absolute -inset-2 rounded-full blur-xl animate-pulse bg-pink-600/30"></span>
-                <span className="absolute -inset-1 rounded-full blur-md animate-pulse bg-pink-500/50"></span>
+                <span className="absolute -inset-2 rounded-full blur-xl animate-pulse-slow bg-pink-600/30"></span>
+                <span className="absolute -inset-1 rounded-full blur-md animate-pulse-slow bg-pink-500/50"></span>
                 <span className="relative text-3xl md:text-4xl font-orbitron font-bold text-pink-500 drop-shadow-[0_0_8px_rgba(236,72,153,0.7)]">2133</span>
               </div>
             </div>
