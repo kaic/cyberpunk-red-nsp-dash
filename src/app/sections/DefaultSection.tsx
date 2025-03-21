@@ -1,7 +1,10 @@
-import React from 'react';
-import GlitchText from '../components/GlitchText';
+import React from "react";
+import GlitchText from "../components/GlitchText";
 
-const DefaultSection: React.FC<{ icon: string, name: string }> = ({ icon, name }) => {
+const DefaultSection: React.FC<{ icon: string; name: string }> = ({
+  icon,
+  name,
+}) => {
   return (
     <div className="relative z-10">
       <h1 className="text-4xl font-bold mb-6 text-green-400 flex items-center border-b border-green-900 pb-2">
@@ -21,7 +24,8 @@ const DefaultSection: React.FC<{ icon: string, name: string }> = ({ icon, name }
         </div>
         <div className="relative z-10">
           <p className="text-center mt-6 italic text-gray-500 font-mono">
-            &lt;ACCESS_DENIED&gt; Dados criptografados. Contacte seu Mestre para acesso.
+            &lt;ACCESS_DENIED&gt; Dados criptografados. Contacte seu Mestre para
+            acesso.
           </p>
           <div className="flex justify-center mt-2">
             <span className="inline-block h-2 w-2 bg-green-500 rounded-full animate-ping"></span>
