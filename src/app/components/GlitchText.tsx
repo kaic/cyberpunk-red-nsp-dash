@@ -13,36 +13,36 @@ const GlitchText: React.FC<{
         return {
           textClass: "text-purple-400",
           textShadow: "0 0 5px rgba(167, 139, 250, 0.7)",
-          layer1Color: "#EC4899", // pink-500
-          layer2Color: "#22D3EE", // cyan-400
+          layer1Color: "text-pink-500", // pink-500
+          layer2Color: "text-cyan-400", // cyan-400
         };
       case "secondary":
         return {
           textClass: "text-cyan-400",
           textShadow: "0 0 5px rgba(34, 211, 238, 0.7)",
-          layer1Color: "#A855F7", // purple-500
-          layer2Color: "#EC4899", // pink-500
+          layer1Color: "text-purple-500", // purple-500
+          layer2Color: "text-pink-500", // pink-500
         };
       case "accent1":
         return {
           textClass: "text-pink-400",
           textShadow: "0 0 5px rgba(236, 72, 153, 0.7)",
-          layer1Color: "#22D3EE", // cyan-400
-          layer2Color: "#A855F7", // purple-500
+          layer1Color: "text-cyan-400", // cyan-400
+          layer2Color: "text-purple-500", // purple-500
         };
       case "accent2":
         return {
           textClass: "text-blue-400",
           textShadow: "0 0 5px rgba(96, 165, 250, 0.7)",
-          layer1Color: "#EC4899", // pink-500
-          layer2Color: "#22D3EE", // cyan-400
+          layer1Color: "text-pink-500", // pink-500
+          layer2Color: "text-cyan-400", // cyan-400
         };
       default:
         return {
           textClass: "text-cyan-400",
           textShadow: "0 0 5px rgba(34, 211, 238, 0.7)",
-          layer1Color: "#A855F7", // purple-500
-          layer2Color: "#EC4899", // pink-500
+          layer1Color: "text-purple-500", // purple-500
+          layer2Color: "text-pink-500", // pink-500
         };
     }
   };
@@ -59,14 +59,7 @@ const GlitchText: React.FC<{
 
       {/* Glitch layer 1 */}
       <span
-        className="absolute top-0 left-0 w-full h-full overflow-hidden"
-        style={{
-          color: variantStyles.layer1Color,
-          opacity: 0.4,
-          clipPath: "inset(20% 0 70% 0)",
-          animation: "glitchText1 4s infinite linear alternate-reverse",
-          animationDelay: "0.2s"
-        }}
+        className={`absolute top-0 left-0 w-full h-full overflow-hidden ${variantStyles.layer1Color} opacity-40 animate-glitch-text1 delay-200`}
         aria-hidden="true"
       >
         {children}
@@ -74,14 +67,7 @@ const GlitchText: React.FC<{
 
       {/* Glitch layer 2 */}
       <span
-        className="absolute top-0 left-0 w-full h-full overflow-hidden"
-        style={{
-          color: variantStyles.layer2Color,
-          opacity: 0.4,
-          clipPath: "inset(60% 0 30% 0)",
-          animation: "glitchText2 5s infinite linear alternate-reverse",
-          animationDelay: "0.7s"
-        }}
+        className={`absolute top-0 left-0 w-full h-full overflow-hidden ${variantStyles.layer2Color} opacity-40 animate-glitch-text2 delay-700`}
         aria-hidden="true"
       >
         {children}

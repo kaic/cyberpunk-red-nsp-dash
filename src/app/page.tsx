@@ -75,20 +75,20 @@ export default function Home() {
               className="cursor-pointer flex items-center group"
               onClick={() => handleNavigation("introducao")}
             >
-                <span
+              <span
                 className="text-2xl font-orbitron font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 transition-all duration-300 group-hover:from-pink-400 group-hover:to-cyan-500"
-                  data-text="NOVA SÃO PAULO"
-                >
-                  NOVA SÃO PAULO
-                </span>
-                {/* Text shadow/glow effect */}
+                data-text="NOVA SÃO PAULO"
+              >
+                NOVA SÃO PAULO
+              </span>
+              {/* Text shadow/glow effect */}
               <span className="absolute -inset-1 bg-cyan-500/20 blur-md opacity-75 group-hover:opacity-100 transition-opacity duration-300 rounded-lg -z-10"></span>
 
               <div className="relative mx-2 flex items-center">
-                {/* Year with multi-layered glow effect */}
-                <span className="absolute -inset-2 rounded-full blur-xl animate-pulse-slow bg-pink-600/30"></span>
                 <span className="absolute -inset-1 rounded-full blur-md animate-pulse-slow bg-pink-500/50"></span>
-                <span className="relative text-3xl md:text-4xl font-orbitron font-bold text-pink-500 drop-shadow-[0_0_8px_rgba(236,72,153,0.7)]">2133</span>
+                <span className="relative text-3xl md:text-4xl font-orbitron font-bold text-pink-500 drop-shadow-[0_0_8px_rgba(236,72,153,0.7)]">
+                  2133
+                </span>
               </div>
             </div>
 
@@ -120,7 +120,7 @@ export default function Home() {
                 ) : (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 text-cyan-400 drop-shadow-[0_0_3px_rgba(34,211,238,0.7)]"
+                    className="h-6 w-6 text-cyan-400 drop-shadow-[0_0_3px_rgba(34,211,238,0.7)]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -155,12 +155,14 @@ export default function Home() {
                     onClick={() => handleNavigation(section.id)}
                     className={`flex items-center p-3 rounded-lg transition ${
                       activeSection === section.id
-                      ? "bg-purple-900/30 text-cyan-400 border border-purple-800 shadow-[0_0_8px_rgba(124,58,237,0.3)]"
-                      : "hover:bg-purple-900/10 text-gray-300 border border-transparent hover:border-purple-900/50"
+                        ? "bg-purple-900/30 text-cyan-400 border border-purple-800 shadow-[0_0_8px_rgba(124,58,237,0.3)]"
+                        : "hover:bg-purple-900/10 text-gray-300 border border-transparent hover:border-purple-900/50"
                     }`}
                   >
                     <span className="mr-2">{section.icon}</span>
-                    <span className="font-orbitron tracking-wide text-sm">{section.name}</span>
+                    <span className="font-orbitron tracking-wide text-sm">
+                      {section.name}
+                    </span>
                   </button>
                 ))}
               </nav>
@@ -176,15 +178,16 @@ export default function Home() {
             {sections.map((section) => (
               <div
                 key={section.id}
-                className={`${activeSection === section.id ? "bg-purple-900/20" : ""
-                  } rounded-lg overflow-hidden group transition-colors duration-300 hover:bg-purple-900/10`}
+                className={`${
+                  activeSection === section.id ? "bg-purple-900/20" : ""
+                } rounded-lg overflow-hidden group transition-colors duration-300 hover:bg-purple-900/10`}
               >
                 <button
                   onClick={() => handleNavigation(section.id)}
                   className={`flex items-center w-full px-4 py-3 text-left transition ${
                     activeSection === section.id
-                    ? "text-cyan-400 font-bold"
-                    : "text-gray-400 hover:text-cyan-400"
+                      ? "text-cyan-400 font-bold"
+                      : "text-gray-400 hover:text-cyan-400"
                   }`}
                 >
                   <span
@@ -192,7 +195,13 @@ export default function Home() {
                   >
                     {section.icon}
                   </span>
-                  <span className={activeSection === section.id ? "font-orbitron tracking-wide" : ""}>
+                  <span
+                    className={
+                      activeSection === section.id
+                        ? "font-orbitron tracking-wide"
+                        : ""
+                    }
+                  >
                     {section.name}
                   </span>
 
