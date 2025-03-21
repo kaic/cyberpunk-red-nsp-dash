@@ -28,6 +28,7 @@ export interface RulesData {
     description?: string | string[];
     formula?: string;
     list?: string[];
+      steps?: string[];
     parts?: PartItem[];
     actions?: ActionItem[];
     example?: Example;
@@ -45,8 +46,10 @@ export interface RulesData {
     warning?: string;
     whatToBuy?: string[];
     blackMarketItems?: BlackMarketItem[];
-    costOfLiving?: CostOfLivingItem[];
+      costOfLivingItem?: CostOfLivingItem[];
     uses?: string[];
+      table?: TableItem[];
+      states?: StateItem[];
     [key: string]: any;
   }
   
@@ -67,11 +70,15 @@ export interface RulesData {
     description: string;
     steps?: string[];
     example?: Example;
+      formula?: string;
+      table?: TableItem[];
   }
   
   export interface ActionItem {
     name: string;
     description: string;
+      formula?: string;
+      steps?: string[];
   }
   
   export interface Example {
@@ -96,6 +103,8 @@ export interface RulesData {
     description?: string;
     complications?: ComplicationItem[];
     note?: string;
+      steps?: string[];
+      example?: Example;
   }
   
   export interface DifficultyItem {
@@ -126,6 +135,17 @@ export interface RulesData {
     description: string;
   }
   
+export interface AttackTargetItem {
+    localização: string;
+    penalidade: string;
+    efeito: string;
+}
+
+export interface CombatBonusItem {
+    bônus: string;
+    efeito: string;
+}
+
   // Props para o componente de subsection
   export interface SubsectionProps {
     subsection: Subsection;
