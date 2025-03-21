@@ -1,0 +1,532 @@
+{
+    "sections": [
+      {
+        "id": "basic",
+        "title": "Mecânica Básica",
+        "icon": "🎲",
+        "content": [
+          {
+            "title": "Como funcionam as rolagens de dados",
+            "description": "Sistema: d10 + modificadores (conhecido como roll + add).",
+            "subsections": [
+              {
+                "title": "Teste básico (Skill Check)",
+                "icon": "🎯",
+                "description": "A maioria das rolagens segue esta fórmula:",
+                "formula": "1d10 + Atributo (Stat) + Perícia (Skill)",
+                "example": {
+                  "scenario": "Você quer hackear uma câmera de segurança:",
+                  "steps": [
+                    "Atributo: INT (Inteligência) = 6",
+                    "Perícia: Electronic Security = 4",
+                    "Rola: 1d10 → saiu 7"
+                  ],
+                  "result": "Resultado: 7 + 6 + 4 = 17",
+                  "conclusion": "DV era 15 → Sucesso!"
+                }
+              },
+              {
+                "title": "Críticos e falhas",
+                "icon": "💥",
+                "parts": [
+                  {
+                    "title": "Acerto crítico",
+                    "icon": "🎉",
+                    "description": "Se você rolar 10 no d10, o dado explode:",
+                    "steps": [
+                      "Role mais 1d10 e some",
+                      "Se sair outro 10, role novamente e continue somando"
+                    ],
+                    "example": {
+                      "scenario": "Você rola 10 → explode → rola mais 10 → explode → rola 5",
+                      "result": "Total: 25 (antes de aplicar os bônus)"
+                    }
+                  },
+                  {
+                    "title": "Falha crítica",
+                    "icon": "💀",
+                    "description": "Se você rolar 1 no d10, é uma falha crítica:",
+                    "steps": [
+                      "Role mais 1d10 e subtraia do total final"
+                    ],
+                    "example": {
+                      "scenario": "Você rola 1 → rola outro d10 e sai 4",
+                      "result": "Total: -3 (antes de aplicar os bônus)",
+                      "note": "Mesmo com bons atributos, há chance de falhar feio."
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Quando usar cada tipo de rolagem",
+            "icon": "🧠",
+            "subsections": [
+              {
+                "title": "Skill Checks",
+                "description": "Para ações do dia a dia como hackear, persuadir, dirigir ou pular de um prédio.",
+                "formula": "1d10 + Stat + Skill vs. DV"
+              },
+              {
+                "title": "Combate",
+                "icon": "⚔️",
+                "parts": [
+                  {
+                    "title": "Ataques",
+                    "formula": "1d10 + REF (ou outro stat) + habilidade da arma vs. DV ou Evasion do alvo",
+                    "examples": [
+                      "Pistola → REF + Handgun", 
+                      "Espada → DEX + Melee Weapon"
+                    ]
+                  },
+                  {
+                    "title": "Dano",
+                    "points": [
+                      "Cada arma tem um valor fixo (geralmente em d6)",
+                      "Aplica-se redução de armadura (SP)"
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Iniciativa",
+                "icon": "⏱️",
+                "formula": "1d10 + REF"
+              },
+              {
+                "title": "Salvamento de morte (Death Save)",
+                "icon": "🩸",
+                "description": "Quando o personagem chega a 0 HP ou menos:",
+                "formula": "1d10 + WILL >= valor negativo atual de HP",
+                "notes": [
+                  "Se estiver a -4 de HP, precisa tirar 4 ou mais",
+                  "Falha no teste → morte"
+                ]
+              },
+              {
+                "title": "Ações de Interface (Netrunner)",
+                "icon": "🕹️",
+                "description": "Usam o atributo especial Interface.",
+                "note": "Cada ação (Scan, Backdoor, Control Node) tem sua própria DV"
+              }
+            ]
+          },
+          {
+            "title": "Tabela de dificuldades comuns",
+            "icon": "📏",
+            "table": [
+              { "descrição": "Muito fácil", "dv": 8 },
+              { "descrição": "Fácil", "dv": 10 },
+              { "descrição": "Moderado", "dv": 13 },
+              { "descrição": "Difícil", "dv": 15 },
+              { "descrição": "Muito difícil", "dv": 17 },
+              { "descrição": "Extremamente difícil", "dv": 20 },
+              { "descrição": "Quase impossível", "dv": "25+" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "character",
+        "title": "Personagens",
+        "icon": "👤",
+        "content": [
+          {
+            "title": "A criação de personagem",
+            "subsections": [
+              {
+                "title": "Estatísticas (Stats)",
+                "icon": "🧬",
+                "description": "São 10 no total, normalmente entre 2 e 8:",
+                "list": [
+                  "INT (Inteligência)",
+                  "REF (Reflexos)",
+                  "DEX (Destreza)",
+                  "TECH (Tecnologia)",
+                  "COOL (Frieza)",
+                  "WILL (Vontade)",
+                  "LUCK (Sorte)",
+                  "MOVE (Movimento)",
+                  "BODY (Corpo)",
+                  "EMP (Empatia)"
+                ]
+              },
+              {
+                "title": "Classes (Roles)",
+                "icon": "💼",
+                "description": "Cada personagem tem uma Role (classe), com uma habilidade especial:",
+                "list": [
+                  "Rockerboy: Inspiração",
+                  "Solo: Combat Awareness",
+                  "Netrunner: Interface",
+                  "Techie: Maker",
+                  "Medtech: Medtech",
+                  "Media: Credibilidade",
+                  "Exec: Teamwork",
+                  "Fixer: Reputação",
+                  "Nomad: Motores"
+                ]
+              },
+              {
+                "title": "Skills",
+                "icon": "🎓",
+                "description": "Mais de 60 habilidades disponíveis, como:",
+                "examples": "Athletics, Persuasion, Stealth, Handgun, Cybertech, Hacking, First Aid etc.",
+                "note": "Cada skill vai de 0 a 10."
+              }
+            ]
+          },
+          {
+            "title": "Reputação",
+            "icon": "🧨",
+            "description": "A Reputação mede como o personagem é conhecido no mundo — seja por suas façanhas, conquistas ou crimes. Representa sua influência social e afeta como NPCs reagem a ele, podendo abrir portas... ou atrair problemas.",
+            "subsections": [
+              {
+                "title": "Como funciona",
+                "icon": "🔧",
+                "description": "Reputação é uma pontuação numérica que pode subir ou descer conforme suas ações. Pode ser usada para:",
+                "uses": [
+                  "Intimidar",
+                  "Impressionar",
+                  "Convencer ou manipular",
+                  "Se destacar (positiva ou negativamente)"
+                ],
+                "note": "Quanto maior a reputação, mais o personagem é conhecido — seja como herói, lenda urbana ou ameaça pública."
+              },
+              {
+                "title": "Ganhando e perdendo reputação",
+                "icon": "📈",
+                "gaining": [
+                  "Derrotar inimigos importantes",
+                  "Sobreviver a eventos públicos",
+                  "Aparecer na mídia (ou boatos nas ruas)"
+                ],
+                "losing": "Perde reputação se for humilhado, desmascarado ou derrotado publicamente."
+              },
+              {
+                "title": "Testes de Reputação",
+                "icon": "🎲",
+                "description": "Chamados de Reputation Rolls, funcionam assim:",
+                "formula": "1d10 + Valor de Reputação ≥ DV definida pelo mestre",
+                "example": {
+                  "scenario": "Seu personagem tem 5 de reputação e rola 1d10 → tirou 7",
+                  "result": "Total: 12",
+                  "note": "Se a dificuldade for 10, sucesso. Se for 15, falhou."
+                }
+              },
+              {
+                "title": "Modificadores e contexto",
+                "icon": "🎭",
+                "factors": [
+                  {"name": "Relevância da reputação", "description": "Se sua fama é entre gangues, talvez não funcione com corpos executivos."},
+                  {"name": "Contexto da ação", "description": "Um Solo conhecido por ser letal pode intimidar facilmente. Um Netrunner famoso pode ganhar respeito no submundo digital."}
+                ],
+                "note": "O GM ajusta a DV conforme o público-alvo e a situação."
+              },
+              {
+                "title": "Utilização narrativa",
+                "icon": "🧩",
+                "description": "Reputação também serve para enriquecer a história:",
+                "uses": [
+                  "NPCs podem te reconhecer, te oferecer tramas ou pedir favores",
+                  "Pode influenciar em negociações, recompensas e resolução de conflitos sociais",
+                  "Um personagem com fama negativa pode atrair caçadores de recompensa ou inimigos de facções rivais"
+                ]
+              }
+            ],
+            "conclusion": "A Reputação em Cyberpunk RED é uma ferramenta poderosa que molda a forma como o mundo enxerga o personagem. Pode ser usada como arma social, moeda de influência ou combustível narrativo. Mas cuidado: quanto maior a fama... maior o alvo nas suas costas."
+          }
+        ]
+      },
+      {
+        "id": "combat",
+        "title": "Combate",
+        "icon": "⚔️",
+        "content": [
+          {
+            "title": "Sistema de Combate",
+            "subsections": [
+              {
+                "title": "Ordem de iniciativa",
+                "icon": "🧠",
+                "formula": "1d10 + REF"
+              },
+              {
+                "title": "Ações por turno",
+                "icon": "🎬",
+                "actions": [
+                  "1 Ação (atacar, hackear, curar...)",
+                  "1 Movimento (MOV x 2 metros)",
+                  "Algumas ações são rápidas (sacar arma), outras lentas (recarregar)"
+                ]
+              },
+              {
+                "title": "Ataques",
+                "formula": "1d10 + Stat + Skill vs. DV ou Defesa ativa",
+                "example": "Ex: REF + Handgun"
+              },
+              {
+                "title": "Defesa",
+                "icon": "🛡️",
+                "description": "Você pode tentar Esquivar ou Parar se estiver em espera ou com certas habilidades."
+              },
+              {
+                "title": "Ação em espera",
+                "icon": "🎯",
+                "description": "Declare algo como: \"Atiro se ele sair da cobertura.\""
+              }
+            ]
+          },
+          {
+            "title": "Dano, ferimentos e morte",
+            "icon": "❤️",
+            "subsections": [
+              {
+                "title": "Tipos de dano",
+                "list": [
+                  "Balístico",
+                  "Explosivo",
+                  "Corte, impacto, etc."
+                ]
+              },
+              {
+                "title": "Armadura",
+                "icon": "🦾",
+                "description": [
+                  "SP (Stopping Power) reduz dano",
+                  "Se tomar dano maior que metade do SP, a armadura degrada 1 ponto"
+                ]
+              },
+              {
+                "title": "Ferimentos críticos",
+                "icon": "☠️",
+                "description": [
+                  "Se causar 8+ de dano após armadura, role na tabela de ferimentos",
+                  "Pode gerar: cegueira, membros quebrados, sangramento..."
+                ]
+              },
+              {
+                "title": "Morte",
+                "icon": "⚰️",
+                "description": "Se HP < 0, role Death Save:",
+                "formula": "1d10 + WILL >= valor negativo atual de HP"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "netrunning",
+        "title": "Netrunning",
+        "icon": "💻",
+        "content": [
+          {
+            "title": "Regras para Netrunners",
+            "icon": "💻",
+            "subsections": [
+              {
+                "title": "Interface e rede",
+                "icon": "🌐",
+                "description": "Netrunners usam Decks para invadir redes.",
+                "notes": [
+                  "Executam 3 ações de Interface por turno",
+                  "As redes têm camadas (níveis de firewall)"
+                ]
+              },
+              {
+                "title": "Principais ações",
+                "actions": [
+                  {"name": "Scanner", "description": "Detecta redes próximas"},
+                  {"name": "Pathfinder", "description": "Revela camadas"},
+                  {"name": "Backdoor", "description": "Quebra senhas"},
+                  {"name": "Control", "description": "Assumir controle de dispositivos"},
+                  {"name": "Zap", "description": "Ataca ICEs"}
+                ]
+              },
+              {
+                "title": "Perigo",
+                "icon": "⚠️",
+                "description": "ICEs atacam com dano cerebral. Netrunners podem morrer online se não forem cuidadosos."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "gear",
+        "title": "Equipamentos",
+        "icon": "🔫",
+        "content": [
+          {
+            "title": "Itens, cyberware e economia",
+            "icon": "💰",
+            "subsections": [
+              {
+                "title": "Economia e custo de vida",
+                "icon": "💵",
+                "description": "Nova São Paulo (ou Night City, no padrão do livro) é cruel. O dinheiro faz o mundo girar — ou engasgar.",
+                "costOfLiving": [
+                  {"style": "Corpo no chão", "cost": "€100", "description": "Você dorme em caçambas ou ruínas, come resto de kibble"},
+                  {"style": "Pobretão", "cost": "€500", "description": "Quartinho minúsculo, luz instável, banho quando dá"},
+                  {"style": "Padrão quebrado", "cost": "€1000", "description": "Apto simples, eletricidade ok, segurança limitada"},
+                  {"style": "Profissional", "cost": "€2500", "description": "Acesso a internet decente, ambiente limpo, segurança"},
+                  {"style": "Luxo", "cost": "€5000+", "description": "Cobertura ou suíte corpo-executiva, tudo automático"}
+                ],
+                "note": "Se você não paga seu custo de vida mensal, sofre consequências — desde penalidades sociais até perseguição de cobradores, despejo ou pior."
+              },
+              {
+                "title": "Dinheiro, reputação e influência",
+                "icon": "🌐",
+                "description": "No mundo de Cyberpunk RED, o dinheiro não é tudo, mas é quase.",
+                "factors": [
+                  "Com grana, você compra equipamentos melhores, armas, cyberware, favores e informações",
+                  "Com reputação, você intimida, convence e atrai missões ou aliados",
+                  "Com influência, você sobrevive mais tempo e abre caminhos onde as balas falham"
+                ],
+                "tips": [
+                  "Armas e equipamentos custam de €50 a €2000",
+                  "Cyberware pode ir de €100 (Fashionware) até €5000+ (Neuroware avançado)",
+                  "Kits médicos, munição e drogas também têm custo recorrente",
+                  "A curadoria de contatos é valiosa: pagar um Fixer, um Techie ou um Medtech pode salvar sua pele"
+                ]
+              },
+              {
+                "title": "Mercado negro",
+                "icon": "🕶️",
+                "whatToBuy": [
+                  "Armas ilegais (SMGs, granadas, rifles)",
+                  "Cyberware militar ou proibido",
+                  "Drogas de combate",
+                  "Equipamentos raros ou furtados"
+                ],
+                "howToBuy": {
+                  "step1": {
+                    "title": "Procurar um vendedor",
+                    "formula": "1d10 + Cool + Streetwise",
+                    "difficulties": [
+                      {"rarity": "Comum", "dv": 10},
+                      {"rarity": "Incomum", "dv": 13},
+                      {"rarity": "Raro", "dv": 15},
+                      {"rarity": "Muito Raro", "dv": 17},
+                      {"rarity": "Ilegal/Único", "dv": "20+"}
+                    ],
+                    "note": "Se tiver um Fixer confiável, pode pular a rolagem."
+                  },
+                  "step2": {
+                    "title": "Pagar o preço",
+                    "process": [
+                      "Use o preço base do item",
+                      "Pode tentar negociar com um teste de Persuasion ou Trading",
+                      "O mestre decide se há desconto ou não"
+                    ]
+                  },
+                  "step3": {
+                    "title": "Esperar a entrega",
+                    "deliveryTimes": [
+                      {"rarity": "Comum", "time": "Horas"},
+                      {"rarity": "Incomum", "time": "1d6 dias"},
+                      {"rarity": "Raro+", "time": "1d10 dias"},
+                      {"rarity": "Muito raro+", "time": "Pode exigir missão extra ou arco de história"}
+                    ]
+                  },
+                  "step4": {
+                    "title": "Complicações (opcional)",
+                    "description": "Mestre pode rolar 1d10 para ver se algo dá errado:",
+                    "complications": [
+                      {"roll": "1–3", "result": "Polícia, roubo, ou item com defeito"},
+                      {"roll": "4–5", "result": "Fixer exige um favor antes"},
+                      {"roll": "6–10", "result": "Tudo certo, item entregue normalmente"}
+                    ]
+                  }
+                },
+                "blackMarketItems": [
+                  {"item": "Pistola sem registro (Heavy Pistol)", "rarity": "Comum", "price": "100–150", "notes": "Discreta, fácil de encontrar"},
+                  {"item": "SMG (Submachine Gun)", "rarity": "Incomum", "price": "500–700", "notes": "Arma automática, alvo da polícia"},
+                  {"item": "Rifle de assalto (Assault Rifle)", "rarity": "Raro", "price": "1500", "notes": "Só via gangue ou Fixer confiável"},
+                  {"item": "Espingarda de combate (Shotgun)", "rarity": "Incomum", "price": "500–800", "notes": "Popular em zonas de guerra urbana"},
+                  {"item": "Granada de gás (Stun Gas)", "rarity": "Raro", "price": "800–1200", "notes": "Requer contato especial"},
+                  {"item": "Cibermão com ferramenta oculta", "rarity": "Incomum", "price": "700", "notes": "Pode esconder arma branca"}
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Cyberware",
+            "icon": "🤖",
+            "description": "O cyberware é o que separa um cidadão comum de um verdadeiro cyberpunk. São implantes, modificações e melhorias tecnológicas que você injeta no próprio corpo para ganhar vantagem — às vezes física, às vezes social, às vezes... letal.",
+            "subsections": [
+              {
+                "title": "O que dá pra comprar?",
+                "icon": "🛠️",
+                "description": "O cyberware é dividido em categorias, como:",
+                "categories": [
+                  "Cyberópticos: visão infravermelha, telescópica, gravação, HUD integrado",
+                  "Cyberáudio: escuta direcional, cancelamento de ruído, rádio interna",
+                  "Membros cibernéticos: braços com força aumentada, lâminas ocultas, mãos com ferramentas",
+                  "Interface Plugs: para conectar diretamente em veículos, armas ou redes",
+                  "Neuroware: reflexos aumentados, aceleradores de tempo de reação",
+                  "Biomods e Fashionware: mudanças estéticas, como pele que muda de cor, olhos de LED, sintetizadores de cheiro"
+                ],
+                "note": "Cada tipo de cyberware tem um custo em eurodollars (€$) e um impacto na sua Empatia (EMP)."
+              },
+              {
+                "title": "Perda de empatia e risco de cyberpsicose",
+                "icon": "🧠",
+                "description": "A cada implante, você sofre uma redução temporária ou permanente no seu atributo EMP (Empatia), que mede sua humanidade.",
+                "effects": [
+                  "EMP afeta a capacidade de se conectar com os outros: empatia, carisma, controle emocional",
+                  "Se a EMP cair abaixo de 3, o personagem começa a mostrar traços de desumanização",
+                  "Se cair para 0 ou menos, você entra em Cyberpsicose: o mestre assume o controle do seu personagem, que se torna imprevisível e perigoso"
+                ],
+                "example": {
+                  "scenario": "Você instala um braço cibernético e um olho com HUD: perde 2 pontos de EMP",
+                  "result": "Se sua EMP era 5, agora é 3 — já está na beirada da linha"
+                },
+                "warning": "Use com cuidado. Ser mais forte ou mais rápido tem um preço."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "critical",
+        "title": "Críticos",
+        "icon": "💥",
+        "content": [
+          {
+            "title": "Ferimentos críticos",
+            "description": "Quando um ataque causa 8 ou mais pontos de dano após a redução da armadura, o atacante rola 2d6 na tabela de ferimentos críticos.",
+            "subsections": [
+              {
+                "title": "Ferimentos críticos corporais",
+                "table": [
+                  {"roll": "2", "injury": "Braço desmembrado", "effect": "Itens segurados são largados, Penalidade base de +1 no Salvamento de Morte", "treatment": "Cirurgia DV17"},
+                  {"roll": "3", "injury": "Mão desmembrada", "effect": "Itens segurados são largados, Penalidade base de +1 no Salvamento de Morte", "treatment": "Cirurgia DV17"},
+                  {"roll": "4", "injury": "Pulmão colapsado", "effect": "-2 em MOVE, Penalidade base de +1 no Salvamento de Morte", "treatment": "Paramédico DV15 ou Cirurgia DV15"},
+                  {"roll": "5", "injury": "Costelas quebradas", "effect": "Dano adicional ao se mover mais de 4m/turno", "treatment": "Paramédico DV13 ou Cirurgia DV13"}
+                ]
+              },
+              {
+                "title": "Ferimentos críticos à cabeça",
+                "note": "Aplicados quando um ataque mirado à cabeça causa ferimento crítico",
+                "table": [
+                  {"roll": "2", "injury": "Olho perdido", "effect": "-4 em Ataques à Distância e Percepção visual, Penalidade base de +1 no Salvamento de Morte", "treatment": "Cirurgia DV17"},
+                  {"roll": "3", "injury": "Dano cerebral", "effect": "-2 em todas as Ações, Penalidade base de +1 no Salvamento de Morte", "treatment": "Cirurgia DV17"}
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Estados de ferimento",
+            "description": "Os personagens podem passar por diferentes estados de ferimento com base em seus pontos de vida restantes:",
+            "states": [
+              {"state": "Levemente ferido", "condition": "Menos do que HP total", "effects": "Nenhum", "healing": "Estabilização DV10"},
+              {"state": "Gravemente ferido", "condition": "Menos da metade do HP", "effects": "-2 em todas as Ações", "healing": "Estabilização DV13"},
+              {"state": "Mortalmente ferido", "condition": "Menos de 1 HP", "effects": "-4 em todas as Ações, -6 em MOVE (mínimo 1), Testes de Salvamento de Morte", "healing": "DV15 para recuperar 1 HP, inconsciente por 1 minuto"}
+            ]
+          }
+        ]
+      }
+    ]
+  }

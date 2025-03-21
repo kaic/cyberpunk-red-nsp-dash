@@ -6,6 +6,7 @@ import Capitulos from "./sections/Capitulos";
 import Gangues from "./sections/Gangues";
 import DefaultSection from "./sections/DefaultSection";
 import Lore from "./sections/Lore";
+import Rules from "./sections/Rules";
 
 export default function Home() {
   const [activeSection, setActiveSection] = React.useState("introducao");
@@ -45,6 +46,9 @@ export default function Home() {
 
       case "lore":
         return <Lore />;
+
+      case "rules":
+        return <Rules />;
 
       // Add additional case statements for other sections
       default:
