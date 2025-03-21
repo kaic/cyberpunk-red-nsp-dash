@@ -8,8 +8,6 @@ import DefaultSection from "./sections/DefaultSection";
 import Lore from "./sections/Lore";
 import Rules from "./sections/Rules";
 
-import { neonTheme as theme } from "./theme";
-
 export default function Home() {
   const [activeSection, setActiveSection] = React.useState("introducao");
   const [menuOpen, setMenuOpen] = React.useState(false);
@@ -42,16 +40,12 @@ export default function Home() {
         return <Introducao />;
       case "capitulos":
         return <Capitulos />;
-
       case "gangues":
         return <Gangues />;
-
       case "lore":
         return <Lore />;
-
       case "rules":
         return <Rules />;
-
       // Add additional case statements for other sections
       default:
         const section = sections.find((s) => s.id === activeSection);
@@ -68,30 +62,52 @@ export default function Home() {
     <div className="min-h-screen text-gray-100 bg-black relative">
       {/* Header with neon effect */}
       <header className="sticky top-0 z-50">
-        <div className="w-full bg-black/80 backdrop-blur-md border-b border-green-900">
-          <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div className="w-full bg-black/90 backdrop-blur-md border-b border-cyan-900 relative overflow-hidden">
+          {/* Animated background lighting */}
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-900/20 via-black/0 to-cyan-900/20"></div>
+
+          {/* Enhanced horizontal neon line */}
+          <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-cyan-400 shadow-[0_0_8px_rgba(34,211,238,0.7)]"></div>
+
+          <div className="container mx-auto px-4 py-4 flex justify-between items-center relative z-10">
             <div
-              className="text-2xl font-bold cursor-pointer flex items-center"
+              className="cursor-pointer flex items-center group"
               onClick={() => handleNavigation("introducao")}
             >
-              <span className="text-green-400">NOVA SÃO PAULO</span>
-              <div className="relative mx-1">
-                <span className="absolute -inset-1 rounded-full blur animate-pulse bg-green-600/50"></span>
-                <span className="relative text-green-500 text-3xl">2133</span>
+              {/* Main title with enhanced cyberpunk styling */}
+              <div className="relative">
+                <span
+                  className="text-2xl md:text-3xl font-orbitron font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 transition-all duration-300 group-hover:from-pink-400 group-hover:to-cyan-500"
+                  data-text="NOVA SÃO PAULO"
+                >
+                  NOVA SÃO PAULO
+                </span>
+                {/* Text shadow/glow effect */}
+                <span className="absolute -inset-1 bg-cyan-500/20 blur-md opacity-75 group-hover:opacity-100 transition-opacity duration-300 rounded-lg -z-10"></span>
+              </div>
+
+              <div className="relative mx-2 flex items-center">
+                {/* Year with multi-layered glow effect */}
+                <span className="absolute -inset-2 rounded-full blur-xl animate-pulse bg-pink-600/30"></span>
+                <span className="absolute -inset-1 rounded-full blur-md animate-pulse bg-pink-500/50"></span>
+                <span className="relative text-3xl md:text-4xl font-orbitron font-bold text-pink-500 drop-shadow-[0_0_8px_rgba(236,72,153,0.7)]">2133</span>
               </div>
             </div>
 
             <div className="flex items-center">
-              {/* Mobile menu button */}
+              {/* Mobile menu button with enhanced neon effect */}
               <button
                 onClick={() => setMenuOpen(!menuOpen)}
-                className="md:hidden p-2 rounded transition-colors bg-black hover:bg-green-900/20 focus:outline-none border border-green-800"
+                className="md:hidden p-2 rounded relative overflow-hidden transition-all bg-black/60 hover:bg-cyan-900/20 focus:outline-none border border-cyan-800 group"
                 aria-label="Menu"
               >
+                {/* Button glow effect */}
+                <span className="absolute inset-0 bg-cyan-800/0 group-hover:bg-cyan-800/20 transition-colors duration-300"></span>
+
                 {menuOpen ? (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-green-400"
+                    className="h-6 w-6 text-cyan-400 drop-shadow-[0_0_3px_rgba(34,211,238,0.7)]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -106,7 +122,7 @@ export default function Home() {
                 ) : (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-green-400"
+                      className="h-6 w-6 text-cyan-400 drop-shadow-[0_0_3px_rgba(34,211,238,0.7)]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -119,14 +135,20 @@ export default function Home() {
                     />
                   </svg>
                 )}
+
+                {/* Button highlight effect */}
+                <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-cyan-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
               </button>
             </div>
           </div>
+
+          {/* Optional scanline effect for more cyberpunk feel */}
+          <div className="absolute inset-0 pointer-events-none scanline opacity-10"></div>
         </div>
 
         {/* Mobile menu */}
         {menuOpen && (
-          <div className="md:hidden absolute w-full bg-black/90 border-b border-green-800 shadow-lg z-50">
+          <div className="md:hidden absolute w-full bg-black/90 border-b border-cyan-900 shadow-lg z-50">
             <div className="container mx-auto px-4 py-2">
               <nav className="grid grid-cols-2 gap-2 py-4">
                 {sections.map((section) => (
@@ -135,12 +157,12 @@ export default function Home() {
                     onClick={() => handleNavigation(section.id)}
                     className={`flex items-center p-3 rounded-lg transition ${
                       activeSection === section.id
-                        ? "bg-green-900/30 text-green-400 border border-green-800"
-                        : "hover:bg-green-900/10 text-gray-300 border border-transparent"
+                      ? "bg-purple-900/30 text-cyan-400 border border-purple-800 shadow-[0_0_8px_rgba(124,58,237,0.3)]"
+                      : "hover:bg-purple-900/10 text-gray-300 border border-transparent hover:border-purple-900/50"
                     }`}
                   >
                     <span className="mr-2">{section.icon}</span>
-                    <span>{section.name}</span>
+                    <span className="font-orbitron tracking-wide text-sm">{section.name}</span>
                   </button>
                 ))}
               </nav>
@@ -151,19 +173,20 @@ export default function Home() {
 
       <div className="flex min-h-screen">
         {/* Sidebar - Desktop Only */}
-        <aside className="hidden md:block w-64 bg-black border-r border-green-900 p-6 sticky top-[73px] h-[calc(100vh-73px)] overflow-auto">
+        <aside className="hidden md:block w-64 bg-black border-r border-cyan-900 p-6 sticky top-[73px] h-[calc(100vh-73px)] overflow-auto">
           <nav className="space-y-1">
             {sections.map((section) => (
               <div
                 key={section.id}
-                className={`${activeSection === section.id ? "bg-green-900/20" : ""} rounded-lg overflow-hidden`}
+                className={`${activeSection === section.id ? "bg-purple-900/20" : ""
+                  } rounded-lg overflow-hidden group transition-colors duration-300 hover:bg-purple-900/10`}
               >
                 <button
                   onClick={() => handleNavigation(section.id)}
                   className={`flex items-center w-full px-4 py-3 text-left transition ${
                     activeSection === section.id
-                      ? "text-green-400 font-bold"
-                      : "text-gray-400 hover:text-green-400"
+                    ? "text-cyan-400 font-bold"
+                    : "text-gray-400 hover:text-cyan-400"
                   }`}
                 >
                   <span
@@ -171,15 +194,25 @@ export default function Home() {
                   >
                     {section.icon}
                   </span>
-                  <span>{section.name}</span>
+                  <span className={activeSection === section.id ? "font-orbitron tracking-wide" : ""}>
+                    {section.name}
+                  </span>
+
+                  {/* Add subtle glow effect for active item */}
+                  {activeSection === section.id && (
+                    <span className="absolute bottom-0 left-4 right-4 h-px bg-cyan-400/50"></span>
+                  )}
                 </button>
               </div>
             ))}
           </nav>
 
-          <div className="mt-8 pt-6 border-t border-green-900/50">
-            <div className="p-4 rounded-lg bg-black shadow-inner border border-green-900">
-              <h3 className="font-bold text-sm uppercase tracking-wider mb-2 text-green-500 opacity-70">
+          <div className="mt-8 pt-6 border-t border-purple-900/50">
+            <div className="p-4 rounded-lg bg-black shadow-inner border border-purple-900 relative overflow-hidden group">
+              {/* Add subtle glowing border effect on hover */}
+              <div className="absolute inset-0 bg-purple-900/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+              <h3 className="font-orbitron font-bold text-sm uppercase tracking-wider mb-2 text-pink-500 opacity-80">
                 Mensagem do Mestre
               </h3>
               <p className="text-sm italic text-gray-400">
@@ -197,9 +230,9 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <footer className="py-4 bg-black border-t border-green-900/50">
+      <footer className="py-4 bg-black border-t border-purple-900/50">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-sm text-green-600 font-mono">
+          <p className="text-sm text-cyan-600 font-mono">
             CYBERPUNK RED - NOVA SÃO PAULO © 2133
           </p>
         </div>
