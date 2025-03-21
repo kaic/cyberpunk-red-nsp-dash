@@ -3,35 +3,35 @@
 import React from "react";
 import GlitchText from "../components/GlitchText";
 import Link from "next/link";
+import { neonTheme as theme } from "../theme";
 
 const Introducao: React.FC = () => {
   return (
     <div className="relative z-10">
-          {/* Header */}
-      <h1 className="text-4xl font-bold mb-6 text-green-400 flex items-center border-b border-green-900 pb-2">
-        <span className="mr-2">🏛️</span>
+          <h1 className={`text-4xl font-bold mb-6 text-${theme.primary} flex items-center border-b border-${theme.primaryDark} pb-2`}>
+              <span className="mr-2">🏛️</span>
               <GlitchText>NOVA SÃO PAULO 2133</GlitchText>
-      </h1>
+          </h1>
 
-          {/* Quick Stats Bar */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
-              <div className="bg-black p-3 rounded-lg border border-green-900 text-center">
-                  <div className="text-green-400 font-mono text-sm">POPULAÇÃO</div>
-                  <div className="text-white text-2xl font-bold">50M+</div>
+              <div className={`bg-black p-3 rounded-lg border border-${theme.primaryDark} text-center`}>
+                  <div className={`text-${theme.primary} font-mono text-sm`}>POPULAÇÃO</div>
+                  <div className="text-white text-lg font-bold">50M+</div>
               </div>
-              <div className="bg-black p-3 rounded-lg border border-green-900 text-center">
-                  <div className="text-green-400 font-mono text-sm">STATUS</div>
-                  <div className="text-white text-2xl font-bold">INDEPENDENTE</div>
+              <div className={`bg-black p-3 rounded-lg border border-${theme.accent1Dark} text-center`}>
+                  <div className={`text-${theme.accent1} font-mono text-sm`}>STATUS</div>
+                  <div className="text-white text-lg font-bold">INDEPENDENTE</div>
               </div>
-              <div className="bg-black p-3 rounded-lg border border-green-900 text-center">
-                  <div className="text-green-400 font-mono text-sm">SECESSÃO</div>
-                  <div className="text-white text-2xl font-bold">2099</div>
+              <div className={`bg-black p-3 rounded-lg border border-${theme.accent2Dark} text-center`}>
+                  <div className={`text-${theme.accent2} font-mono text-sm`}>SECESSÃO</div>
+                  <div className="text-white text-lg font-bold">2099</div>
               </div>
-              <div className="bg-black p-3 rounded-lg border border-green-900 text-center">
-                  <div className="text-green-400 font-mono text-sm">CONTROLE</div>
-                  <div className="text-white text-2xl font-bold">DIVIDIDO</div>
+              <div className={`bg-black p-3 rounded-lg border border-${theme.secondaryDark} text-center`}>
+                  <div className={`text-${theme.secondary} font-mono text-sm`}>CONTROLE</div>
+                  <div className="text-white text-lg font-bold">DIVIDIDO</div>
               </div>
           </div>
+
 
           {/* Boas-vindas */}
           <div className="p-6 rounded-lg shadow-lg bg-black border border-green-900 relative overflow-hidden mb-8">

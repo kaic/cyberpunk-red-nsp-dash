@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import GlitchText from "../components/GlitchText";
+import { neonTheme as theme } from "../theme";
 
 const CapituloUmIntroducao: React.FC = () => {
   // Estado para renderização client-side

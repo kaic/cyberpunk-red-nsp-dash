@@ -8,6 +8,8 @@ import DefaultSection from "./sections/DefaultSection";
 import Lore from "./sections/Lore";
 import Rules from "./sections/Rules";
 
+import { neonTheme as theme } from "./theme";
+
 export default function Home() {
   const [activeSection, setActiveSection] = React.useState("introducao");
   const [menuOpen, setMenuOpen] = React.useState(false);

@@ -1,5 +1,62 @@
 @import "tailwindcss";
 
+/* Theme variables - easy to update in one place */
+:root {
+  /* Base theme colors - using direct hex values instead of theme() function */
+  --theme-primary: #BF40BF;      /* Purple-400 equivalent */
+  --theme-primary-dark: #44337A; /* Purple-900 equivalent */
+  --theme-secondary: #38B2AC;    /* Cyan-400 equivalent */
+  --theme-secondary-dark: #234E52; /* Cyan-900 equivalent */
+  --theme-accent1: #F687B3;      /* Pink-400 equivalent */
+  --theme-accent1-dark: #702459; /* Pink-900 equivalent */
+  --theme-accent2: #4299E1;      /* Blue-400 equivalent */
+  --theme-accent2-dark: #2A4365; /* Blue-900 equivalent */
+  --theme-accent3: #7F9CF5;      /* Indigo-400 equivalent */
+  --theme-accent3-dark: #3C366B; /* Indigo-900 equivalent */
+}
+
+/* Theme utility classes */
+.theme-text-primary {
+  color: var(--theme-primary);
+}
+
+.theme-border-primary {
+  border-color: var(--theme-primary-dark);
+}
+
+.theme-bg-primary {
+  background-color: var(--theme-primary-dark);
+}
+
+.theme-text-secondary {
+  color: var(--theme-secondary);
+}
+
+.theme-border-secondary {
+  border-color: var(--theme-secondary-dark);
+}
+
+.theme-bg-secondary {
+  background-color: var(--theme-secondary-dark);
+}
+
+/* Add similar classes for accent colors */
+
+/* You can also add utility classes for gradients */
+.theme-gradient-primary {
+  background-image: linear-gradient(to right, var(--theme-primary-dark) / 0.1, transparent);
+}
+
+.theme-gradient-nightlife {
+  background-image: linear-gradient(to bottom, rgba(88, 28, 135, 0.1), rgba(30, 58, 138, 0.1));
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 @layer utilities {
   .hide-scrollbar::-webkit-scrollbar {
     display: none;
