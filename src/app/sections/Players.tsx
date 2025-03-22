@@ -42,7 +42,7 @@ const playersData = [
       { name: "Faca retrátil de titanium", damage: "1d6", notes: "Escondida na bota" }
     ],
     contacts: [
-      { name: "BlingBling", type: "Aliado", description: "Membro dos BitMarauders, fonte de trabalhos e informações privilegiadas" },
+      { name: "BlingBling", type: "Aliado", description: "Membro dos Raul, fonte de trabalhos e informações privilegiadas" },
       { name: "Dr. Sombra", type: "Associado", description: "Médico d'A Caldeira, realiza procedimentos sem perguntas" }
     ],
     enemies: [

@@ -34,7 +34,7 @@ const ganguesData = {
       ],
       armas: "Armas brancas, pistolas de baixo calibre, explosivos caseiros",
       rivalidades: ["Comando Cyberpunk (em certos territórios)", "Guardian"],
-      aliancas: ["Ocasionalmente cooperam com BitMarauders"]
+      aliancas: ["Ocasionalmente cooperam com Raul"]
     },
     {
       id: "comando",
@@ -66,21 +66,21 @@ const ganguesData = {
         { texto: "Infiltração", cor: "purple" }
       ],
       armas: "Arsenal militar completo, acesso a armas automáticas e explosivos",
-      rivalidades: ["TOs (disputas territoriais)", "BitMarauders (competição por mercados de luxo)"],
+      rivalidades: ["TOs (disputas territoriais)", "Raul (competição por mercados de luxo)"],
       aliancas: ["MiliTech (aliança secreta recente)"]
     },
     {
-      id: "bitmarauders",
-      nome: "BitMarauders",
+      id: "Raul",
+      nome: "Raul",
       descricao: "Operam nas altas esferas financeiras de Nova São Paulo. Seus tentáculos se estendem por corporações e instituições bancárias.",
-      descricaoLonga: "Os BitMarauders são uma máfia que opera nas altas esferas financeiras de Nova São Paulo. Seus tentáculos se estendem por corporações e instituições bancárias, usando esquemas complexos para manipular a economia da cidade. Eles estão envolvidos em crimes financeiros, lavagem de dinheiro e corrupção.",
+      descricaoLonga: "Os Raul são uma máfia que opera nas altas esferas financeiras de Nova São Paulo. Seus tentáculos se estendem por corporações e instituições bancárias, usando esquemas complexos para manipular a economia da cidade. Eles estão envolvidos em crimes financeiros, lavagem de dinheiro e corrupção.",
       icone: "💰",
       corPrimaria: "green",
       corSecundaria: "cyan",
       territorio: "Arranha-céus corporativos, distritos financeiros",
       atividades: "Lavagem de dinheiro, manipulação do mercado, chantagem corporativa, tráfico de dados",
       caracteristicas: [
-        "Ao contrário de gangues convencionais, os membros dos BitMarauders se apresentam com elegância e sofisticação.",
+        "Ao contrário de gangues convencionais, os membros dos Raul se apresentam com elegância e sofisticação.",
         "Trajes caros escondem uma crueldade impiedosa, e seus negócios são realizados nos corredores dos arranha-céus corporativos.",
         "Especialistas em tecnologia financeira, utilizam criptomoedas e mercados paralelos para movimentar recursos."
       ],
@@ -115,7 +115,7 @@ const ganguesData = {
       { aliados: "Comando + MiliTech", descricao: "Aliança secreta", notas: "Formada recentemente para objetivos comuns ainda desconhecidos." },
       { aliados: "Guardian + SynthCorp", descricao: "Controle de fronteiras", notas: "Cooperam no controle de entradas e saídas da cidade." },
       { aliados: "TOs", descricao: "Se unem contra inimigos comuns", notas: "Quando necessário, superam rivalidades entre torcidas." },
-      { aliados: "BitMarauders", descricao: "Rivalidade com o Comando", notas: "Competem por mercados lucrativos e zonas de influência." }
+      { aliados: "Raul", descricao: "Rivalidade com o Comando", notas: "Competem por mercados lucrativos e zonas de influência." }
     ]
   }
 };

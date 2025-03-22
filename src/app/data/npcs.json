@@ -15,7 +15,7 @@
       "descricaoLonga": "É um Maurauder novo porem é muito promissor. Tem 25 anos, é um corporate que sabe onde encontrar o dinheiro. Usa um terno tecnologico, tem um cabelo azul, oculos, olhos ciberneticos e usa uma katana.",
       "imagem": "/img/BlingBling.png",
       "idade": "25 anos",
-      "profissao": "Fixer dos BitMarauders",
+      "profissao": "Fixer dos Raul",
       "status": "Aliado",
       "caracteristicas": [
         "Veste terno tecnológico de última geração",
@@ -24,12 +24,16 @@
         "Tem contatos em praticamente todos os círculos financeiros de Nova São Paulo"
       ],
       "conexoes": [
-        { "nome": "BitMarauders", "relacao": "Membro", "detalhes": "Apesar de novo na organização, conquistou respeito rapidamente" },
+        {
+          "nome": "Raul",
+          "relacao": "Membro",
+          "detalhes": "Apesar de novo na organização, conquistou respeito rapidamente"
+        },
         { "nome": "El Rato", "relacao": "Contato comercial", "detalhes": "Já fez negócios no passado, relação tensa mas respeitosa" }
       ],
       "notas": [
         "Ofereceu ajuda ao grupo em troca de um favor - recuperar um laboratório de CyberJenkins",
-        "Tem ambições de ascender na hierarquia dos BitMarauders",
+        "Tem ambições de ascender na hierarquia dos Raul",
         "Extremamente conectado ao submundo financeiro de NSP"
       ]
     },

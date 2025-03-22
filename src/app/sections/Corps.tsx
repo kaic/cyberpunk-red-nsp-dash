@@ -33,7 +33,7 @@ const corpsData = {
         { texto: "Controle social", cor: "purple" }
       ],
       projetos: "Projeto Omega (confidencial), Interface Neural Direta, Nova Rede de Vigilância Urbana",
-      rivalidades: ["BionTech (disputa por patentes)", "BitMarauders (espionagem industrial)"],
+      rivalidades: ["BionTech (disputa por patentes)", "Raul (espionagem industrial)"],
       aliancas: ["Guardian (controle de fronteiras)", "MiliTech (projetos conjuntos de defesa)"]
     },
     {
@@ -161,7 +161,7 @@ const corpsData = {
         { texto: "Vigilância", cor: "blue" }
       ],
       projetos: "Sistema de Identificação Obrigatória, Rede Neural de Reconhecimento Facial, Isolamento Distrital",
-      rivalidades: ["Ativistas pelos direitos civis", "BitMarauders (resistem ao controle)"],
+      rivalidades: ["Ativistas pelos direitos civis", "Raul (resistem ao controle)"],
       aliancas: ["SynthCorp (tecnologia de vigilância)", "Governador Gerald (controle político)"]
     }
   ],

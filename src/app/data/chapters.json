@@ -10,17 +10,25 @@
       "keyEvents": [
         "A explosão mata duas pessoas próximo à janela do bar.",
         "Membros do Comando chegam acusando os jogadores do assassinato.",
-        "BlingBling, um fixer dos BitMarauders, contata oferecendo ajuda.",
+        "BlingBling, um fixer dos Raul, contata oferecendo ajuda.",
         "Para ganhar sua confiança, o grupo precisa recuperar um laboratório de CyberJenkins."
       ],
       "locations": [
         { "name": "Bar no Tatuapé", "description": "Bar bem localizado em um prédio alto, frequentado pela elite local. Do lado de fora, pode-se ver a cidade em todo seu esplendor e caos, com veículos aéreos e o metrô passando próximo." },
-        { "name": "Agência de Carros", "description": "Fachada para operações de lavagem de dinheiro dos BitMarauders. Apresenta modelos de carros de luxo, mas seu verdadeiro negócio ocorre nos fundos, onde dados e dinheiro são processados." },
+        {
+            "name": "Agência de Carros",
+            "description": "Fachada para operações de lavagem de dinheiro dos Raul. Apresenta modelos de carros de luxo, mas seu verdadeiro negócio ocorre nos fundos, onde dados e dinheiro são processados."
+        },
         { "name": "Laboratório de Jenkins", "description": "Base de produção de CyberJenkins, controlada pelos TO do Palmeiras. Escondido em uma área industrial abandonada, o laboratório é protegido por gangsters e possui equipamentos químicos avançados." }
       ],
       "npcs": [
         { "name": "Marcos da ZL", "faction": "Comando", "status": "Morto", "notes": "Líder do Comando assassinado pela bomba. Era conhecido por sua brutalidade, mas também por um código de honra nas ruas." },
-        { "name": "BlingBling", "faction": "BitMarauders", "status": "Aliado", "notes": "Fixer que oferece ajuda em troca de favores. Exuberante e extravagante, sempre vestido com roupas brilhantes e joias, possui uma rede de contatos invejável." },
+        {
+            "name": "BlingBling",
+            "faction": "Raul",
+            "status": "Aliado",
+            "notes": "Fixer que oferece ajuda em troca de favores. Exuberante e extravagante, sempre vestido com roupas brilhantes e joias, possui uma rede de contatos invejável."
+        },
         { "name": "MC Kleber", "faction": "Ex-Comando", "status": "Neutro", "notes": "Pode ajudar a marcar reunião com o Tribunal do Crime. Antigo membro que saiu após divergências ideológicas e agora vive como artista de rua e informante." }
       ],
       "loot": [
@@ -29,7 +37,11 @@
       ],
       "challenges": [
         { "type": "Combate", "description": "Enfrentar os membros do Comando que aparecem no bar acusando os jogadores.", "difficulty": "Média" },
-        { "type": "Social", "description": "Convencer a polícia na agência de carros de que tudo está normal.", "difficulty": "Difícil" },
+        {
+            "type": "Combate/Social",
+            "description": "Convencer a polícia na agência de carros de que tudo está normal.",
+            "difficulty": "Difícil"
+        },
         { "type": "Infiltração", "description": "Recuperar o laboratório de CyberJenkins dos TOs do Palmeiras.", "difficulty": "Muito Difícil" }
       ]
     },
@@ -42,9 +54,9 @@
       "summary": "Após estabelecer contato com MC Kleber, o grupo descobre que ele foi sequestrado pela MiliTech. Esta revelação aponta para uma aliança secreta entre a corporação e o Comando, complicando ainda mais a situação dos jogadores. A investigação leva à perigosa balada 'A Floresta' e às bases da MiliTech, onde segredos sombrios começam a ser revelados.",
       "keyEvents": [
         "BlingBling avisa que MC Kleber foi sequestrado.",
-        "A balada 'A Floresta' em Pinheiros é a última localização conhecida.",
+        "A balada 'AFloresta' em Pinheiros é a última localização conhecida.",
         "Investigação leva a duas bases da MiliTech: Brás e Capão.",
-        "Descoberta da aliança entre MiliTech e Comando para esconder o Cartel."
+        "A visita na AFloresta causa efeitos colaterais em Raposa."
       ],
       "locations": [
         { "name": "A Floresta", "description": "Balada em Pinheiros, ponto de encontro para fixers e mercenários. Um festival de luzes neon, música alta e negócios clandestinos sendo feitos em cantos escuros entre drinks caros." },
@@ -53,50 +65,156 @@
       ],
       "npcs": [
         { "name": "Will", "faction": "Civil", "status": "Neutro", "notes": "Bartender de A Floresta com informações úteis. Ouvidos atentos e boa memória, mas cauteloso ao compartilhar o que sabe." },
-        { "name": "Z", "faction": "Civil", "status": "Possível Aliado", "notes": "Segurança da balada insatisfeito com seus chefes. Busca uma saída de sua situação atual e pode ser persuadido a ajudar por um preço." },
-        { "name": "Raposa", "faction": "Independente", "status": "Aliado", "notes": "Sofre efeitos do CyberJenkins após contato com V. As visões que experimenta podem conter pistas cruciais sobre os projetos secretos." },
+        {
+            "name": "Z",
+            "faction": "Civil",
+            "status": "Possível Aliado",
+            "notes": "Segurança da balada insatisfeito com seus chefes. Busca uma saída de sua situação atual e pode ser persuadido a ajudar por um preço."
+        },
         { "name": "V", "faction": "Desconhecida", "status": "Misteriosa", "notes": "Envenenou Raposa com CyberJenkins. Suas motivações são obscuras, mas parece ter conhecimento interno sobre as corporações." }
       ],
       "loot": [
-        { "name": "Planta da Base do Capão", "type": "Informação", "source": "Base MiliTech - Brás", "description": "Diagrama detalhado mostrando pontos de acesso, localização de câmeras e rota até as celas de detenção." },
-        { "name": "Cyberarm", "type": "Cyberware", "source": "Base MiliTech - Brás", "description": "Braço cibernético de alta qualidade com aumento de força e compartimento oculto." },
+        {
+            "name": "Localização da Base do Capão",
+            "type": "Informação",
+            "source": "AFloresta",
+            "description": "Localização detalhada mostrando pontos de acesso e rota até o local."
+        },
+        {
+            "name": "Localização da Base do Brás",
+            "type": "Informação",
+            "source": "AFloresta",
+            "description": "Localização detalhada mostrando pontos de acesso e rota até o local."
+        },
+        {
+            "name": "Cyberarm",
+            "type": "Cyberware",
+            "source": "Base MiliTech - Brás",
+            "description": "Braço cibernético de alta qualidade com aumento de força e compartimento oculto."
+        },
         { "name": "Arasaka WSSA Sniper System", "type": "Arma", "source": "Base MiliTech - Brás", "description": "Sistema de sniper avançado com mira inteligente e munição especializada." }
       ],
       "challenges": [
         { "type": "Investigação", "description": "Descobrir o paradeiro de MC Kleber através de pistas na balada.", "difficulty": "Média" },
-        { "type": "Infiltração", "description": "Entrar na base da MiliTech no Brás sem ser detectado.", "difficulty": "Difícil" },
-        { "type": "Resgate", "description": "Libertar MC Kleber da instalação de segurança máxima no Capão.", "difficulty": "Muito Difícil" }
+        {
+            "type": "Infiltração",
+            "description": "Entrar na base certa da MiliTech sem ser detectado.",
+            "difficulty": "Difícil"
+        },
+        {
+            "type": "Resgate",
+            "description": "Libertar MC Kleber da instalação em que se encontra",
+            "difficulty": "Muito Difícil"
+        }
       ]
     },
     {
-      "id": "cap3",
-      "number": "03",
-      "title": "Cidade dos Sonhos",
-      "status": "complete",
-      "description": "As visões causadas pelo CyberJenkins revelam projetos secretos e a verdadeira natureza da conspiração.",
-      "summary": "As visões experimentadas por Raposa após o contato com CyberJenkins abrem uma janela para os projetos secretos da MiliTech e SynthCorp. A realidade distorcida das alucinações revela verdades ocultas sobre os projetos Omega e Alpha, levando o grupo a confrontar um poderoso cyborgue da MiliTech, o Executor de Ferro. Neste capítulo, a verdadeira extensão da conspiração começa a tomar forma.",
-      "keyEvents": [
-        "Raposa tem visões intensas após contato com CyberJenkins.",
-        "Aparecem pistas sobre os projetos Omega e Alpha.",
-        "Confronto com o 'Executor de Ferro', um cyborg da MiliTech.",
-        "Revelações sobre conexões entre o governo, MiliTech e o Cartel."
-      ],
-      "locations": [
-        { "name": "Hideout dos Players", "description": "Esconderijo temporário enquanto são caçados. Um apartamento apertado em um prédio decadente, com recursos limitados mas relativamente seguro das autoridades." },
-        { "name": "Sede SynthCorp", "description": "Mencionada nas visões, conectada ao Projeto Omega. Torre imponente no distrito financeiro, símbolo do poder corporativo, com sistemas de segurança de última geração." }
-      ],
-      "npcs": [
-        { "name": "Eco", "faction": "Mídia", "status": "Aliado", "notes": "Amigo de infância de Ellie, jornalista investigativo. Dedicado a expor a corrupção corporativa, possui recursos de mídia e contatos que podem ajudar a espalhar a verdade." },
-        { "name": "Executor de Ferro", "faction": "MiliTech", "status": "Inimigo", "notes": "Cyborg com armadura pesada e armas integradas. Um soldado aprimorado com implantes militares experimentais, praticamente uma máquina de matar." }
-      ],
-      "loot": [
-        { "name": "Dados do Projeto Omega", "type": "Informação", "source": "Visões de Raposa", "description": "Fragmentos de informação sobre um sistema de controle neural em desenvolvimento que poderia suprimir a resistência em massa." }
-      ],
-      "challenges": [
-        { "type": "Mental", "description": "Interpretar corretamente as visões de Raposa para extrair informações úteis.", "difficulty": "Difícil" },
-        { "type": "Combate", "description": "Enfrentar o Executor de Ferro, um inimigo com capacidades muito superiores.", "difficulty": "Extrema" },
-        { "type": "Investigação", "description": "Conectar os pontos entre os projetos Omega/Alpha e as atitudes das corporações.", "difficulty": "Muito Difícil" }
-      ]
+        "id": "cap3",
+        "number": "03",
+        "title": "Cidade dos Sonhos",
+        "status": "complete",
+        "description": "As visões causadas pelo CyberJenkins revelam conflitos, guerras e perturbação, enquanto o grupo busca MC Kleber no Brás apenas para descobrir que seu rastro se perdeu.",
+        "summary": "As visões experimentadas por Raposa após o contato com CyberJenkins abrem uma janela para os projetos secretos da MiliTech e SynthCorp. O grupo confronta GB do JH logo no início, com Raposa executando-o antes que pudesse revelar segredos importantes, cuspindo em seu rosto num gesto de desprezo. Em seguida, o grupo viaja até o Brás em busca de MC Kleber, mas não o encontra na base da MiliTech, descobrindo pistas que sugerem uma conexão entre a corporação e o desenvolvimento do CyberJenkins. Para realizar esta missão, contraem uma dívida com El Rato para alugar um carro. Na volta, enfrentam uma blitz policial onde parte do grupo foge com Dominic, enquanto os que permaneceram no carro alugado são forçados a pagar suborno. O veículo acaba sendo destruído, complicando ainda mais a situação financeira do grupo e deixando-os com uma dívida perigosa com El Rato.",
+        "keyEvents": [
+        "Confronto inicial com GB do JH, onde Raposa o executa após cuspir em seu rosto, silenciando segredos importantes.",
+        "O grupo viaja ao Brás mas não encontra MC Kleber, descobrindo evidências da ligação entre MiliTech e o desenvolvimento do CyberJenkins.",
+        "Uma dívida é contraída com El Rato para alugar um carro para a missão.",
+        "Eco, amigo de infância de Ellie, reconhece seu rosto em um vídeo vazado e faz contato oferecendo ajuda.",
+        "Blitz policial na volta do galpão divide o grupo - alguns fogem com Dominic, outros pagam suborno.",
+        "Carro alugado é destruído, criando uma dívida perigosa com El Rato, o implacável agiota."
+    ],
+    "locations": [
+        {
+            "name": "Base MiliTech - Brás",
+            "description": "Instalação em distrito industrial com aparência de galpão abandonado por fora, mas altamente protegida por dentro. Sistema de segurança de ponta inclui câmeras térmicas, guardas armados e drones de vigilância. O grupo descobre que MC Kleber não está mais lá, mas encontram evidências de experimentos relacionados ao CyberJenkins."
+        },
+        {
+            "name": "Blitz Policial",
+            "description": "Ponto de controle da polícia estrategicamente posicionado na Radial Leste para fiscalizar veículos suspeitos. Oficiais corrompidos da NCPD frequentemente aceitam subornos para deixar passar atividades ilegais, mas não hesitam em prender quem não pode pagar. Luzes piscantes azuis e vermelhas iluminam o asfalto molhado pela chuva ácida."
+        },
+        {
+            "name": "Praça da Sé",
+            "description": "Antigo centro cívico da cidade, agora ponto de encontro de refugiados corporativos e campo de batalha urbano. Torres de vigilância improvisadas pelos Comandos controlam o fluxo, enquanto drones de publicidade ainda tentam vender produtos para uma população desesperada. Foi aqui que ocorreu a emboscada que quase dizimou o grupo."
+        }
+    ],
+    "npcs": [
+        {
+            "name": "GB do JH",
+            "faction": "Comando",
+            "status": "Morto",
+            "notes": "Líder revolucionário do Comando com implantes cibernéticos avançados. Tentou revelar segredos importantes sobre a conexão Comando-MiliTech, mas foi executado por Raposa que cuspiu em seu rosto sem dar chance para discursos. Morreu levando consigo segredos importantes sobre o envolvimento do Comando com a morte de Marcos da ZL."
+        },
+        {
+            "name": "El Rato",
+            "faction": "Agiota",
+            "status": "Credor",
+            "notes": "Hector 'El Rato' Jiménez, 52 anos, hispânico da Zona Norte. Agiota do mercado cinza com mãos cibernéticas douradas que simbolizam dívidas não perdoadas. Ex-cobrador do Cartel de Medellín, agora empresta dinheiro, armas, veículos e equipamentos roubados com juros absurdos. Frio e calculista, trata dívidas como contratos de vida ou morte. Tem conexões com MiliTech e SynthCorp. Exige o pagamento do carro destruído ou um veículo equivalente, caso contrário forçará o grupo a fazer um serviço perigoso."
+        },
+        {
+            "name": "Policiais Corruptos",
+            "faction": "NSP-PM",
+            "status": "Inimigos",
+            "notes": "Oficiais da Policia Militicar de Nova São Paulo que sobrevivem por meio de subornos. Comandados pelo Sargento Alvarez, usam uniformes desgastados mas armas de última geração. Durante a blitz, exigiram pagamento significativo para liberar o grupo, contribuindo para a perda do carro e agravamento da dívida com El Rato."
+        }
+    ],
+    "loot": [
+        {
+            "name": "Cyberleg do GB do JH",
+            "type": "Cyberware",
+            "source": "Confronto com GB do JH",
+            "description": "Perna cibernética militar de alto desempenho com compartimento secreto e propulsores para saltos aumentados. Contém dados criptografados sobre operações do Comando que podem ser acessados com habilidades técnicas avançadas."
+        },
+        {
+            "name": "Carro roubado para fuga",
+            "type": "Veículo",
+            "source": "Blitz Policial",
+            "description": "Veículo esportivo de médio porte apropriado durante a fuga com Dominic. Modelo Quadra Type-66 com blindagem leve e sistema de navegação modificado para evitar monitoramento, mas tanque quase vazio limitando seu uso imediato."
+        },
+        {
+            "name": "Carro danificado durante a fuga",
+            "type": "Veículo",
+            "source": "Blitz Policial",
+            "description": "O Thorton Colby alugado de El Rato sofreu danos irreparáveis durante a fuga. Agora é apenas uma carcaça de metal retorcido - mas a dívida pelo valor integral permanece, gerando um problema financeiro grave para o grupo."
+        },
+        {
+            "name": "Documentos da MiliTech",
+            "type": "Informação",
+            "source": "Base MiliTech - Brás",
+            "description": "Arquivos fragmentados recuperados de um terminal danificado contendo referências ao 'Projeto Jenkins' e experimentos de controle comportamental usando a droga como vetor. Sugere fortemente a conexão entre a corporação e o desenvolvimento/distribuição do CyberJenkins."
+        }
+    ],
+    "challenges": [
+        {
+            "type": "Combate",
+            "description": "Confronto inicial com GB do JH, que terminou com sua execução por Raposa antes que pudesse revelar segredos importantes.",
+            "difficulty": "Extrema"
+        },
+        {
+            "type": "Financeiro",
+            "description": "Lidar com a dívida com El Rato após a destruição do carro alugado, evitando suas consequências letais.",
+            "difficulty": "Média"
+        },
+        {
+            "type": "Persuasão",
+            "description": "Negociar com os policiais corruptos durante a blitz para evitar prisão, minimizando os danos financeiros.",
+            "difficulty": "Difícil"
+        },
+        {
+            "type": "Investigação",
+            "description": "Descobrir o verdadeiro paradeiro de MC Kleber após não encontrá-lo no Brás, conectando pistas dispersas.",
+            "difficulty": "Muito Difícil"
+        },
+        {
+            "type": "Infiltração",
+            "description": "Infiltrar-se na base da MiliTech no Brás sem alertar as forças de segurança avançadas.",
+            "difficulty": "Extrema"
+        },
+        {
+            "type": "Análise",
+            "description": "Compreender a conexão entre MiliTech, CyberJenkins e os projetos ocultos mencionados nos documentos fragmentados.",
+            "difficulty": "Difícil"
+        }
+    ]
     },
     {
       "id": "cap4",
