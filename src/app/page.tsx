@@ -12,6 +12,7 @@ import NPCs from "./sections/NPCs";
 import ScreamsheetsViewer from "./sections/Screensheets";
 import LocationsSection from "./sections/Localizations";
 import PlayersSection from "./sections/Players";
+import EquipmentSection from "./sections/Loot";
 
 export default function Home() {
   const [activeSection, setActiveSection] = React.useState("introducao");
@@ -57,6 +58,8 @@ export default function Home() {
         return <PlayersSection />;
       case "npcs":
         return <NPCs />;
+      case "loot":
+        return <EquipmentSection />;
       case "locais":
         return <LocationsSection />;
       case "screamsheets":
