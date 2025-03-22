@@ -57,7 +57,7 @@ const ScreamsheetsViewer = () => {
     return (
       <div 
         key={sheet.id} 
-        className={`border border-${accentColor} rounded-lg overflow-hidden transition-all duration-300 bg-black`}
+        className={`border border-${accentColor}  overflow-hidden transition-all duration-300 bg-black`}
       >
         {/* Cabeçalho */}
         <div 
@@ -101,7 +101,7 @@ const ScreamsheetsViewer = () => {
             )}
 
             {sheet.details && sheet.details.length > 0 && (
-              <div className="mb-6 bg-black/30 p-4 rounded-lg border-l-4 border-purple-700">
+              <div className="mb-6 bg-black/30 p-4  border-l-4 border-purple-700">
                 <h4 className="text-lg font-bold mb-2 text-purple-400">Detalhes:</h4>
                 <ul className="list-disc pl-5 space-y-1">
                   {sheet.details.map((detail, index) => (
@@ -212,7 +212,7 @@ const ScreamsheetsViewer = () => {
           <GlitchText variant="primary">Screamsheets</GlitchText>
         </h1>
         
-        <div className="p-6 rounded-lg shadow-lg bg-black border border-purple-900 relative">
+        <div className="p-6  shadow-lg bg-black border border-purple-900 relative">
           <div className="mb-4 flex flex-wrap gap-4 items-center justify-between">
             {/* Barra de busca */}
             <div className="relative flex-grow">
@@ -221,7 +221,7 @@ const ScreamsheetsViewer = () => {
                 placeholder="Buscar screamsheets..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full p-3 bg-black border border-purple-900 rounded-lg text-gray-300 focus:border-purple-500 focus:outline-none pr-10"
+                className="w-full p-3 bg-black border border-purple-900  text-gray-300 focus:border-purple-500 focus:outline-none pr-10"
               />
               <Search className="absolute right-3 top-3 text-gray-500 h-5 w-5" />
               {searchTerm && (
@@ -236,7 +236,7 @@ const ScreamsheetsViewer = () => {
             
             <button 
               onClick={toggleSortOrder}
-              className="bg-black border border-purple-700 hover:bg-purple-900/30 text-purple-400 p-3 rounded-lg flex items-center"
+              className="bg-black border border-purple-700 hover:bg-purple-900/30 text-purple-400 p-3  flex items-center"
             >
               <ArrowUpDown className="mr-2 h-4 w-4" />
               {sortOrder === 'newest' ? 'Mais recente primeiro' : 'Mais antigo primeiro'}
@@ -259,7 +259,7 @@ const ScreamsheetsViewer = () => {
         <GlitchText variant="primary">Screamsheets</GlitchText>
       </h1>
       
-      <div className="p-6 rounded-lg shadow-lg bg-black border border-purple-900 relative">
+      <div className="p-6  shadow-lg bg-black border border-purple-900 relative">
         <div className="mb-4 flex flex-wrap gap-4 items-center justify-between">
           {/* Barra de busca */}
           <div className="relative flex-grow">
@@ -268,7 +268,7 @@ const ScreamsheetsViewer = () => {
               placeholder="Buscar screamsheets..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full p-3 bg-black border border-purple-900 rounded-lg text-gray-300 focus:border-purple-500 focus:outline-none pr-10"
+              className="w-full p-3 bg-black border border-purple-900  text-gray-300 focus:border-purple-500 focus:outline-none pr-10"
             />
             <Search className="absolute right-3 top-3 text-gray-500 h-5 w-5" />
             {searchTerm && (
@@ -283,7 +283,7 @@ const ScreamsheetsViewer = () => {
           
           <button 
             onClick={toggleSortOrder}
-            className="bg-black border border-purple-700 hover:bg-purple-900/30 text-purple-400 p-3 rounded-lg flex items-center"
+            className="bg-black border border-purple-700 hover:bg-purple-900/30 text-purple-400 p-3  flex items-center"
           >
             <ArrowUpDown className="mr-2 h-4 w-4" />
             {sortOrder === 'newest' ? 'Mais recente primeiro' : 'Mais antigo primeiro'}

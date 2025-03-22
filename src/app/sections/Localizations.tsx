@@ -83,7 +83,7 @@ const LocationsSection = () => {
             placeholder="Buscar locais por nome, distrito, tipo..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full p-3 bg-black border border-cyan-900 rounded-lg text-gray-300 focus:border-cyan-500 focus:outline-none pr-10"
+            className="w-full p-3 bg-black border border-cyan-900  text-gray-300 focus:border-cyan-500 focus:outline-none pr-10"
           />
           <Search className="absolute right-3 top-3 text-gray-500 h-5 w-5" />
           {searchTerm && (
@@ -105,7 +105,7 @@ const LocationsSection = () => {
             <div
               key={location.id}
               onClick={() => handleSelectLocation(location.id)}
-              className={`p-4 bg-black border border-${location.accentColor || 'cyan'}-900 rounded-lg cursor-pointer hover:bg-${location.accentColor || 'cyan'}-900/10 transition-all duration-200`}
+              className={`p-4 bg-black border border-${location.accentColor || 'cyan'}-900  cursor-pointer hover:bg-${location.accentColor || 'cyan'}-900/10 transition-all duration-200`}
             >
               <div className="flex justify-between items-start mb-2">
                 <h2 className={`text-xl font-bold text-${location.accentColor || 'cyan'}-400`}>{location.name}</h2>
@@ -154,7 +154,7 @@ const LocationsSection = () => {
           </div>
           
           {/* Cabeçalho do local */}
-          <div className={`p-6 rounded-lg shadow-lg bg-black border border-${selectedLocation.accentColor || 'cyan'}-900 relative overflow-hidden`}>
+            <div className={`p-6  shadow-lg bg-black border border-${selectedLocation.accentColor || 'cyan'}-900 relative overflow-hidden`}>
             <div className={`absolute top-0 left-0 w-full h-2 bg-${selectedLocation.accentColor || 'cyan'}-500`}></div>
             <div className="relative z-10">
               <div className="flex items-center mb-2">
@@ -166,13 +166,13 @@ const LocationsSection = () => {
                 <Building className="h-4 w-4 mr-1" /> {selectedLocation.type}
               </div>
               
-              <p className="mb-6 text-gray-300 bg-black/50 p-4 rounded-lg border-l-4 border-cyan-700">
+                <p className="mb-6 text-gray-300 bg-black/50 p-4  border-l-4 border-cyan-700">
                 {selectedLocation.detailedDescription}
               </p>
 
               {/* Imagem do local, se disponível */}
               {selectedLocation.imageUrl && (
-                <div className="mb-6 overflow-hidden rounded-lg border border-gray-800">
+                  <div className="mb-6 overflow-hidden  border border-gray-800">
                   <img 
                     src={selectedLocation.imageUrl}
                     alt={selectedLocation.name}
@@ -185,7 +185,7 @@ const LocationsSection = () => {
           
           {/* Contatos */}
           {selectedLocation.contacts && selectedLocation.contacts.length > 0 && (
-            <div className={`p-4 bg-black border border-${selectedLocation.accentColor || 'cyan'}-900 rounded-lg`}>
+              <div className={`p-4 bg-black border border-${selectedLocation.accentColor || 'cyan'}-900 `}>
               <button 
                 onClick={() => toggleSection('contacts')}
                 className="w-full flex justify-between items-center text-left"
@@ -202,7 +202,7 @@ const LocationsSection = () => {
               {expandedSections.contacts && (
                 <div className="mt-3 space-y-3">
                   {selectedLocation.contacts.map((contact, index) => (
-                    <div key={index} className={`bg-${selectedLocation.accentColor || 'cyan'}-900/20 p-3 rounded-lg border-l-2 border-${selectedLocation.accentColor || 'cyan'}-700`}>
+                    <div key={index} className={`bg-${selectedLocation.accentColor || 'cyan'}-900/20 p-3  border-l-2 border-${selectedLocation.accentColor || 'cyan'}-700`}>
                       <div className="flex justify-between">
                         <h4 className={`text-${selectedLocation.accentColor || 'cyan'}-400 font-bold`}>{contact.name}</h4>
                         <span className="text-xs px-2 py-0.5 rounded-full bg-gray-800 text-gray-300">
@@ -221,7 +221,7 @@ const LocationsSection = () => {
           
           {/* Detalhes */}
           {selectedLocation.details && selectedLocation.details.length > 0 && (
-            <div className={`p-4 bg-black border border-${selectedLocation.accentColor || 'cyan'}-900 rounded-lg`}>
+              <div className={`p-4 bg-black border border-${selectedLocation.accentColor || 'cyan'}-900 `}>
               <button 
                 onClick={() => toggleSection('details')}
                 className="w-full flex justify-between items-center text-left"
@@ -250,7 +250,7 @@ const LocationsSection = () => {
           
           {/* Segredos (para o Mestre) */}
           {selectedLocation.secrets && selectedLocation.secrets.length > 0 && (
-            <div className="p-4 bg-black border border-purple-900 rounded-lg">
+              <div className="p-4 bg-black border border-purple-900 ">
               <button 
                 onClick={() => toggleSection('secrets')}
                 className="w-full flex justify-between items-center text-left"
@@ -265,7 +265,7 @@ const LocationsSection = () => {
               </button>
               
               {expandedSections.secrets && (
-                <ul className="mt-3 space-y-2 bg-purple-900/10 p-3 rounded-lg border-l-2 border-purple-700">
+                  <ul className="mt-3 space-y-2 bg-purple-900/10 p-3  border-l-2 border-purple-700">
                   {selectedLocation.secrets.map((secret, index) => (
                     <li key={index} className="flex items-start">
                       <span className="text-purple-500 mr-2">•</span>
@@ -279,7 +279,7 @@ const LocationsSection = () => {
           
           {/* Avisos */}
           {selectedLocation.warnings && selectedLocation.warnings.length > 0 && (
-            <div className="p-4 bg-black border border-red-900 rounded-lg">
+              <div className="p-4 bg-black border border-red-900 ">
               <button 
                 onClick={() => toggleSection('warnings')}
                 className="w-full flex justify-between items-center text-left"
@@ -294,7 +294,7 @@ const LocationsSection = () => {
               </button>
               
               {expandedSections.warnings && (
-                <ul className="mt-3 space-y-2 bg-red-900/10 p-3 rounded-lg border-l-2 border-red-700">
+                  <ul className="mt-3 space-y-2 bg-red-900/10 p-3  border-l-2 border-red-700">
                   {selectedLocation.warnings.map((warning, index) => (
                     <li key={index} className="flex items-start">
                       <span className="text-red-500 mr-2">!</span>

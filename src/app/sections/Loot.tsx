@@ -352,7 +352,7 @@ const EquipmentSection = () => {
     return (
       <div 
         key={item.id}
-        className={`bg-black border border-${categoryColor}-900 rounded-lg overflow-hidden transition-all duration-300 ${isExpanded ? 'col-span-full' : ''}`}
+        className={`bg-black border border-${categoryColor}-900  overflow-hidden transition-all duration-300 ${isExpanded ? 'col-span-full' : ''}`}
       >
         <div 
           className={`p-4 bg-${categoryColor}-900/20 cursor-pointer`}
@@ -384,7 +384,7 @@ const EquipmentSection = () => {
           {/* Detalhes quando expandido */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
             {/* Características */}
-            <div className={`p-3 bg-${categoryColor}-900/10 rounded-lg border border-${categoryColor}-900/40`}>
+            <div className={`p-3 bg-${categoryColor}-900/10  border border-${categoryColor}-900/40`}>
               <h4 className={`text-${categoryColor}-400 font-bold mb-2 flex items-center`}>
                 <Info className="w-4 h-4 mr-2" /> Características
               </h4>
@@ -400,7 +400,7 @@ const EquipmentSection = () => {
             
             {/* Estatísticas */}
             {item.stats && (
-              <div className={`p-3 bg-${categoryColor}-900/10 rounded-lg border border-${categoryColor}-900/40`}>
+              <div className={`p-3 bg-${categoryColor}-900/10  border border-${categoryColor}-900/40`}>
                 <h4 className={`text-${categoryColor}-400 font-bold mb-2 flex items-center`}>
                   <Zap className="w-4 h-4 mr-2" /> Estatísticas
                 </h4>
@@ -418,7 +418,7 @@ const EquipmentSection = () => {
           
           {/* Informações adicionais para alguns itens */}
           {item.longDescription && (
-            <div className={`p-3 bg-${categoryColor}-900/10 rounded-lg border border-${categoryColor}-900/40 mb-4`}>
+            <div className={`p-3 bg-${categoryColor}-900/10  border border-${categoryColor}-900/40 mb-4`}>
               <h4 className={`text-${categoryColor}-400 font-bold mb-2`}>Descrição Detalhada</h4>
               <p className="text-gray-300 text-sm">{item.longDescription}</p>
             </div>
@@ -426,7 +426,7 @@ const EquipmentSection = () => {
           
           {/* Informação de instalação para cyberware */}
           {item.category === "cyberware" && (
-            <div className="p-3 bg-red-900/10 rounded-lg border border-red-900/40 mb-4">
+            <div className="p-3 bg-red-900/10  border border-red-900/40 mb-4">
               <h4 className="text-red-400 font-bold mb-2 flex items-center">
                  Requisitos de Instalação
               </h4>
@@ -477,7 +477,7 @@ const EquipmentSection = () => {
       
       {/* Guia de Preços e Compras */}
       <div className="mb-6">
-        <div className="p-4 rounded-lg shadow-lg bg-black border border-orange-900 relative overflow-hidden">
+        <div className="p-4  shadow-lg bg-black border border-orange-900 relative overflow-hidden">
           <button 
             onClick={() => toggleSection('guide')}
             className="flex justify-between items-center w-full text-left"
@@ -554,7 +554,7 @@ const EquipmentSection = () => {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                <div className="p-3 bg-orange-900/10 rounded-lg border border-orange-900/40">
+                <div className="p-3 bg-orange-900/10  border border-orange-900/40">
                   <h3 className="text-orange-400 font-bold mb-2 flex items-center">
                     <Percent className="w-4 h-4 mr-2" /> Negociação
                   </h3>
@@ -581,7 +581,7 @@ const EquipmentSection = () => {
                   </ul>
                 </div>
                 
-                <div className="p-3 bg-orange-900/10 rounded-lg border border-orange-900/40">
+                <div className="p-3 bg-orange-900/10  border border-orange-900/40">
                   <h3 className="text-orange-400 font-bold mb-2 flex items-center">
                     <PlusCircle className="w-4 h-4 mr-2" /> Testes para Compra
                   </h3>
@@ -611,7 +611,7 @@ const EquipmentSection = () => {
       
       {/* Disponibilidade e Mercado Negro */}
       <div className="mb-6">
-        <div className="p-4 rounded-lg shadow-lg bg-black border border-red-900 relative overflow-hidden">
+        <div className="p-4  shadow-lg bg-black border border-red-900 relative overflow-hidden">
           <button 
             onClick={() => toggleSection('availability')}
             className="flex justify-between items-center w-full text-left"
@@ -634,7 +634,7 @@ const EquipmentSection = () => {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-                <div className="p-3 bg-green-900/20 rounded-lg border border-green-900">
+                <div className="p-3 bg-green-900/20  border border-green-900">
                   <h3 className="text-green-400 font-bold mb-2">Legal e Comum</h3>
                   <ul className="space-y-1">
                     <li className="flex items-start text-sm">
@@ -659,7 +659,7 @@ const EquipmentSection = () => {
                   </p>
                 </div>
                 
-                <div className="p-3 bg-yellow-900/20 rounded-lg border border-yellow-900">
+                <div className="p-3 bg-yellow-900/20  border border-yellow-900">
                   <h3 className="text-yellow-400 font-bold mb-2">Restrito</h3>
                   <ul className="space-y-1">
                     <li className="flex items-start text-sm">
@@ -684,7 +684,7 @@ const EquipmentSection = () => {
                   </p>
                 </div>
                 
-                <div className="p-3 bg-red-900/20 rounded-lg border border-red-900">
+                <div className="p-3 bg-red-900/20  border border-red-900">
                   <h3 className="text-red-400 font-bold mb-2">Ilegal</h3>
                   <ul className="space-y-1">
                     <li className="flex items-start text-sm">
@@ -710,7 +710,7 @@ const EquipmentSection = () => {
                 </div>
               </div>
               
-              <div className="p-4 bg-black/30 border border-red-900/60 rounded-lg">
+              <div className="p-4 bg-black/30 border border-red-900/60 ">
                 <h3 className="text-red-400 font-bold mb-2">O Mercado Negro</h3>
                 <p className="text-gray-300 text-sm mb-3">
                   Para itens ilegais ou raros, o mercado negro é uma opção, mas vem com riscos adicionais:
@@ -755,7 +755,7 @@ const EquipmentSection = () => {
             placeholder="Buscar equipamentos..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full p-3 bg-black border border-orange-900 rounded-lg text-gray-300 focus:border-orange-500 focus:outline-none pr-10"
+            className="w-full p-3 bg-black border border-orange-900  text-gray-300 focus:border-orange-500 focus:outline-none pr-10"
           />
           <Search className="absolute right-3 top-3 text-gray-500 h-5 w-5" />
           {searchTerm && (
@@ -803,7 +803,7 @@ const EquipmentSection = () => {
           {filteredItems.map(item => renderItemCard(item))}
         </div>
       ) : (
-        <div className="p-10 text-center border border-orange-900 rounded-lg">
+          <div className="p-10 text-center border border-orange-900 ">
           <p className="text-xl text-orange-400 mb-2">Nenhum equipamento encontrado</p>
           <p className="text-gray-500">Tente ajustar seus filtros ou termos de busca</p>
         </div>

@@ -11,7 +11,7 @@ const DefaultSection: React.FC<{ icon: string; name: string }> = ({
         <span className="mr-2">{icon}</span>
         <GlitchText>{name}</GlitchText>
       </h1>
-      <div className="p-6 rounded-lg shadow-lg bg-black border border-green-900 mb-8 relative overflow-hidden">
+      <div className="p-6  shadow-lg bg-black border border-green-900 mb-8 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full opacity-5 bg-cover bg-center"></div>
         <div className="animate-pulse flex space-x-4 relative z-10">
           <div className="flex-1 space-y-6 py-1">

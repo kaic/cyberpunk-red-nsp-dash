@@ -52,7 +52,7 @@ const Lore = () => {
 
       {/* História de Nova São Paulo */}
       <div className="mb-6">
-        <div className="p-6 rounded-lg shadow-lg bg-black border border-green-900 relative overflow-hidden">
+        <div className="p-6  shadow-lg bg-black border border-green-900 relative overflow-hidden">
           <button
             onClick={() => toggleSection('history')}
             className="flex justify-between items-center w-full text-left"
@@ -75,7 +75,7 @@ const Lore = () => {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-black border border-green-900/40 p-4 rounded-lg">
+                <div className="bg-black border border-green-900/40 p-4 ">
                   <h3 className="text-lg font-bold text-green-400 mb-2 flex items-center">
                     <Radio className="w-4 h-4 mr-2" /> O Estopim
                   </h3>
@@ -86,7 +86,7 @@ const Lore = () => {
                   </div>
                 </div>
 
-                <div className="bg-black border border-green-900/40 p-4 rounded-lg">
+                <div className="bg-black border border-green-900/40 p-4 ">
                   <h3 className="text-lg font-bold text-green-400 mb-2 flex items-center">
                     <Radio className="w-4 h-4 mr-2" /> A Guerra Civil
                   </h3>
@@ -97,7 +97,7 @@ const Lore = () => {
                   </div>
                 </div>
 
-                <div className="bg-black border border-green-900/40 p-4 rounded-lg">
+                <div className="bg-black border border-green-900/40 p-4 ">
                   <h3 className="text-lg font-bold text-green-400 mb-2 flex items-center">
                     <Radio className="w-4 h-4 mr-2" /> Independência
                   </h3>
@@ -118,13 +118,13 @@ const Lore = () => {
                     Três décadas após a guerra, a cidade é um paradoxo de avanço tecnológico e decadência social. Arranha-céus reluzentes onde a elite corporativa vive em luxo contrastam com favelas verticais onde 50 milhões lutam pela sobrevivência. O controle da cidade é fragmentado entre o governo oficial, as megacorporações que salvaram e escravizaram a economia, e as gangues que dominam as ruas.
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                    <div className="bg-black/50 p-3 rounded-lg">
+                    <div className="bg-black/50 p-3 ">
                       <span className="text-green-400 font-bold block mb-1">Cicatrizes da Guerra</span>
                       <p className="text-sm text-gray-400">
                         Distritos inteiros permanecem em ruínas, transformados em zonas de exclusão. Os "Campos de Batalha" do Centro e da Zona Leste são labirintos mortais de concreto destroçado, habitados por gangues e os esquecidos da sociedade.
                       </p>
                     </div>
-                    <div className="bg-black/50 p-3 rounded-lg">
+                    <div className="bg-black/50 p-3 ">
                       <span className="text-green-400 font-bold block mb-1">Nova Realidade</span>
                       <p className="text-sm text-gray-400">
                         As linhas entre governo, corporações e crime organizado se tornaram tão borradas que alguns dizem que não há mais diferença. A cada dia, a tensão cresce e muitos temem que uma nova guerra esteja se formando nas sombras.
@@ -140,7 +140,7 @@ const Lore = () => {
 
       {/* Fenômenos e Mistérios Recentes */}
       <div className="mb-6">
-        <div className="p-6 rounded-lg shadow-lg bg-black border border-blue-900 relative overflow-hidden">
+        <div className="p-6  shadow-lg bg-black border border-blue-900 relative overflow-hidden">
           <button
             onClick={() => toggleSection('mysteries')}
             className="flex justify-between items-center w-full text-left"
@@ -163,7 +163,7 @@ const Lore = () => {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-black border border-blue-900/70 p-4 rounded-lg">
+                <div className="bg-black border border-blue-900/70 p-4 ">
                   <h3 className="text-lg font-bold text-blue-400 mb-2 flex items-center">
                     <Zap className="w-4 h-4 mr-2" /> CyberJenkins
                   </h3>
@@ -175,7 +175,7 @@ const Lore = () => {
                   </p>
                 </div>
 
-                <div className="bg-black border border-blue-900/70 p-4 rounded-lg">
+                <div className="bg-black border border-blue-900/70 p-4 ">
                   <h3 className="text-lg font-bold text-blue-400 mb-2 flex items-center">
                     <Skull className="w-4 h-4 mr-2" /> O Martírio de Well
                   </h3>
@@ -187,7 +187,7 @@ const Lore = () => {
                   </p>
                 </div>
 
-                <div className="bg-black border border-blue-900/70 p-4 rounded-lg">
+                <div className="bg-black border border-blue-900/70 p-4 ">
                   <h3 className="text-lg font-bold text-blue-400 mb-2 flex items-center">
                     <AlertTriangle className="w-4 h-4 mr-2" /> Desaparecimentos
                   </h3>
@@ -200,7 +200,7 @@ const Lore = () => {
                 </div>
               </div>
 
-              <div className="mt-6 p-4 border border-blue-900 rounded-lg bg-black/50">
+              <div className="mt-6 p-4 border border-blue-900  bg-black/50">
                 <h3 className="text-lg font-bold text-blue-400 mb-2">Falhas na Rede</h3>
                 <p className="text-gray-300 mb-2">
                   Nos últimos 8 meses, Nova São Paulo tem experimentado falhas inexplicáveis em suas redes. Blecautes digitais momentâneos afetam bairros inteiros, com relatos de comportamento errático em implantes neurais e dispositivos conectados.
@@ -215,7 +215,7 @@ const Lore = () => {
       </div>
 
       {/* Dados Confidenciais */}
-      <div className="bg-black border border-red-900 rounded-lg relative overflow-hidden">
+      <div className="bg-black border border-red-900  relative overflow-hidden">
         <MatrixEffect />
         <div className="relative z-10 p-6">
           <button
@@ -238,7 +238,7 @@ const Lore = () => {
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                <div className="p-4 bg-black border border-red-700 rounded-lg">
+                <div className="p-4 bg-black border border-red-700 ">
                   <h3 className="text-lg font-bold text-red-400 mb-2">
                     Projeto Omega
                   </h3>
@@ -250,7 +250,7 @@ const Lore = () => {
                   </div>
                 </div>
 
-                <div className="p-4 bg-black border border-red-700 rounded-lg">
+                <div className="p-4 bg-black border border-red-700 ">
                   <h3 className="text-lg font-bold text-red-400 mb-2">
                     Projeto Alpha
                   </h3>
@@ -262,7 +262,7 @@ const Lore = () => {
                   </div>
                 </div>
 
-                <div className="p-4 bg-black border border-red-700 rounded-lg">
+                <div className="p-4 bg-black border border-red-700 ">
                   <h3 className="text-lg font-bold text-red-400 mb-2">
                     O Cerco Silencioso
                   </h3>
@@ -275,7 +275,7 @@ const Lore = () => {
                 </div>
               </div>
 
-              <div className="p-4 bg-black border border-red-900/70 rounded-lg mb-4">
+              <div className="p-4 bg-black border border-red-900/70  mb-4">
                 <h3 className="text-lg font-bold text-red-400 mb-2 flex items-center">
                   <Skull className="w-4 h-4 mr-2" /> A Morte de Marcos da ZL
                 </h3>

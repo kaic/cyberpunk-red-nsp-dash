@@ -193,7 +193,7 @@ const GMDashboard = () => {
       );
 
     return (
-      <div className="bg-black border border-green-900 rounded-lg p-4">
+      <div className="bg-black border border-green-900  p-4">
         <h3 className="text-xl font-bold text-green-400 mb-2">
           {selectedNPC.name}
         </h3>
@@ -259,7 +259,7 @@ const GMDashboard = () => {
   // Renderiza os detalhes do local selecionado
   const renderLocationDetails = (location) => {
     return (
-      <div className="bg-black border border-green-900 rounded-lg p-4 mb-4">
+      <div className="bg-black border border-green-900  p-4 mb-4">
         <h3 className="text-xl font-bold text-green-400 mb-2">
           {location.name}
         </h3>
@@ -325,7 +325,7 @@ const GMDashboard = () => {
       </div>
 
       {/* Conteúdo da tab ativa */}
-      <div className="bg-black border border-green-900 rounded-lg p-4">
+      <div className="bg-black border border-green-900  p-4">
         {activeTab === "npcs" && (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="col-span-1">
@@ -374,7 +374,7 @@ const GMDashboard = () => {
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="bg-black border border-green-900 rounded-lg p-4">
+              <div className="bg-black border border-green-900  p-4">
                 <h3 className="text-lg font-bold text-green-400 mb-3">
                   Rolagem d10 (Sistema Cyberpunk)
                 </h3>
@@ -438,7 +438,7 @@ const GMDashboard = () => {
                 )}
               </div>
 
-              <div className="bg-black border border-green-900 rounded-lg p-4">
+              <div className="bg-black border border-green-900  p-4">
                 <h3 className="text-lg font-bold text-green-400 mb-3">
                   Referência de DVs
                 </h3>
@@ -510,7 +510,7 @@ const GMDashboard = () => {
               Encontros Aleatórios
             </h2>
 
-            <div className="bg-black border border-green-900 rounded-lg p-4 mb-4">
+            <div className="bg-black border border-green-900  p-4 mb-4">
               <h3 className="text-lg font-bold text-green-400 mb-3">
                 Gerador de Encontros
               </h3>
@@ -530,7 +530,7 @@ const GMDashboard = () => {
               )}
             </div>
 
-            <div className="bg-black border border-green-900 rounded-lg p-4">
+            <div className="bg-black border border-green-900  p-4">
               <h3 className="text-lg font-bold text-green-400 mb-3">
                 Lista de Encontros Possíveis
               </h3>

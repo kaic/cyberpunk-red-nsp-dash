@@ -534,7 +534,7 @@ const PlayersSection = () => {
             placeholder="Buscar jogadores por nome, role..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full p-3 bg-black border border-pink-900 rounded-lg text-gray-300 focus:border-pink-500 focus:outline-none pr-10"
+            className="w-full p-3 bg-black border border-pink-900  text-gray-300 focus:border-pink-500 focus:outline-none pr-10"
           />
           <Search className="absolute right-3 top-3 text-gray-500 h-5 w-5" />
           {searchTerm && (
@@ -556,7 +556,7 @@ const PlayersSection = () => {
             <div
               key={player.id}
               onClick={() => handleSelectPlayer(player.id)}
-              className={`p-4 bg-black border border-${player.accent || 'pink'}-900 rounded-lg cursor-pointer hover:bg-${player.accent || 'pink'}-900/10 transition-all duration-200`}
+              className={`p-4 bg-black border border-${player.accent || 'pink'}-900  cursor-pointer hover:bg-${player.accent || 'pink'}-900/10 transition-all duration-200`}
             >
               <div className="flex justify-between items-start mb-2">
                 <h2 className={`text-xl font-bold text-${player.accent || 'pink'}-400`}>{player.name}</h2>
@@ -595,7 +595,7 @@ const PlayersSection = () => {
           </div>
           
           {/* Cabeçalho do jogador */}
-          <div className={`p-6 rounded-lg shadow-lg bg-black border border-${selectedPlayer.accent || 'pink'}-900 relative overflow-hidden`}>
+            <div className={`p-6  shadow-lg bg-black border border-${selectedPlayer.accent || 'pink'}-900 relative overflow-hidden`}>
             <div className={`absolute top-0 left-0 w-full h-2 bg-${selectedPlayer.accent || 'pink'}-500`}></div>
             <div className="relative z-10">
               <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4">
@@ -609,7 +609,7 @@ const PlayersSection = () => {
                 </div>
               </div>
               
-              <div className={`p-4 rounded-lg border border-${selectedPlayer.accent || 'pink'}-900/50 mb-4`}>
+                <div className={`p-4  border border-${selectedPlayer.accent || 'pink'}-900/50 mb-4`}>
                 <p className="text-gray-300 italic">"{selectedPlayer.tagline}"</p>
               </div>
               
@@ -618,7 +618,7 @@ const PlayersSection = () => {
           </div>
           
           {/* Estatísticas */}
-          <div className={`p-4 bg-black border border-${selectedPlayer.accent || 'pink'}-900 rounded-lg`}>
+            <div className={`p-4 bg-black border border-${selectedPlayer.accent || 'pink'}-900 `}>
             <button 
               onClick={() => toggleSection('stats')}
               className="w-full flex justify-between items-center text-left"
@@ -635,7 +635,7 @@ const PlayersSection = () => {
             {expandedSections.stats && selectedPlayer.stats && (
               <div className="mt-3 grid grid-cols-2 sm:grid-cols-5 gap-3">
                 {Object.entries(selectedPlayer.stats).map(([stat, value]) => (
-                  <div key={stat} className={`p-3 bg-${selectedPlayer.accent || 'pink'}-900/20 rounded-lg text-center`}>
+                  <div key={stat} className={`p-3 bg-${selectedPlayer.accent || 'pink'}-900/20  text-center`}>
                     <div className={`text-${selectedPlayer.accent || 'pink'}-400 font-bold`}>{stat}</div>
                     <div className="text-2xl font-mono text-gray-300">{value}</div>
                   </div>
@@ -645,7 +645,7 @@ const PlayersSection = () => {
           </div>
           
           {/* Habilidades */}
-          <div className={`p-4 bg-black border border-${selectedPlayer.accent || 'pink'}-900 rounded-lg`}>
+            <div className={`p-4 bg-black border border-${selectedPlayer.accent || 'pink'}-900 `}>
             <button 
               onClick={() => toggleSection('abilities')}
               className="w-full flex justify-between items-center text-left"
@@ -672,7 +672,7 @@ const PlayersSection = () => {
           </div>
           
           {/* Cyberware */}
-          <div className={`p-4 bg-black border border-${selectedPlayer.accent || 'pink'}-900 rounded-lg`}>
+            <div className={`p-4 bg-black border border-${selectedPlayer.accent || 'pink'}-900 `}>
             <button 
               onClick={() => toggleSection('cyberware')}
               className="w-full flex justify-between items-center text-left"
@@ -689,7 +689,7 @@ const PlayersSection = () => {
             {expandedSections.cyberware && selectedPlayer.cyberware && (
               <div className="mt-3 space-y-2">
                 {selectedPlayer.cyberware.map((item, index) => (
-                  <div key={index} className={`p-3 bg-${selectedPlayer.accent || 'pink'}-900/20 rounded-lg`}>
+                  <div key={index} className={`p-3 bg-${selectedPlayer.accent || 'pink'}-900/20 `}>
                     <div className="flex justify-between">
                       <h4 className={`text-${selectedPlayer.accent || 'pink'}-400 font-bold`}>{item.name}</h4>
                     </div>
@@ -701,7 +701,7 @@ const PlayersSection = () => {
           </div>
           
           {/* Armas */}
-          <div className={`p-4 bg-black border border-${selectedPlayer.accent || 'pink'}-900 rounded-lg`}>
+            <div className={`p-4 bg-black border border-${selectedPlayer.accent || 'pink'}-900 `}>
             <button 
               onClick={() => toggleSection('weapons')}
               className="w-full flex justify-between items-center text-left"
@@ -722,7 +722,7 @@ const PlayersSection = () => {
                     <h4 className={`text-${selectedPlayer.accent || 'pink'}-400 font-bold mb-2`}>Armas</h4>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                       {selectedPlayer.weapons.map((weapon, index) => (
-                        <div key={index} className={`p-3 bg-${selectedPlayer.accent || 'pink'}-900/20 rounded-lg`}>
+                        <div key={index} className={`p-3 bg-${selectedPlayer.accent || 'pink'}-900/20 `}>
                           <div className="flex justify-between">
                             <h5 className="text-gray-300 font-bold">{weapon.name}</h5>
                             <span className={`text-${selectedPlayer.accent || 'pink'}-400`}>{weapon.damage}</span>
@@ -736,7 +736,7 @@ const PlayersSection = () => {
                 
                 {/* Equipamento especial da classe */}
                 {selectedPlayer.deck && (
-                  <div className={`p-3 bg-${selectedPlayer.accent || 'pink'}-900/20 rounded-lg mt-3`}>
+                    <div className={`p-3 bg-${selectedPlayer.accent || 'pink'}-900/20  mt-3`}>
                     <h4 className={`text-${selectedPlayer.accent || 'pink'}-400 font-bold mb-2`}>Cyberdeck: {selectedPlayer.deck.model}</h4>
                     <div className="text-gray-300">
                       <div className="mb-1">Slots: {selectedPlayer.deck.slots}</div>
@@ -752,7 +752,7 @@ const PlayersSection = () => {
                 )}
                 
                 {selectedPlayer.medkit && (
-                  <div className={`p-3 bg-${selectedPlayer.accent || 'pink'}-900/20 rounded-lg mt-3`}>
+                    <div className={`p-3 bg-${selectedPlayer.accent || 'pink'}-900/20  mt-3`}>
                     <h4 className={`text-${selectedPlayer.accent || 'pink'}-400 font-bold mb-2`}>Kit Médico: {selectedPlayer.medkit.model}</h4>
                     <div className="flex flex-wrap gap-1">
                       {selectedPlayer.medkit.contents.map((item, idx) => (
@@ -765,7 +765,7 @@ const PlayersSection = () => {
                 )}
                 
                 {selectedPlayer.toolKit && (
-                  <div className={`p-3 bg-${selectedPlayer.accent || 'pink'}-900/20 rounded-lg mt-3`}>
+                    <div className={`p-3 bg-${selectedPlayer.accent || 'pink'}-900/20  mt-3`}>
                     <h4 className={`text-${selectedPlayer.accent || 'pink'}-400 font-bold mb-2`}>Kit de Ferramentas: {selectedPlayer.toolKit.model}</h4>
                     <div className="flex flex-wrap gap-1">
                       {selectedPlayer.toolKit.contents.map((item, idx) => (
@@ -778,7 +778,7 @@ const PlayersSection = () => {
                 )}
                 
                 {selectedPlayer.gear && (
-                  <div className={`p-3 bg-${selectedPlayer.accent || 'pink'}-900/20 rounded-lg mt-3`}>
+                    <div className={`p-3 bg-${selectedPlayer.accent || 'pink'}-900/20  mt-3`}>
                     <h4 className={`text-${selectedPlayer.accent || 'pink'}-400 font-bold mb-2`}>{selectedPlayer.gear.model}</h4>
                     <div className="flex flex-wrap gap-1">
                       {selectedPlayer.gear.contents.map((item, idx) => (
@@ -791,7 +791,7 @@ const PlayersSection = () => {
                 )}
                 
                 {selectedPlayer.team && (
-                  <div className={`p-3 bg-${selectedPlayer.accent || 'pink'}-900/20 rounded-lg mt-3`}>
+                    <div className={`p-3 bg-${selectedPlayer.accent || 'pink'}-900/20  mt-3`}>
                     <h4 className={`text-${selectedPlayer.accent || 'pink'}-400 font-bold mb-2`}>{selectedPlayer.team.model}</h4>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-1">
                       {selectedPlayer.team.members.map((member, idx) => (
@@ -805,7 +805,7 @@ const PlayersSection = () => {
                 )}
                 
                 {selectedPlayer.armor && (
-                  <div className={`p-3 bg-${selectedPlayer.accent || 'pink'}-900/20 rounded-lg mt-3`}>
+                    <div className={`p-3 bg-${selectedPlayer.accent || 'pink'}-900/20  mt-3`}>
                     <h4 className={`text-${selectedPlayer.accent || 'pink'}-400 font-bold mb-2`}>Armadura: {selectedPlayer.armor.model}</h4>
                     <div className="text-gray-300 mb-2">Proteção: {selectedPlayer.armor.protection}</div>
                     <div className="flex flex-wrap gap-1">
@@ -819,7 +819,7 @@ const PlayersSection = () => {
                 )}
                 
                 {selectedPlayer.equipment && (
-                  <div className={`p-3 bg-${selectedPlayer.accent || 'pink'}-900/20 rounded-lg mt-3`}>
+                    <div className={`p-3 bg-${selectedPlayer.accent || 'pink'}-900/20  mt-3`}>
                     <h4 className={`text-${selectedPlayer.accent || 'pink'}-400 font-bold mb-2`}>{selectedPlayer.equipment.model}</h4>
                     <div className="flex flex-wrap gap-1">
                       {selectedPlayer.equipment.contents.map((item, idx) => (
@@ -835,7 +835,7 @@ const PlayersSection = () => {
           </div>
           
           {/* Contatos */}
-          <div className={`p-4 bg-black border border-${selectedPlayer.accent || 'pink'}-900 rounded-lg`}>
+            <div className={`p-4 bg-black border border-${selectedPlayer.accent || 'pink'}-900 `}>
             <button 
               onClick={() => toggleSection('contacts')}
               className="w-full flex justify-between items-center text-left"
@@ -856,7 +856,7 @@ const PlayersSection = () => {
                     <h4 className={`text-${selectedPlayer.accent || 'pink'}-400 font-bold mb-2`}>Contatos</h4>
                     <div className="space-y-2">
                       {selectedPlayer.contacts.map((contact, index) => (
-                        <div key={index} className={`p-3 bg-${selectedPlayer.accent || 'pink'}-900/20 rounded-lg border-l-2 border-${selectedPlayer.accent || 'pink'}-700`}>
+                        <div key={index} className={`p-3 bg-${selectedPlayer.accent || 'pink'}-900/20  border-l-2 border-${selectedPlayer.accent || 'pink'}-700`}>
                           <div className="flex justify-between">
                             <h5 className="text-gray-300 font-bold">{contact.name}</h5>
                             <span className={`text-xs px-2 py-0.5 rounded-full bg-green-900/50 text-green-400 border border-green-700`}>
@@ -875,7 +875,7 @@ const PlayersSection = () => {
                     <h4 className={`text-${selectedPlayer.accent || 'pink'}-400 font-bold mb-2`}>Inimigos</h4>
                     <div className="space-y-2">
                       {selectedPlayer.enemies.map((enemy, index) => (
-                        <div key={index} className="p-3 bg-red-900/20 rounded-lg border-l-2 border-red-700">
+                        <div key={index} className="p-3 bg-red-900/20  border-l-2 border-red-700">
                           <div className="flex justify-between">
                             <h5 className="text-gray-300 font-bold">{enemy.name}</h5>
                             <Skull className="text-red-400 h-4 w-4" />
@@ -891,7 +891,7 @@ const PlayersSection = () => {
           </div>
           
           {/* Notas */}
-          <div className={`p-4 bg-black border border-${selectedPlayer.accent || 'pink'}-900 rounded-lg`}>
+            <div className={`p-4 bg-black border border-${selectedPlayer.accent || 'pink'}-900 `}>
             <button 
               onClick={() => toggleSection('notes')}
               className="w-full flex justify-between items-center text-left"
@@ -906,7 +906,7 @@ const PlayersSection = () => {
             </button>
             
             {expandedSections.notes && selectedPlayer.notes && (
-              <div className="mt-3 p-3 bg-purple-900/20 rounded-lg border-l-2 border-purple-700">
+                <div className="mt-3 p-3 bg-purple-900/20  border-l-2 border-purple-700">
                 <h4 className="text-purple-400 font-bold mb-2">Notas para o Mestre</h4>
                 <ul className="space-y-2">
                   {selectedPlayer.notes.map((note, index) => (

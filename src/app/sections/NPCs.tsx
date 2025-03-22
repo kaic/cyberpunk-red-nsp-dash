@@ -70,7 +70,7 @@ const NPCs: React.FC = () => {
             placeholder="Buscar NPCs..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full p-3 bg-black border border-purple-900 rounded-lg text-gray-300 focus:border-purple-500 focus:outline-none"
+            className="w-full p-3 bg-black border border-purple-900  text-gray-300 focus:border-purple-500 focus:outline-none"
           />
           <span className="absolute right-3 top-3 text-gray-500">🔍</span>
         </div>
@@ -82,7 +82,7 @@ const NPCs: React.FC = () => {
           <button
             key={category.id}
             onClick={() => handleCategoryChange(category.id)}
-            className={`p-3 rounded-lg transition-all duration-200 ${
+            className={`p-3  transition-all duration-200 ${
               activeCategory === category.id
                 ? `bg-${category.corPrimaria}-900/70 text-${category.corPrimaria}-400 border border-${category.corPrimaria}-700`
                 : "bg-black text-gray-400 border border-gray-800 hover:bg-purple-900/20 hover:text-purple-400 hover:border-purple-800"
@@ -94,7 +94,7 @@ const NPCs: React.FC = () => {
         ))}
         <button
           onClick={() => handleCategoryChange("todos")}
-          className={`p-3 rounded-lg transition-all duration-200 ${
+          className={`p-3  transition-all duration-200 ${
             activeCategory === "todos"
               ? "bg-gray-900/70 text-gray-400 border border-gray-700"
               : "bg-black text-gray-400 border border-gray-800 hover:bg-gray-900/20 hover:text-gray-400 hover:border-gray-800"
@@ -113,7 +113,7 @@ const NPCs: React.FC = () => {
             <div
               key={npc.id}
               onClick={() => handleSelectNPC(npc.id)}
-              className="p-4 bg-black border border-purple-900 rounded-lg cursor-pointer hover:bg-purple-900/10 transition-all duration-200"
+              className="p-4 bg-black border border-purple-900  cursor-pointer hover:bg-purple-900/10 transition-all duration-200"
             >
               <div className="flex justify-between items-start mb-2">
                 <h2 className="text-xl font-bold text-purple-400">{npc.nome}</h2>
@@ -150,7 +150,7 @@ const NPCs: React.FC = () => {
           </div>
           
           {/* Cabeçalho do NPC */}
-          <div className="p-6 rounded-lg shadow-lg bg-black border border-purple-900 relative overflow-hidden">
+            <div className="p-6  shadow-lg bg-black border border-purple-900 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-2 bg-purple-500"></div>
             <div className="relative z-10">
               <div className="flex items-center mb-2">
@@ -162,7 +162,7 @@ const NPCs: React.FC = () => {
                 <span>{npcAtual?.profissao}</span>
               </div>
               
-              <p className="mb-6 text-gray-300 bg-black/50 p-4 rounded-lg border-l-4 border-purple-700">
+                <p className="mb-6 text-gray-300 bg-black/50 p-4  border-l-4 border-purple-700">
                 {npcAtual?.descricaoLonga}
               </p>
             </div>
@@ -171,7 +171,7 @@ const NPCs: React.FC = () => {
           {/* Características e Detalhes */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Características */}
-            <div className="p-4 bg-black border border-purple-900 rounded-lg">
+              <div className="p-4 bg-black border border-purple-900 ">
               <h3 className="text-lg font-bold mb-3 text-purple-400 border-b border-purple-900/50 pb-1">
                 <span className="mr-2">👁️</span>Características
               </h3>
@@ -189,13 +189,13 @@ const NPCs: React.FC = () => {
             
             {/* Conexões */}
             {npcAtual?.conexoes && (
-              <div className="p-4 bg-black border border-cyan-900 rounded-lg">
+                <div className="p-4 bg-black border border-cyan-900 ">
                 <h3 className="text-lg font-bold mb-3 text-cyan-400 border-b border-cyan-900/50 pb-1">
                   <span className="mr-2">🔗</span>Conexões
                 </h3>
                 <div className="space-y-3">
                   {npcAtual.conexoes.map((conexao, idx) => (
-                    <div key={idx} className="bg-black/30 p-3 rounded-lg border-l-2 border-cyan-700">
+                    <div key={idx} className="bg-black/30 p-3  border-l-2 border-cyan-700">
                       <div className="flex justify-between">
                         <h4 className="text-cyan-400 font-bold">{conexao.nome}</h4>
                         <span className="text-xs px-2 py-0.5 rounded-full bg-cyan-900/50 text-cyan-400 border border-cyan-700">
@@ -215,19 +215,19 @@ const NPCs: React.FC = () => {
           {/* Seções opcionais baseadas na categoria/tipo de NPC */}
           {/* Projetos (para membros do Cartel) */}
           {npcAtual?.projetos && (
-            <div className="p-4 bg-black border border-blue-900 rounded-lg">
+              <div className="p-4 bg-black border border-blue-900 ">
               <h3 className="text-lg font-bold mb-3 text-blue-400 border-b border-blue-900/50 pb-1">
                 <span className="mr-2">📊</span>Projetos
               </h3>
               <ul className="space-y-2">
                 {Array.isArray(npcAtual.projetos) ? (
                   npcAtual.projetos.map((projeto, idx) => (
-                    <li key={idx} className="bg-black/30 p-3 rounded-lg border-l-2 border-blue-700">
+                    <li key={idx} className="bg-black/30 p-3  border-l-2 border-blue-700">
                       <span className="text-gray-300">{projeto}</span>
                     </li>
                   ))
                 ) : (
-                  <li className="bg-black/30 p-3 rounded-lg border-l-2 border-blue-700">
+                      <li className="bg-black/30 p-3  border-l-2 border-blue-700">
                     <span className="text-gray-300">{npcAtual.projetos}</span>
                   </li>
                 )}
@@ -237,13 +237,13 @@ const NPCs: React.FC = () => {
           
           {/* Operações (para gangues) */}
           {npcAtual?.operacoes && (
-            <div className="p-4 bg-black border border-red-900 rounded-lg">
+              <div className="p-4 bg-black border border-red-900 ">
               <h3 className="text-lg font-bold mb-3 text-red-400 border-b border-red-900/50 pb-1">
                 <span className="mr-2">🔍</span>Operações
               </h3>
               <ul className="space-y-2">
                 {npcAtual.operacoes.map((op, idx) => (
-                  <li key={idx} className="bg-black/30 p-3 rounded-lg border-l-2 border-red-700">
+                  <li key={idx} className="bg-black/30 p-3  border-l-2 border-red-700">
                     <span className="text-gray-300">{op}</span>
                   </li>
                 ))}
@@ -253,16 +253,16 @@ const NPCs: React.FC = () => {
           
           {/* Habilidades de Netrunner (para V) */}
           {npcAtual?.habilidadesNetrunner && (
-            <div className="p-4 bg-black border border-cyan-900 rounded-lg">
+              <div className="p-4 bg-black border border-cyan-900 ">
               <h3 className="text-lg font-bold mb-3 text-cyan-400 border-b border-cyan-900/50 pb-1">
                 <span className="mr-2">💻</span>Perfil de Netrunner
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-black/30 p-3 rounded-lg border-l-2 border-cyan-700">
+                  <div className="bg-black/30 p-3  border-l-2 border-cyan-700">
                   <h4 className="text-cyan-400 font-bold mb-2">Interface</h4>
                   <span className="text-3xl font-mono text-gray-300">{npcAtual.habilidadesNetrunner.interface}</span>
                 </div>
-                <div className="bg-black/30 p-3 rounded-lg border-l-2 border-cyan-700">
+                  <div className="bg-black/30 p-3  border-l-2 border-cyan-700">
                   <h4 className="text-cyan-400 font-bold mb-2">Armamento</h4>
                   <ul className="space-y-1">
                     {npcAtual.habilidadesNetrunner.armas.map((arma, idx) => (
@@ -274,7 +274,7 @@ const NPCs: React.FC = () => {
                   </ul>
                 </div>
               </div>
-              <div className="mt-4 bg-black/30 p-3 rounded-lg border-l-2 border-cyan-700">
+                <div className="mt-4 bg-black/30 p-3  border-l-2 border-cyan-700">
                 <h4 className="text-cyan-400 font-bold mb-2">Cyberware</h4>
                 <div className="flex flex-wrap gap-2">
                   {npcAtual.habilidadesNetrunner.cyberware.map((cyber, idx) => (
@@ -289,13 +289,13 @@ const NPCs: React.FC = () => {
           
           {/* Notas */}
           {npcAtual?.notas && (
-            <div className="p-4 bg-black border border-yellow-900 rounded-lg">
+              <div className="p-4 bg-black border border-yellow-900 ">
               <h3 className="text-lg font-bold mb-3 text-yellow-400 border-b border-yellow-900/50 pb-1">
                 <span className="mr-2">📝</span>Notas do Mestre
               </h3>
               <ul className="space-y-2">
                 {npcAtual.notas.map((nota, idx) => (
-                  <li key={idx} className="bg-black/30 p-3 rounded-lg border-l-2 border-yellow-700">
+                  <li key={idx} className="bg-black/30 p-3  border-l-2 border-yellow-700">
                     <span className="text-gray-300">{nota}</span>
                   </li>
                 ))}

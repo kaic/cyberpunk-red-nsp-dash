@@ -63,7 +63,7 @@ const Rules: React.FC = () => {
         <div className="md:hidden mb-4">
           <button
             onClick={toggleMenu}
-            className="w-full p-3 flex items-center justify-between bg-green-900/30 text-green-400 rounded-lg border border-green-700"
+            className="w-full p-3 flex items-center justify-between bg-green-900/30 text-green-400  border border-green-700"
           >
             <span className="flex items-center">
               <span className="mr-2">{currentSection?.icon}</span>
@@ -75,7 +75,7 @@ const Rules: React.FC = () => {
 
         {/* Menu principal - visível em desktop, toggle em mobile */}
         <div
-          className={`${menuOpen ? "block" : "hidden md:grid"} md:grid-cols-3 lg:grid-cols-4 gap-2 bg-black/90 p-3 rounded-lg border border-green-900/50`}
+          className={`${menuOpen ? "block" : "hidden md:grid"} md:grid-cols-3 lg:grid-cols-4 gap-2 bg-black/90 p-3  border border-green-900/50`}
         >
           {rulesData.sections.map((section) => (
             <button
@@ -84,7 +84,7 @@ const Rules: React.FC = () => {
                 setActiveSection(section.id);
                 setMenuOpen(false);
               }}
-              className={`px-3 py-2 rounded-lg flex items-center mb-1 ${
+              className={`px-3 py-2  flex items-center mb-1 ${
                 activeSection === section.id
                   ? "bg-green-900/70 text-green-400 border border-green-700"
                   : "bg-black text-gray-400 border border-gray-800 hover:border-green-800 hover:text-green-400"
@@ -103,7 +103,7 @@ const Rules: React.FC = () => {
           {currentSection.content.map((item, index) => (
             <div
               key={`${currentSection.id}-content-${index}`}
-              className="rounded-lg shadow-lg bg-black border border-green-900 relative overflow-hidden"
+              className=" shadow-lg bg-black border border-green-900 relative overflow-hidden"
               id={`${currentSection.id}-${index}`}
             >
               {/* Background Matrix Effect for combat section */}
@@ -157,7 +157,7 @@ const Rules: React.FC = () => {
                   }
                 >
                   {"description" in item && item.description && (
-                    <div className="mb-6 text-gray-300 bg-green-900/10 p-4 rounded-lg border-l-4 border-green-700">
+                    <div className="mb-6 text-gray-300 bg-green-900/10 p-4  border-l-4 border-green-700">
                       {Array.isArray(item.description) ? (
                         item.description.map((desc, i) => (
                           <p key={i} className="mb-2 last:mb-0">
@@ -187,7 +187,7 @@ const Rules: React.FC = () => {
 
                   {/* Render tables */}
                   {"table" in item && item.table && (
-                    <div className="overflow-x-auto mb-6 rounded-lg border border-green-800">
+                    <div className="overflow-x-auto mb-6  border border-green-800">
                       <table className="w-full">
                         <thead>
                           <tr className="border-b border-green-800 bg-green-900/20">
@@ -231,7 +231,7 @@ const Rules: React.FC = () => {
                       {item.states.map((state, stateIndex) => (
                         <div
                           key={stateIndex}
-                          className="bg-black border border-green-800 rounded-lg p-4"
+                          className="bg-black border border-green-800  p-4"
                         >
                           <h4 className="font-bold text-green-400 mb-2 text-lg border-b border-green-900/50 pb-2">
                             {state.state}
@@ -263,7 +263,7 @@ const Rules: React.FC = () => {
 
                   {/* Render conclusion/footer */}
                   {"conclusion" in item && item.conclusion && (
-                    <div className="mt-6 p-4 bg-green-900/20 border border-green-800 rounded-lg">
+                    <div className="mt-6 p-4 bg-green-900/20 border border-green-800 ">
                       <p className="text-green-400">{item.conclusion}</p>
                     </div>
                   )}
@@ -288,7 +288,7 @@ const RenderSubsection = ({
   subIndex: number;
 }) => {
   return (
-    <div className="bg-black border border-green-900 rounded-lg overflow-hidden">
+    <div className="bg-black border border-green-900  overflow-hidden">
       {/* Subsection header */}
       <div className="p-4 border-b border-green-900/30 bg-green-900/20">
         <h3 className="text-xl font-bold text-green-400 flex items-center">
@@ -304,14 +304,14 @@ const RenderSubsection = ({
         )}
 
         {subsection.formula && (
-          <div className="bg-green-900/20 border border-green-800 rounded-lg p-3 mb-4 font-mono text-green-400 text-center">
+          <div className="bg-green-900/20 border border-green-800  p-3 mb-4 font-mono text-green-400 text-center">
             {subsection.formula}
           </div>
         )}
 
         {/* Lists */}
         {subsection.list && (
-          <div className="mb-4 bg-black/50 rounded-lg p-3 border-l-2 border-green-700">
+          <div className="mb-4 bg-black/50  p-3 border-l-2 border-green-700">
             <ul className="space-y-2 text-gray-400">
               {subsection.list.map((item, i) => (
                 <li key={i} className="flex items-start">
@@ -325,7 +325,7 @@ const RenderSubsection = ({
 
         {/* Uses */}
         {subsection.uses && (
-          <div className="mb-4 bg-black/50 rounded-lg p-3 border-l-2 border-green-700">
+          <div className="mb-4 bg-black/50  p-3 border-l-2 border-green-700">
             <ul className="space-y-2 text-gray-400">
               {subsection.uses.map((item, i) => (
                 <li key={i} className="flex items-start">
@@ -343,7 +343,7 @@ const RenderSubsection = ({
             {subsection.actions.map((action, i) => (
               <div
                 key={i}
-                className="bg-green-900/10 p-3 rounded-lg border-l-2 border-green-700"
+                className="bg-green-900/10 p-3  border-l-2 border-green-700"
               >
                 <span className="text-green-400 font-bold block mb-1">
                   {action.name}
@@ -360,7 +360,7 @@ const RenderSubsection = ({
             {subsection.parts.map((part, i) => (
               <div
                 key={i}
-                className="bg-black/50 rounded-lg p-4 border-l-2 border-green-700"
+                className="bg-black/50  p-4 border-l-2 border-green-700"
               >
                 <h4 className="font-bold text-green-400 mb-2 flex items-center">
                   {part.icon && <span className="mr-2">{part.icon}</span>}
@@ -383,7 +383,7 @@ const RenderSubsection = ({
                 )}
 
                 {part.example && (
-                  <div className="bg-green-900/10 border border-green-800/50 rounded-lg p-3 mt-2">
+                  <div className="bg-green-900/10 border border-green-800/50  p-3 mt-2">
                     <p className="text-gray-400 mb-2">
                       {part.example.scenario}
                     </p>
@@ -404,7 +404,7 @@ const RenderSubsection = ({
 
         {/* Example */}
         {subsection.example && (
-          <div className="mb-4 bg-green-900/10 border border-green-800 rounded-lg p-4">
+          <div className="mb-4 bg-green-900/10 border border-green-800  p-4">
             <p className="text-gray-300 mb-2 border-b border-green-900/30 pb-2">
               {subsection.example.scenario}
             </p>
@@ -452,7 +452,7 @@ const RenderSubsection = ({
 
         {/* Single note */}
         {subsection.note && (
-          <p className="text-gray-500 italic mb-4 bg-black/30 p-3 rounded-lg border-l-2 border-yellow-700">
+          <p className="text-gray-500 italic mb-4 bg-black/30 p-3  border-l-2 border-yellow-700">
             {subsection.note}
           </p>
         )}
@@ -464,7 +464,7 @@ const RenderSubsection = ({
               {subsection.factors.map((factor, i) => (
                 <li
                   key={i}
-                  className="bg-black/30 p-3 rounded-lg border-l-2 border-green-700"
+                  className="bg-black/30 p-3  border-l-2 border-green-700"
                 >
                   <span className="text-green-400 font-bold block mb-1">
                     {factor.name}
@@ -479,7 +479,7 @@ const RenderSubsection = ({
         {/* Special case for reputation gaining/losing */}
         {subsection.gaining && (
           <div className="mb-4 space-y-3">
-            <div className="bg-green-900/10 p-3 rounded-lg border-l-2 border-green-600">
+            <div className="bg-green-900/10 p-3  border-l-2 border-green-600">
               <h4 className="font-bold text-green-400 mb-2">
                 Ganha reputação:
               </h4>
@@ -494,7 +494,7 @@ const RenderSubsection = ({
             </div>
 
             {subsection.losing && (
-              <div className="bg-red-900/10 p-3 rounded-lg border-l-2 border-red-700">
+              <div className="bg-red-900/10 p-3  border-l-2 border-red-700">
                 <h4 className="font-bold text-red-400 mb-2">
                   Perde reputação:
                 </h4>
@@ -522,7 +522,7 @@ const RenderSpecialContent = (subsection: any) => {
           return (
             <div
               key={key}
-              className="bg-black/40 rounded-lg overflow-hidden border border-green-900"
+              className="bg-black/40  overflow-hidden border border-green-900"
             >
               <div className="bg-green-900/30 p-3 border-b border-green-800">
                 <h4 className="font-bold text-green-400">
@@ -532,13 +532,13 @@ const RenderSpecialContent = (subsection: any) => {
 
               <div className="p-3">
                 {step.formula && (
-                  <div className="bg-green-900/20 border border-green-800 rounded-lg p-2 mb-3 font-mono text-sm text-green-400 text-center">
+                  <div className="bg-green-900/20 border border-green-800  p-2 mb-3 font-mono text-sm text-green-400 text-center">
                     {step.formula}
                   </div>
                 )}
 
                 {step.difficulties && (
-                  <div className="mb-3 overflow-x-auto rounded-lg border border-green-800/50">
+                  <div className="mb-3 overflow-x-auto  border border-green-800/50">
                     <table className="w-full text-sm">
                       <thead>
                         <tr className="border-b border-green-800/50 bg-green-900/20">
@@ -570,7 +570,7 @@ const RenderSpecialContent = (subsection: any) => {
                 )}
 
                 {step.process && (
-                  <div className="mb-3 bg-black/30 p-3 rounded-lg">
+                  <div className="mb-3 bg-black/30 p-3 ">
                     <ul className="space-y-1 text-gray-400">
                       {step.process.map((proc, i) => (
                         <li key={i} className="flex items-start">
@@ -583,7 +583,7 @@ const RenderSpecialContent = (subsection: any) => {
                 )}
 
                 {step.deliveryTimes && (
-                  <div className="mb-3 overflow-x-auto rounded-lg border border-green-800/50">
+                  <div className="mb-3 overflow-x-auto  border border-green-800/50">
                     <table className="w-full text-sm">
                       <thead>
                         <tr className="border-b border-green-800/50 bg-green-900/20">
@@ -619,7 +619,7 @@ const RenderSpecialContent = (subsection: any) => {
                 )}
 
                 {step.complications && (
-                  <div className="mb-3 overflow-x-auto rounded-lg border border-green-800/50">
+                  <div className="mb-3 overflow-x-auto  border border-green-800/50">
                     <table className="w-full text-sm">
                       <thead>
                         <tr className="border-b border-green-800/50 bg-green-900/20">
@@ -664,7 +664,7 @@ const RenderSpecialContent = (subsection: any) => {
   // Handle black market items table
   if (subsection.blackMarketItems) {
     return (
-      <div className="overflow-x-auto rounded-lg border border-green-800/50">
+      <div className="overflow-x-auto  border border-green-800/50">
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-green-800 bg-green-900/20">
@@ -705,7 +705,7 @@ const RenderSpecialContent = (subsection: any) => {
   // Handle cost of living table
   if (subsection.costOfLiving) {
     return (
-      <div className="overflow-x-auto rounded-lg border border-green-800/50">
+      <div className="overflow-x-auto  border border-green-800/50">
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-green-800 bg-green-900/20">

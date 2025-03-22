@@ -27,7 +27,7 @@ export default function Home() {
   // Sections data
   const sections = [
     { id: "introducao", name: "Introdução", icon: "🏛️" },
-    { id: "capitulos", name: "Capítulos", icon: "📚" },
+    { id: "capitulos", name: "Capítulos", icon: "📖" },
     { id: "lore", name: "Lore", icon: "📜" },
     { id: "rules", name: "Rules", icon: "🎲" },
     { id: "players", name: "Players", icon: "🎮" },
@@ -161,7 +161,7 @@ export default function Home() {
                   <button
                     key={section.id}
                     onClick={() => handleNavigation(section.id)}
-                    className={`flex items-center p-3 rounded-lg transition ${
+                    className={`flex items-center p-3  transition ${
                       activeSection === section.id
                         ? "bg-purple-900/30 text-cyan-400 border border-purple-800 shadow-[0_0_8px_rgba(124,58,237,0.3)]"
                         : "hover:bg-purple-900/10 text-gray-300 border border-transparent hover:border-purple-900/50"
@@ -188,7 +188,7 @@ export default function Home() {
                 key={section.id}
                 className={`${
                   activeSection === section.id ? "bg-purple-900/20" : ""
-                } rounded-lg overflow-hidden group transition-colors duration-300 hover:bg-purple-900/10`}
+                  }  overflow-hidden group transition-colors duration-300 hover:bg-purple-900/10`}
               >
                 <button
                   onClick={() => handleNavigation(section.id)}
@@ -223,7 +223,7 @@ export default function Home() {
           </nav>
 
           <div className="mt-8 pt-6 border-t border-purple-900/50">
-            <div className="p-4 rounded-lg bg-black shadow-inner border border-purple-900 relative overflow-hidden group">
+            <div className="p-4  bg-black shadow-inner border border-purple-900 relative overflow-hidden group">
               {/* Add subtle glowing border effect on hover */}
               <div className="absolute inset-0 bg-purple-900/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 

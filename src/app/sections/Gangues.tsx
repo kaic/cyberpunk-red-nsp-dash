@@ -136,13 +136,13 @@ const Gangues: React.FC = () => {
   // Renderiza a seção de membros conhecidos
   const renderMembrosConhecidos = (membros) => {
     return (
-      <div className="p-4 bg-black border border-pink-900 rounded-lg">
+      <div className="p-4 bg-black border border-pink-900 ">
         <h3 className="text-lg font-bold mb-3 text-pink-400 border-b border-pink-900/50 pb-1">
           <span className="mr-2">👤</span>Membros Conhecidos
         </h3>
         <div className="space-y-3">
           {membros.map((membro, idx) => (
-            <div key={idx} className="bg-black/30 border border-pink-900/30 rounded-lg p-3">
+            <div key={idx} className="bg-black/30 border border-pink-900/30  p-3">
               <div className="flex justify-between">
                 <h4 className="text-pink-400 font-bold">{membro.nome}</h4>
                 <span className={`text - xs px - 2 py - 0.5 rounded - full ${membro.status === "Aliado"
@@ -168,13 +168,13 @@ const Gangues: React.FC = () => {
   // Renderiza a seção de características
   const renderCaracteristicas = (carac) => {
     return (
-      <div className="p-4 bg-black border border-purple-900 rounded-lg">
+      <div className="p-4 bg-black border border-purple-900 ">
         <h3 className="text-lg font-bold mb-3 text-purple-400 border-b border-purple-900/50 pb-1">
           <span className="mr-2">⚡</span>Características
         </h3>
         <div className="space-y-2">
           {carac.map((item, idx) => (
-            <div key={idx} className="bg-black/30 p-3 rounded-lg border-l-2 border-purple-700">
+            <div key={idx} className="bg-black/30 p-3  border-l-2 border-purple-700">
               <p className="text-gray-300">{item}</p>
             </div>
           ))}
@@ -187,7 +187,7 @@ const Gangues: React.FC = () => {
   const renderConflitosTerritoriais = () => {
     const conflitos = ganguesData.conflitosTerritoriais;
     return (
-      <div className="p-6 rounded-lg shadow-lg bg-black border border-red-900 relative overflow-hidden mt-6">
+      <div className="p-6  shadow-lg bg-black border border-red-900 relative overflow-hidden mt-6">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-red-900/10 to-transparent"></div>
         <div className="relative z-10">
           <h2 className="text-2xl font-bold mb-4 text-red-400">
@@ -197,7 +197,7 @@ const Gangues: React.FC = () => {
             {conflitos.descricao}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-            <div className="p-4 bg-black border border-red-800 rounded-lg">
+            <div className="p-4 bg-black border border-red-800 ">
               <h3 className="text-lg font-bold text-red-400 mb-3 border-b border-red-900/50 pb-1">
                 Zonas Quentes
               </h3>
@@ -213,13 +213,13 @@ const Gangues: React.FC = () => {
                 ))}
               </div>
             </div>
-            <div className="p-4 bg-black border border-red-800 rounded-lg">
+            <div className="p-4 bg-black border border-red-800 ">
               <h3 className="text-lg font-bold text-red-400 mb-3 border-b border-red-900/50 pb-1">
                 Alianças & Rivalidades
               </h3>
               <div className="space-y-2">
                 {conflitos.aliancasConhecidas.map((alianca, idx) => (
-                  <div key={idx} className="bg-black/30 p-2 rounded-lg border-l-2 border-red-700">
+                  <div key={idx} className="bg-black/30 p-2  border-l-2 border-red-700">
                     <div className="flex items-center justify-between">
                       <span className="text-red-400 font-bold">{alianca.aliados}</span>
                       <span className="text-xs px-2 py-0.5 rounded-full bg-red-900/50 text-red-400 border border-red-700">
@@ -287,7 +287,7 @@ const Gangues: React.FC = () => {
                 </h2>
               </div>
 
-              <p className="mb-6 text-gray-300 bg-black/50 p-4 rounded-lg border-l-4 border-green-700">
+              <p className="mb-6 text-gray-300 bg-black/50 p-4  border-l-4 border-green-700">
                 {gangueAtual.descricaoLonga}
               </p>
 
@@ -303,20 +303,20 @@ const Gangues: React.FC = () => {
 
           {/* Informações sobre território e atividades */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div className="p-4 bg-black border border-cyan-900 rounded-lg">
+            <div className="p-4 bg-black border border-cyan-900 ">
               <h3 className="text-lg font-bold mb-3 text-cyan-400 border-b border-cyan-900/50 pb-1">
                 <span className="mr-2">📍</span>Território & Atividades
               </h3>
               <div className="space-y-4">
-                <div className="bg-black/30 p-3 rounded-lg border-l-2 border-cyan-700">
+                <div className="bg-black/30 p-3  border-l-2 border-cyan-700">
                   <h4 className="text-cyan-400 font-bold mb-1">Território</h4>
                   <p className="text-gray-300">{gangueAtual.territorio}</p>
                 </div>
-                <div className="bg-black/30 p-3 rounded-lg border-l-2 border-cyan-700">
+                <div className="bg-black/30 p-3  border-l-2 border-cyan-700">
                   <h4 className="text-cyan-400 font-bold mb-1">Atividades</h4>
                   <p className="text-gray-300">{gangueAtual.atividades}</p>
                 </div>
-                <div className="bg-black/30 p-3 rounded-lg border-l-2 border-cyan-700">
+                <div className="bg-black/30 p-3  border-l-2 border-cyan-700">
                   <h4 className="text-cyan-400 font-bold mb-1">Armamento</h4>
                   <p className="text-gray-300">{gangueAtual.armas}</p>
                 </div>
@@ -324,18 +324,18 @@ const Gangues: React.FC = () => {
             </div>
 
             {/* Liderança */}
-            <div className="p-4 bg-black border border-yellow-900 rounded-lg">
+            <div className="p-4 bg-black border border-yellow-900 ">
               <h3 className="text-lg font-bold mb-3 text-yellow-400 border-b border-yellow-900/50 pb-1">
                 <span className="mr-2">👑</span>Liderança
               </h3>
-              <div className="bg-black/30 p-4 rounded-lg border-l-2 border-yellow-700">
+              <div className="bg-black/30 p-4  border-l-2 border-yellow-700">
                 <h4 className="text-yellow-400 font-bold mb-2">{gangueAtual.lider.nome}</h4>
                 <p className="text-gray-300 italic">{gangueAtual.lider.descricao}</p>
               </div>
 
               <h4 className="text-lg font-bold mt-4 mb-2 text-yellow-400">Conexões</h4>
               <div className="grid grid-cols-2 gap-2">
-                <div className="bg-black/30 p-3 rounded-lg border-l-2 border-red-700">
+                <div className="bg-black/30 p-3  border-l-2 border-red-700">
                   <h5 className="text-red-400 font-bold mb-1 text-sm">Rivalidades</h5>
                   <ul className="text-gray-400 text-sm">
                     {gangueAtual.rivalidades.map((rival, idx) => (
@@ -346,7 +346,7 @@ const Gangues: React.FC = () => {
                     ))}
                   </ul>
                 </div>
-                <div className="bg-black/30 p-3 rounded-lg border-l-2 border-green-700">
+                <div className="bg-black/30 p-3  border-l-2 border-green-700">
                   <h5 className="text-green-400 font-bold mb-1 text-sm">Alianças</h5>
                   <ul className="text-gray-400 text-sm">
                     {gangueAtual.aliancas.map((aliado, idx) => (
