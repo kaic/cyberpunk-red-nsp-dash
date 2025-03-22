@@ -8,6 +8,8 @@ import DefaultSection from "./sections/DefaultSection";
 import Lore from "./sections/Lore";
 import Rules from "./sections/Rules";
 import Corps from "./sections/Corps";
+import NPCs from "./sections/NPCs";
+import ScreamsheetsViewer from "./sections/Screensheets";
 
 export default function Home() {
   const [activeSection, setActiveSection] = React.useState("introducao");
@@ -49,6 +51,10 @@ export default function Home() {
         return <Corps />;
       case "rules":
         return <Rules />;
+      case "npcs":
+        return <NPCs />;
+      case "screamsheets":
+        return <ScreamsheetsViewer />;
       // Add additional case statements for other sections
       default:
         const section = sections.find((s) => s.id === activeSection);

@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "title": "Escândalo no Banheiro da AFloresta",
+    "date": "01/06/2133",
+    "source": "Nova São Paulo Today",
+    "headline": "Escândalo no Banheiro da Balada!",
+    "summary": "Na noite passada, um grupo de homens se envolveu em uma situação embaraçosa na popular balada \"AFloresta\". Durante um encontro secreto no banheiro feminino, foram filmados por um desconhecido, e o vídeo rapidamente viralizou nas redes sociais.",
+    "details": [
+      "Data do Incidente: 01/06/2133",
+      "Local: Balada \"AFloresta\", Nova Pinheiros.",
+      "Protagonistas: 6 homens desconhecidos e TT, um trapper pouco conhecido que ganhou certa fama após isso."
+    ],
+    "testimonials": [
+      {
+        "name": "Laura",
+        "quote": "Estava retocando a maquiagem quando eles entraram. Fiquei assustada no começo, mas eles só estavam olhando. Acredito que estavam fazendo algum trabalho."
+      },
+      {
+        "name": "Marina",
+        "quote": "Eu estava conversando com uma amiga quando eles apareceram. Foi estranho, mas não causaram problemas, além do susto de um monte de homens dentro do banheiro feminino. Acho que a exposição na rede foi exagerada."
+      }
+    ],
+    "officialStatement": "A segurança e a privacidade dos nossos clientes são nossa prioridade. Após o incidente de ontem, implementamos medidas adicionais para garantir que situações semelhantes não voltem a ocorrer.",
+    "expertAnalysis": "Este incidente demonstra como a exposição pública pode ser tanto uma arma quanto uma oportunidade no mundo atual.",
+    "publicOpinion": {
+      "positive": 60,
+      "negative": 30,
+      "indifferent": 10
+    },
+    "adText": "Curta o hit viralizado de TT, \"Não atire em mim\", disponível agora em todas as plataformas de música digital!",
+    "footer": "Para mais atualizações sobre este e outros acontecimentos, siga-nos nas redes sociais @nsptoday.",
+    "imageUrl": "/api/placeholder/600/400",
+    "bgColor": "bg-purple-900",
+    "accentColor": "border-purple-500"
+  },
+  {
+    "id": 2,
+    "title": "CyberJenkins Causa Surto na Zona Sul",
+    "date": "15/06/2133",
+    "source": "Nova São Paulo Chronicle",
+    "headline": "Novíssima Droga Causa Alucinações Coletivas!",
+    "summary": "Um surto de alucinações coletivas atingiu o distrito de Interlagos nesta semana. Investigações iniciais apontam para uma nova versão de CyberJenkins como o provável culpado.",
+    "details": [
+      "Data do Incidente: 14/06/2133",
+      "Local: Distrito de Interlagos, Zona Sul.",
+      "Vítimas: Aproximadamente 35 pessoas afetadas."
+    ],
+    "testimonials": [
+      {
+        "name": "Dr. Sérgio Vieira",
+        "quote": "Nunca vi nada parecido. Os pacientes compartilham as mesmas alucinações, como se estivessem conectados mentalmente. Todos falam sobre 'mensagens nos céus' e 'visitantes digitais'."
+      }
+    ],
+    "officialStatement": "A Guardian está investigando a origem desta substância e promete medidas severas contra os fabricantes e distribuidores deste perigoso composto.",
+    "expertAnalysis": "O CyberJenkins original já era preocupante, mas esta nova versão parece ter propriedades ainda não compreendidas pela ciência moderna.",
+    "publicOpinion": {
+      "positive": 5,
+      "negative": 75,
+      "indifferent": 20
+    },
+    "adText": "BionTech: Tratamentos neurológicos de ponta para os efeitos do abuso de substâncias. Sua mente merece o melhor.",
+    "footer": "Mantenha-se informado. Mantenha-se seguro. Nova São Paulo Chronicle.",
+    "imageUrl": "/api/placeholder/600/400",
+    "bgColor": "bg-cyan-900",
+    "accentColor": "border-cyan-500"
+  },
+  {
+    "id": 3,
+    "title": "Corpo é Encontrado no Lago Tiradentes",
+    "date": "22/06/2133",
+    "source": "NSP Alerta",
+    "headline": "Mistério nas Águas de Tiradentes",
+    "summary": "O corpo de um homem não identificado foi encontrado nas margens do Lago Tiradentes esta manhã. A vítima apresentava sinais de implantes cibernéticos avançados removidos de forma violenta.",
+    "details": [
+      "Data da Descoberta: 22/06/2133, 05:47",
+      "Local: Margem norte do Lago Tiradentes",
+      "Vítima: Homem, aproximadamente 30 anos, identidade desconhecida"
+    ],
+    "testimonials": [
+      {
+        "name": "Agente Silva",
+        "quote": "Este é o terceiro caso com o mesmo modus operandi este mês. Estamos tratando os casos como relacionados e possivelmente obra de um serial killer."
+      }
+    ],
+    "officialStatement": "A Guardian solicita que qualquer pessoa com informações sobre identidades desaparecidas entre em contato imediatamente com o departamento de investigações.",
+    "expertAnalysis": "Os implantes removidos são de altíssima tecnologia, indicando possível envolvimento corporativo ou mercado negro de órgãos cibernéticos.",
+    "publicOpinion": {
+      "positive": 0,
+      "negative": 80,
+      "indifferent": 20
+    },
+    "adText": "Seguro de Vida SynthCorp. Porque em Nova São Paulo, nunca se sabe o que o amanhã reserva.",
+    "footer": "NSP Alerta: Verdade quando você mais precisa.",
+    "imageUrl": "/api/placeholder/600/400",
+    "bgColor": "bg-red-900",
+    "accentColor": "border-red-500"
+  }
+]

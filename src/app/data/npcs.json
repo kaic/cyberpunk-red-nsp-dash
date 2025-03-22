@@ -1,0 +1,413 @@
+{
+  "categories": [
+    { "id": "amigos", "nome": "Amigos & Aliados", "icone": "🤝", "corPrimaria": "green" },
+    { "id": "comando", "nome": "Comando Cyberpunk", "icone": "🔥", "corPrimaria": "red" },
+    { "id": "cartel", "nome": "O Cartel", "icone": "🎭", "corPrimaria": "blue" },
+    { "id": "politicos", "nome": "Políticos", "icone": "👑", "corPrimaria": "yellow" },
+    { "id": "outros", "nome": "Outros", "icone": "❓", "corPrimaria": "purple" }
+  ],
+  "npcs": [
+    {
+      "id": "blingbling",
+      "nome": "BlingBling",
+      "categoria": "amigos",
+      "descricao": "Um Maurauder novo porém muito promissor. Corporate que sabe onde encontrar o dinheiro.",
+      "descricaoLonga": "É um Maurauder novo porem é muito promissor. Tem 25 anos, é um corporate que sabe onde encontrar o dinheiro. Usa um terno tecnologico, tem um cabelo azul, oculos, olhos ciberneticos e usa uma katana.",
+      "imagem": "/img/BlingBling.png",
+      "idade": "25 anos",
+      "profissao": "Fixer dos BitMarauders",
+      "status": "Aliado",
+      "caracteristicas": [
+        "Veste terno tecnológico de última geração",
+        "Cabelo azul vibrante, óculos escuros e olhos cibernéticos",
+        "Carrega uma katana personalizada",
+        "Tem contatos em praticamente todos os círculos financeiros de Nova São Paulo"
+      ],
+      "conexoes": [
+        { "nome": "BitMarauders", "relacao": "Membro", "detalhes": "Apesar de novo na organização, conquistou respeito rapidamente" },
+        { "nome": "El Rato", "relacao": "Contato comercial", "detalhes": "Já fez negócios no passado, relação tensa mas respeitosa" }
+      ],
+      "notas": [
+        "Ofereceu ajuda ao grupo em troca de um favor - recuperar um laboratório de CyberJenkins",
+        "Tem ambições de ascender na hierarquia dos BitMarauders",
+        "Extremamente conectado ao submundo financeiro de NSP"
+      ]
+    },
+    {
+      "id": "mckleber",
+      "nome": "MC Kleber",
+      "categoria": "amigos",
+      "descricao": "Ex-chefe de todo o jogo ilegal do Comando, expulso após divergências sobre negócios.",
+      "descricaoLonga": "Era chefe de todo o jogo ilegal do comando. Saiu do comando porque ele queria ganhar dinheiro com outras formas - dinheiro virtual, golpes e etc., mas o comando não permitiu. Foi expulso de forma vergonhosa (apanhou), desde então faz de tudo para tentar fuder com o Comando. Quer ganhar dinheiro a todo custo.",
+      "imagem": "/img/MCKleber.png",
+      "idade": "40 anos (aproximado)",
+      "profissao": "Ex-criminoso / Empreendedor independente",
+      "status": "Aliado",
+      "caracteristicas": [
+        "É gordo, usa uma jaqueta vermelha com um dragão dourado",
+        "Sempre carrega uma Uzi verde personalizada",
+        "Conhece todos os esquemas ilegais de jogos de azar em NSP",
+        "Tem um temperamento explosivo mas é leal aos amigos"
+      ],
+      "conexoes": [
+        { "nome": "Comando Cyberpunk", "relacao": "Ex-membro/Inimigo", "detalhes": "Foi expulso violentamente e guarda rancor" },
+        { "nome": "MCs locais", "relacao": "Amigo próximo", "detalhes": "Frequenta círculos da música, embora nunca tenha lançado nada" }
+      ],
+      "notas": [
+        "Odeia profundamente o Comando após sua expulsão humilhante",
+        "Busca incansavelmente formas de ganhar dinheiro, especialmente com tecnologia",
+        "Foi sequestrado pela MiliTech, revelando uma conspiração maior"
+      ]
+    },
+    {
+      "id": "vanessa",
+      "nome": "Vanessa Molina - V",
+      "categoria": "amigos",
+      "descricao": "Netrunner boliviana fugida de um cartel de drogas, ex-funcionária da MiliTech.",
+      "descricaoLonga": "Tem 30 anos, nasceu em La Paz, Bolívia. Veio para NSP fugida, há 6 anos, de um cartel de drogas que mataram seus pais e sequestraram seu irmão mais novo. É uma netrunner muito habilidosa que trabalhava para a Militech. Já trabalhou para diversas corps antes, tem muito conhecimento sobre o mundo corp e também conhece muito sobre o mundo das gangues. Saiu da Militech porque descobriu sobre o cartel.",
+      "imagem": "/img/VanessaMolina.png",
+      "idade": "30 anos",
+      "profissao": "Netrunner / Ex-funcionária da MiliTech",
+      "status": "Aliada",
+      "habilidadesNetrunner": {
+        "interface": 4,
+        "armas": ["Dai Lung Magnum", "Tech-Assault III", "Wolvers"],
+        "cyberware": ["Audiovox", "Grafted Muscle & Bonelace", "Neural Link", "Radar/Sonar Implant", "Toxin Binders", "Voice Stress Analyzer", "Wolvers"]
+      },
+      "caracteristicas": [
+        "Netrunner altamente habilidosa, especializada em infiltração digital",
+        "Possui vários implantes cibernéticos de alto nível",
+        "Conhece profundamente o mundo corporativo e das gangues",
+        "Extremamente cautelosa e meticulosa em suas operações"
+      ],
+      "conexoes": [
+        { "nome": "MiliTech", "relacao": "Ex-funcionária/Inimiga", "detalhes": "Abandonou o Projeto Omega ao descobrir sua verdadeira natureza" },
+        { "nome": "Cartel", "relacao": "Alvo", "detalhes": "Está sendo caçada por abandonar o Projeto Omega" },
+        { "nome": "Bernardo Molina", "relacao": "Irmão", "detalhes": "Sequestrado por cartéis em La Paz, tentando juntando dinheiro para resgatá-lo" }
+      ],
+      "notas": [
+        "Está sendo caçada pelo cartel após abandonar o Projeto Omega",
+        "Seu maior objetivo é juntar dinheiro suficiente para resgatar seu irmão",
+        "Aparece e desaparece misteriosamente, oferecendo informações valiosas"
+      ]
+    },
+    {
+      "id": "eco",
+      "nome": "Eco",
+      "categoria": "amigos",
+      "descricao": "Media solitário e mensageiro que trabalha para Os Vigilantes.",
+      "descricaoLonga": "É um mensageiro solitário que trabalha para o grupo conhecido como Os Vigilantes. Media habilidoso, nasceu em Nova São Paulo e conhece a cidade como poucos. Tem um apreço muito grande por Elie por algo que Elie fez por ele no passado.",
+      "imagem": "/img/Eco.png",
+      "idade": "Desconhecida",
+      "profissao": "Media / Mensageiro",
+      "status": "Aliado",
+      "caracteristicas": [
+        "Extremamente discreto, raramente permanece no mesmo lugar por muito tempo",
+        "Tem acesso a informações que poucos conseguem obter",
+        "Comunica-se principalmente através de mensagens codificadas",
+        "Parece ter olhos e ouvidos em toda Nova São Paulo"
+      ],
+      "conexoes": [
+        { "nome": "Os Vigilantes", "relacao": "Membro", "detalhes": "Trabalha como mensageiro e coleta informações" },
+        { "nome": "Elie", "relacao": "Grato", "detalhes": "Tem um apreço muito grande por Elie devido a um evento passado" }
+      ],
+      "notas": [
+        "Surge nos momentos mais inesperados com informações cruciais",
+        "Tem uma rede de contatos extensa em toda a cidade",
+        "Nunca revela suas fontes ou metodologias"
+      ]
+    },
+    {
+      "id": "drsombra",
+      "nome": "Dr. Sombra",
+      "categoria": "amigos",
+      "descricao": "Medtech e veterano da Guerra Civil, atende apenas conhecidos ou pessoas enviadas por contatos.",
+      "descricaoLonga": "Dr. Miguel 'Sombra' Sousa é um Medtech e Veterano da Guerra Civil. Tem o apelido de Sombra porque durante a guerra ele apenas era visto em combate à noite, durante o dia estava clinicando. Lutou ao lado das forças separatistas. Ganha a vida como medtech após a guerra. Só atende conhecidos ou pessoas enviadas por contatos. Não faz perguntas a quem atende, não quer saber motivos.",
+      "imagem": "/img/DrSombra.png",
+      "idade": "57 anos",
+      "profissao": "Medtech / Veterano de Guerra",
+      "status": "Aliado",
+      "caracteristicas": [
+        "Homem de aparência austera e olhar penetrante, com rugas profundas",
+        "Implantes médicos antigos, testemunhas de seu passado como médico de guerra",
+        "Extremamente habilidoso na medicina de combate e cirurgias de emergência",
+        "Veste-se formalmente com ternos simples, mas funcionais"
+      ],
+      "conexoes": [
+        { "nome": "Forças Separatistas", "relacao": "Ex-combatente", "detalhes": "Lutou durante a Guerra Civil de 2099" },
+        { "nome": "Submundo médico", "relacao": "Prestador de serviços", "detalhes": "Mantém uma clínica clandestina" }
+      ],
+      "notas": [
+        "Extremamente discreto, nunca questiona ferimentos ou sua origem",
+        "Cobra por seus serviços, mas tem um código de ética próprio",
+        "Considerado uma lenda entre os veteranos da Guerra Civil"
+      ]
+    },
+    {
+      "id": "rafael",
+      "nome": "Rafael \"Chefe\" Oliveira",
+      "categoria": "comando",
+      "descricao": "Chefe do Comando, temido e respeitado no submundo criminal de Nova São Paulo.",
+      "descricaoLonga": "Rafael \"Chefe\" Oliveira é o temido chefe do Comando, a máfia que domina as áreas mais sombrias de Nova São Paulo. Sua habilidade em operar nas ruas e sua mente estratégica o tornaram uma figura quase lendária no submundo do crime. É astuto, calculista e implacável. Sua liderança é marcada por uma mistura de carisma e medo. Possui uma habilidade única de manipular e influenciar aqueles ao seu redor, sempre um passo à frente de seus adversários.",
+      "imagem": "/img/RafaelChefe.png",
+      "idade": "32 anos",
+      "profissao": "Chefe do Comando",
+      "status": "Hostil",
+      "caracteristicas": [
+        "Homem de estatura média, mas com presença que impõe respeito e temor",
+        "Cabelo negro bem cortado, olhos castanhos escuros penetrantes",
+        "Veste-se elegantemente com ternos de alta qualidade",
+        "Cicatrizes discretas no rosto, lembranças de um passado violento"
+      ],
+      "operacoes": [
+        "Controle de tráfico de drogas e armas com precisão militar",
+        "Sistemas de extorsão sofisticados que garantem fluxo constante de renda",
+        "Controle de cassinos clandestinos e esquemas de apostas ilegais"
+      ],
+      "conexoes": [
+        { "nome": "MiliTech", "relacao": "Aliança secreta", "detalhes": "Parceria estratégica com Nathan 'Steel' Turner" },
+        { "nome": "Cartel", "relacao": "Membro", "detalhes": "Parte da aliança secreta para controle da cidade" },
+        { "nome": "Marcos da ZL", "relacao": "Ex-subordinado", "detalhes": "Ordenou seu assassinato após descobrir objeções ao plano" }
+      ],
+      "notas": [
+        "Membro-chave do Cartel, representando o controle das ruas",
+        "Acredita que o Comando cumpre papel essencial ao impor ordem nas ruas",
+        "Extremamente leal aos seus aliados, mas implacável com traidores"
+      ]
+    },
+    {
+      "id": "marcoszl",
+      "nome": "Marcos da ZL",
+      "categoria": "comando",
+      "descricao": "Antigo líder local do Comando na Zona Leste, assassinado na explosão do bar.",
+      "descricaoLonga": "Líder antigo dos comandos, Marcos tinha 35 anos e era um fixer famoso das ruas da zona leste. Era o líder local do Comando na Zona Leste de NSP. Era conhecido por ser gente boa, pragmático e muito famoso nas ruas. Tinha um moicano verde, usava um óculos escuro e uma corrente de ouro de um palhaço. Ao saber do plano do cerco (ele não sabia do Omega) se mostrou contra pois ele tinha negócios com gangues menores que seriam atrapalhados pelo cerco. Como só uma parte do Comando sabe do cartel, as ruas não entenderam sua morte.",
+      "imagem": "/img/MarcosZL.png",
+      "idade": "35 anos (falecido)",
+      "profissao": "Líder local do Comando / Fixer",
+      "status": "Morto",
+      "caracteristicas": [
+        "Moicano verde vibrante, marca registrada na Zona Leste",
+        "Sempre usava óculos escuros e uma corrente de ouro com pingente de palhaço",
+        "Conhecido por ser pragmático e justo em suas negociações",
+        "Extremamente popular nas ruas da Zona Leste"
+      ],
+      "conexoes": [
+        { "nome": "Comando Cyberpunk", "relacao": "Líder regional", "detalhes": "Comandava as operações na Zona Leste" },
+        { "nome": "Gangues menores", "relacao": "Parceiro comercial", "detalhes": "Mantinha acordos e protegia pequenos grupos" }
+      ],
+      "notas": [
+        "Assassinado na explosão do bar no Tatuapé",
+        "Se opôs ao plano de cerco urbano por prejudicar seus negócios locais",
+        "Sua morte causou confusão nas ruas, pois era amplamente respeitado",
+        "Não tinha conhecimento do Projeto Omega"
+      ]
+    },
+    {
+      "id": "gbdojh",
+      "nome": "GB do JH",
+      "categoria": "comando",
+      "descricao": "Líder revolucionário dentro do Comando, com ideias próprias sobre Nova São Paulo.",
+      "descricaoLonga": "GB do JH era um líder revolucionário dentro do Comando Cyberpunk que tinha ideias próprias sobre como Nova São Paulo deveria ser governada. Foi executado por Raposa durante o confronto na Praça da Sé, antes que pudesse revelar segredos importantes sobre o Cartel.",
+      "imagem": "/img/GBDOJH.png",
+      "idade": "Desconhecida",
+      "profissao": "Líder revolucionário / Membro do Comando",
+      "status": "Morto",
+      "caracteristicas": [
+        "Figura enigmática dentro do Comando, com forte ideologia revolucionária",
+        "Conhecia segredos importantes sobre o Cartel e suas operações",
+        "Tentava reformar o Comando de dentro para seus próprios objetivos"
+      ],
+      "conexoes": [
+        { "nome": "Comando Cyberpunk", "relacao": "Membro interno", "detalhes": "Operava com agenda própria" },
+        { "nome": "Cartel", "relacao": "Opositor", "detalhes": "Conhecia detalhes que ameaçavam a operação" }
+      ],
+      "notas": [
+        "Executado por Raposa durante o confronto na Praça da Sé",
+        "Morreu antes de revelar informações cruciais sobre o Cartel",
+        "Sua morte foi planejada para silenciar revelações perigosas"
+      ]
+    },
+    {
+      "id": "kael",
+      "nome": "Dr. Kael Medeiros",
+      "categoria": "cartel",
+      "descricao": "Cientista Chefe da SynthCorp, gênio da Inteligência Artificial e Cibernética Avançada.",
+      "descricaoLonga": "Dr. Kael Medeiros é um dos maiores cientistas de Nova São Paulo, trabalhando na vanguarda da tecnologia na SynthCorp. Com um histórico acadêmico impecável e uma mente brilhante, Kael dedicou sua vida ao avanço da inteligência artificial e cibernética, áreas nas quais ele é considerado um gênio. Nascido e criado em uma das favelas verticais de Nova São Paulo, Kael lutou para escapar da pobreza. Seu talento inato para a ciência foi notado cedo, garantindo-lhe bolsas de estudo e um caminho para fora da miséria.",
+      "imagem": "/img/DrKael.png",
+      "idade": "42 anos",
+      "profissao": "Cientista Chefe da SynthCorp",
+      "status": "Hostil",
+      "caracteristicas": [
+        "Olhos azuis penetrantes, quase sempre ocultos atrás de óculos de realidade aumentada",
+        "Pele pálida, resultado de longas horas nos laboratórios",
+        "Porte atlético, mantido através de regime rigoroso de exercícios e aprimoramentos cibernéticos",
+        "Meticuloso, exigente e, às vezes, visto como frio e calculista"
+      ],
+      "especializacao": "Inteligência Artificial e Cibernética Avançada",
+      "conexoes": [
+        { "nome": "SynthCorp", "relacao": "Cientista Chefe", "detalhes": "Responsável por projetos de ponta" },
+        { "nome": "Cartel", "relacao": "Membro-chave", "detalhes": "Cérebro por trás do Projeto Omega" },
+        { "nome": "Vincent Almeida", "relacao": "Colega", "detalhes": "Executa aspectos técnicos das visões de Vince" }
+      ],
+      "notas": [
+        "Gênio científico por trás do Projeto Omega",
+        "Luta internamente com questões éticas sobre seu trabalho",
+        "Acredita que a tecnologia deve servir para melhorar a vida das pessoas, mas seus projetos no Cartel contradizem essa visão"
+      ]
+    },
+    {
+      "id": "steel",
+      "nome": "Nathan \"Steel\" Turner",
+      "categoria": "cartel",
+      "descricao": "Vice-Presidente de Operações da MiliTech, ex-general com braço cibernético com armas integradas.",
+      "descricaoLonga": "Nathan Turner, conhecido como \"Steel\" devido à sua natureza implacável e determinação férrea, é o Vice-Presidente de Operações da Militech. Com um passado militar exemplar, ele trouxe sua experiência no campo de batalha para o mundo corporativo, onde lidera com precisão e disciplina militar. Ele é veterano da guerra civil e lutou ao lado das forças separatistas, como um mercenário. Aos 24 anos, desertou do serviço militar para servir como mercenário na guerra civil, pois não queria servir as forças federais.",
+      "imagem": "/img/NathanSteel.png",
+      "idade": "56 anos",
+      "profissao": "Vice-Presidente de Operações da MiliTech",
+      "status": "Hostil",
+      "caracteristicas": [
+        "Robusto e musculoso, com presença intimidante",
+        "Cabelo cortado rente ao couro cabeludo, com fios grisalhos",
+        "Olhos cinza penetrantes, sempre atentos e calculistas",
+        "Braço cibernético com armas integradas, resultado de ferimentos de guerra"
+      ],
+      "especializacao": "Estratégia Militar e Gestão de Segurança",
+      "projetos": [
+        "Guardian Armor: linha de armaduras pessoais de alta proteção",
+        "Sentinel Drones: frota de drones de vigilância avançados",
+        "Urban Warfare Tactics: estratégias de combate urbano para controle territorial"
+      ],
+      "conexoes": [
+        { "nome": "MiliTech", "relacao": "Vice-Presidente", "detalhes": "Controla operações táticas e estratégicas" },
+        { "nome": "Cartel", "relacao": "Membro central", "detalhes": "Fornece força militar e estratégia" },
+        { "nome": "Comando Cyberpunk", "relacao": "Aliado", "detalhes": "Parceria secreta para controle territorial" },
+        { "nome": "Vincent Almeida", "relacao": "Amigo", "detalhes": "Aliança pessoal que fortalece o Cartel" }
+      ],
+      "notas": [
+        "Veterano da Guerra Civil, lutou como mercenário pelas forças separatistas",
+        "Acredita que a segurança é mantida através de força e vigilância constante",
+        "Extremamente disciplinado e metódico em suas operações"
+      ]
+    },
+    {
+      "id": "vince",
+      "nome": "Vincent \"Vince\" Almeida",
+      "categoria": "cartel",
+      "descricao": "Diretor de Operações da SynthCorp, ambicioso e estrategista implacável.",
+      "descricaoLonga": "Vincent Almeida é um executivo de alta patente na SynthCorp, conhecido por sua ambição desenfreada e habilidades estratégicas excepcionais. Nascido em uma família abastada, Vince foi preparado desde cedo para ocupar uma posição de poder, e ele abraçou essa expectativa com fervor. Formado em Business pela Universidade de Nova São Paulo (UNSP), com especializações em Gestão Corporativa e Estratégia de Poder, complementou sua educação com diversos cursos de liderança e negociação ao redor do mundo.",
+      "imagem": "/img/VincentVince.png",
+      "idade": "45 anos",
+      "profissao": "Diretor de Operações da SynthCorp",
+      "status": "Hostil",
+      "caracteristicas": [
+        "Alto e robusto, com aparência imponente que exala confiança e autoridade",
+        "Olhos verdes intensos, cabelo cuidadosamente penteado com grisalho nas têmporas",
+        "Sempre visto em trajes formais impecáveis, geralmente ternos italianos",
+        "Calculista, ambicioso e implacável em suas operações"
+      ],
+      "acoes": [
+        "Liderou campanhas de aquisição hostil para expandir o império da SynthCorp",
+        "Desenvolveu estratégias para manipular a opinião pública e decisões políticas",
+        "Supervisionou a expansão internacional da SynthCorp na América do Sul"
+      ],
+      "conexoes": [
+        { "nome": "SynthCorp", "relacao": "Diretor de Operações", "detalhes": "Controla várias divisões da empresa" },
+        { "nome": "Cartel", "relacao": "Líder de facto", "detalhes": "Principal arquiteto da aliança secreta" },
+        { "nome": "Nathan Turner", "relacao": "Aliado próximo", "detalhes": "Amizade e parceria estratégica" },
+        { "nome": "Governador Gerald", "relacao": "Manipulador", "detalhes": "Usa chantagem para controlar o governo" }
+      ],
+      "notas": [
+        "Arquiteto principal do Cartel e suas operações",
+        "Usa chantagem, suborno e eliminação de oponentes sem hesitação",
+        "Ambição desenfreada de consolidar poder absoluto sobre Nova São Paulo"
+      ]
+    },
+    {
+      "id": "rick",
+      "nome": "Ricardo \"Rick\" Silva",
+      "categoria": "cartel",
+      "descricao": "CIO da MiliTech e especialista em operações tecnológicas avançadas.",
+      "descricaoLonga": "Ricardo Silva começou sua carreira como um jovem soldado nas forças especiais brasileiras, destacando-se por sua habilidade em operações de combate e estratégia militar. Sua ascensão na Militech foi rápida, graças ao seu talento para táticas e sua disposição em tomar decisões difíceis. Ao longo dos anos, Ricardo se envolveu em inúmeras operações clandestinas, acumulando experiência e respeito dentro da corporação.",
+      "imagem": "/img/RicardoRick.png",
+      "idade": "50 anos",
+      "profissao": "CIO da MiliTech",
+      "status": "Hostil",
+      "caracteristicas": [
+        "Porte médio, com físico bem cuidado fruto de disciplina rígida",
+        "Cabelo grisalho bem cortado, olhos azuis penetrantes que transmitem frieza",
+        "Possui vários implantes, incluindo olho biônico e braço cibernético",
+        "Veste ternos elegantes e sob medida, com toques de tecnologia avançada"
+      ],
+      "especializacao": "Operações tecnológicas e segurança digital",
+      "conexoes": [
+        { "nome": "MiliTech", "relacao": "CIO", "detalhes": "Responsável por toda infraestrutura tecnológica" },
+        { "nome": "Cartel", "relacao": "Membro", "detalhes": "Coordena aspectos técnicos das operações" },
+        { "nome": "Nathan Turner", "relacao": "Colega", "detalhes": "Relação profissional de respeito mútuo" },
+        { "nome": "Comando", "relacao": "Manipulador", "detalhes": "Utiliza seus serviços para operações clandestinas" }
+      ],
+      "notas": [
+        "Ex-hacker contratado após quase derrubar os sistemas da MiliTech",
+        "Extremamente leal à corporação, vendo-a como família e causa",
+        "Meticuloso e disciplinado, espera o máximo de sua equipe"
+      ]
+    },
+    {
+      "id": "elrato",
+      "nome": "El Rato",
+      "categoria": "cartel",
+      "descricao": "Agiota do Mercado Cinza, não perdoa dívidas e tem conexões com grandes corporações.",
+      "descricaoLonga": "Hector \"El Rato\" Jiménez é um agiota e operador do Mercado Cinza. Começou como cobrador de dívidas para o Cartel de Medellín, mas quando percebeu que poderia lucrar mais sem um chefe, criou sua própria rede de crédito ilegal. Agora, opera no subsolo da cidade, oferecendo dinheiro para quem precisa – mas cobrando um preço que ninguém quer pagar. Seu grande diferencial é que não empresta apenas dinheiro, mas também armas, veículos e equipamentos corporativos roubados.",
+      "imagem": "/img/ElRato.png",
+      "idade": "52 anos",
+      "profissao": "Agiota / Operador do Mercado Cinza",
+      "status": "Neutro",
+      "caracteristicas": [
+        "Cabelos grisalhos penteados para trás, barba bem aparada, olhar cortante",
+        "Usa colete tático por baixo de um blazer de luxo, sempre pronto para o pior",
+        "Mãos cibernéticas douradas, presente de um cartel sul-americano",
+        "Extremamente influente no submundo financeiro"
+      ],
+      "origens": "Hispânico, crescido nas favelas industriais da Zona Norte de Nova São Paulo",
+      "conexoes": [
+        { "nome": "Cartel de Medellín", "relacao": "Ex-funcionário", "detalhes": "Começou como cobrador de dívidas" },
+        { "nome": "MiliTech", "relacao": "Intermediário", "detalhes": "Facilita transações não oficiais" },
+        { "nome": "SynthCorp", "relacao": "Intermediário", "detalhes": "Movimenta equipamentos roubados" },
+        { "nome": "Cartel", "relacao": "Associado", "detalhes": "Conhece mais do que demonstra" }
+      ],
+      "notas": [
+        "Não dorme no mesmo lugar duas noites seguidas",
+        "Trata dívidas como contratos de vida ou morte",
+        "Só mata quem tenta fugir ou dar calote",
+        "Motivação atual: receber pagamento pela Porsche avariada"
+      ]
+    },
+    {
+      "id": "gerald",
+      "nome": "Governador Gerald Fontana",
+      "categoria": "politicos",
+      "descricao": "Governador de Nova São Paulo, chantageado pelo Cartel devido a um crime pessoal.",
+      "descricaoLonga": "Gerald Fontana, aos 60 anos, é um homem alto e imponente, com cabelos grisalhos bem cortados e olhos penetrantes que carregam a bagagem de décadas de política e compromissos duvidosos. Sua postura é ereta, refletindo a autoridade que ele mantém mesmo em uma cidade onde o poder muitas vezes é efêmero. Emergiu da política como um defensor dos direitos civis e um crítico ferrenho da influência corporativa na política de Nova São Paulo. Antes de sua ascensão ao cargo de governador, Gerald teve uma carreira notável como promotor público, ganhando reputação por sua luta contra a corrupção corporativa.",
+      "imagem": "/img/GeraldFontana.png",
+      "idade": "60 anos",
+      "profissao": "Governador de Nova São Paulo",
+      "status": "Neutro",
+      "caracteristicas": [
+        "Alto e imponente, com cabelos grisalhos bem cortados",
+        "Olhos penetrantes que refletem décadas de política",
+        "Postura ereta e autoritária, mesmo sob pressão",
+        "Vive conflito constante entre aparência pública e realidade privada"
+      ],
+      "historicoPublico": "Defensor dos direitos civis e crítico da influência corporativa",
+      "historicoCriminal": "Assassinou a ex-esposa durante um confronto acalorado",
+      "conexoes": [
+        { "nome": "Cartel", "relacao": "Chantageado", "detalhes": "Forçado a ceder às corporações devido ao crime pessoal" },
+        { "nome": "Corporações", "relacao": "Subserviente", "detalhes": "Atual posição contradiz sua plataforma original" }
+      ],
+      "notas": [
+        "Vive em constante conflito interno entre seus ideais e a realidade",
+        "Tenta manter equilibrio entre imagem pública e submissão ao Cartel",
+        "Opera em jogo perigoso entre proteger sua vida pessoal e manter aparências"
+      ]
+    }
+  ]
+}
