@@ -1,0 +1,156 @@
+[
+  {
+    "id": "caldeira",
+    "name": "Hospital - A Caldeira",
+    "type": "hospital",
+    "district": "Guarulhos",
+    "security": "Alta",
+    "imageUrl": "/images/locations/hospital-caldeira.jpg",
+    "description": "Nos subterrâneos da vasta metrópole de Nova São Paulo repousa um hospital clandestino conhecido apenas pelos habitantes dos recantos mais sombrios do submundo cibernético. Esta instalação oculta, simplesmente chamada de 'A Caldeira', especializa-se na instalação de cyberwares ilegais e experimentais para aqueles dispostos a pagar o preço.",
+    "detailedDescription": "Escondida em um distrito de armazéns abandonados nos arredores no distrito de Guarulhos, A Caldeira é oculta por trás de camadas de portas de aço reforçado, passagens secretas e contra-medidas eletrônicas. Somente aqueles com as conexões certas e uma senha sussurrada têm esperança de entrar nesta instituição clandestina.",
+    "contacts": [
+      { "name": "Dr. Sombra", "role": "Médico Chefe", "note": "Especialista em cyberware experimental" }
+    ],
+    "details": [
+      "Do lado de fora, A Caldeira parece nada mais do que um prédio industrial abandonado, suas janelas bloqueadas e suas paredes adornadas com tags de graffiti e decadência urbana.",
+      "O interior é um labirinto de corredores estéreis, iluminados por luzes fluorescentes brancas e revestidos com fileiras de salas de operações e laboratórios cibernéticos.",
+      "O sigilo é primordial dentro de A Caldeira, com protocolos rígidos para garantir o anonimato de seus clientes e a proteção de suas operações ilícitas.",
+      "O pagamento pelos serviços prestados é geralmente feito em criptomoedas não rastreáveis ou commodities valiosas."
+    ],
+    "secrets": [
+      "Senha de entrada: 'O concreto guarda os segredos.'",
+      "Nico ou Carlos podem saber a localização e terão acesso",
+      "Alguns rumores sugerem que A Caldeira está envolvida em experimentos não autorizados relacionados ao Projeto Omega"
+    ],
+    "warnings": [
+      "Apesar de sua natureza clandestina, A Caldeira não está isenta de perigos.",
+      "Gangues rivais, agentes corporativos e forças policiais representam todos uma ameaça às suas operações.",
+      "Aqueles que traem a confiança da instituição rapidamente se encontram no lado errado de um bisturi cibernético."
+    ],
+    "accentColor": "cyan"
+  },
+  {
+    "id": "jenkins-lab",
+    "name": "Laboratório de Jenkins",
+    "type": "laboratório",
+    "district": "Favela da 17",
+    "security": "Média",
+    "imageUrl": "/images/locations/jenkins-lab.jpg",
+    "description": "Um laboratório clandestino de cyberjenkins controlado por uma gangue rival das TOs. Este local de produção de narcóticos altamente viciantes é um ponto estratégico na guerra pelo controle do tráfico de drogas sintéticas em Nova São Paulo.",
+    "detailedDescription": "Localizado nas profundezas da Favela da 17, o laboratório é um complexo improvisado mas surpreendentemente bem equipado. Apesar da aparência rudimentar, contém equipamentos sofisticados para síntese química e bioengenharia, tornando-o extremamente valioso.",
+    "contacts": [
+      { "name": "Big G", "role": "Líder da gangue rival", "note": "Brutamontes ciberneticamente melhorado" },
+      { "name": "MC Kleber", "role": "Interessado na aquisição", "note": "Quer tomar controle do laboratório" }
+    ],
+    "details": [
+      "O laboratório tem sistemas de segurança avançados para um local na favela, incluindo guardas armados e sistemas eletrônicos.",
+      "A produção de cyberjenkins acontece em várias etapas, espalhadas por diferentes salas para dificultar a cópia da fórmula completa.",
+      "A gangue atual usa o laboratório como base de operações secundária, armazenando também armas e outros contrabandos.",
+      "A estrutura é um labirinto de corredores escuros e salas de experimentos sinistras."
+    ],
+    "secrets": [
+      "Há uma fórmula experimental sendo desenvolvida que pode 'mudar o jogo' no submundo de Nova São Paulo.",
+      "O laboratório tem conexões subterrâneas que podem servir como rota de fuga ou acesso secreto.",
+      "Rumores sugerem que alguns experimentos vão além das drogas, possivelmente relacionados ao Projeto Alpha."
+    ],
+    "warnings": [
+      "Há pelo menos 4 guardas fortemente armados protegendo o local.",
+      "O laboratório contém químicos instáveis e explosivos que podem ser detonados em um confronto.",
+      "Após derrotar os membros das TOs, é fundamental ligar para MC Kleber para organizar a reunião."
+    ],
+    "accentColor": "red"
+  },
+  {
+    "id": "a-floresta",
+    "name": "Balada 'A Floresta'",
+    "type": "entretenimento",
+    "district": "Pinheiros",
+    "security": "Baixa-Média",
+    "imageUrl": "/images/locations/a-floresta.jpg",
+    "description": "Um dos pontos centrais da vida noturna em Pinheiros, este clube serve como local de encontro para fixers, runners e mercenários. Por trás da fachada de entretenimento, negócios são feitos e informações valiosas trocam de mãos.",
+    "detailedDescription": "A Floresta é conhecida por seu ambiente imersivo, com projeções holográficas de árvores digitais e vegetação neon que cobrem as paredes e teto. A música estrondosa e as luzes hipnóticas criam o disfarce perfeito para que negócios ilícitos sejam conduzidos sem levantar suspeitas.",
+    "contacts": [
+      { "name": "DJ Volt-8", "role": "DJ residente", "note": "Ouvidos atentos, informante ocasional" },
+      { "name": "Marília 'Dados'", "role": "Fixer", "note": "Geralmente encontrada no bar VIP" }
+    ],
+    "details": [
+      "O clube opera em três níveis: a pista de dança principal, o mezanino VIP, e o porão onde acontecem as negociações mais sensíveis.",
+      "A segurança é discretamente rigorosa, com implantes de escaneamento retinal e detectores de armas disfarçados nas entradas.",
+      "Uma variedade de substâncias sintéticas circula livremente, com o CyberJenkins sendo cada vez mais popular.",
+      "As paredes têm isolamento acústico avançado e sistemas anti-espionagem para garantir privacidade nos encontros."
+    ],
+    "secrets": [
+      "O DJ Volt-8 mantém uma rede de informantes entre os frequentadores e pode ser convencido a compartilhar informações por um preço.",
+      "Há um terminal de acesso à DarkNet escondido em um dos banheiros VIP.",
+      "Os sistemas de ventilação foram modificados para liberar sutilmente substâncias que aumentam a sugestionabilidade dos clientes."
+    ],
+    "warnings": [
+      "A Guardian raramente invade o local, mas agentes disfarçados são uma presença constante.",
+      "As bebidas podem ser facilmente adulteradas, e muitos negócios fracassados terminam em envenenamentos 'acidentais'.",
+      "Rivalidades entre gangues podem explodir a qualquer momento, transformando a pista de dança em uma zona de guerra."
+    ],
+    "accentColor": "green"
+  },
+  {
+    "id": "torre-synthcorp",
+    "name": "Torre SynthCorp",
+    "type": "corporativo",
+    "district": "Centro Financeiro",
+    "security": "Extrema",
+    "imageUrl": "/images/locations/torre-synthcorp.jpg",
+    "description": "Sede da maior corporação de tecnologia cibernética de Nova São Paulo, a imponente Torre SynthCorp é um monumento ao poder corporativo, elevando-se acima da paisagem urbana como um dedo estendido de vidro e aço.",
+    "detailedDescription": "Com 175 andares de altura, a Torre SynthCorp é um dos edifícios mais altos e mais seguros de Nova São Paulo. Sua arquitetura futurista apresenta uma fachada de vidro inteligente que muda de opacidade conforme a luz do dia, enquanto displays holográficos gigantes exibem propagandas e mensagens corporativas que podem ser vistas a quilômetros de distância.",
+    "contacts": [
+      { "name": "Serena Ling", "role": "Recepcionista Chefe", "note": "Conhece todos os funcionários importantes" },
+      { "name": "Viktor Ramos", "role": "Chefe de Segurança", "note": "Ex-militar com implantes de combate avançados" }
+    ],
+    "details": [
+      "Os primeiros 50 andares são dedicados a escritórios comerciais e administrativos, abertos a visitantes com autorização.",
+      "Os andares 51-100 abrigam laboratórios de pesquisa e desenvolvimento, com acesso extremamente restrito.",
+      "Os andares 101-150 contêm instalações de produção de protótipos e testes, completamente automatizadas.",
+      "Os andares 151-175 são reservados para a alta administração e instalações secretas, incluindo o escritório do CEO no último andar."
+    ],
+    "secrets": [
+      "Rumores persistentes sugerem que o subsolo da torre abriga laboratórios onde experimentos antiéticos são realizados em sujeitos humanos.",
+      "Um sistema de IA autônomo chamado 'NEXUS' gerencia toda a segurança da torre, com capacidade de tomar decisões independentes.",
+      "Há um heliporto secreto no 173º andar para evacuação emergencial da liderança executiva."
+    ],
+    "warnings": [
+      "O sistema de segurança inclui guardas armados, drones de patrulha, câmeras com IA de reconhecimento e múltiplos checkpoints biométricos.",
+      "Tentativas de invasão são respondidas com força letal sem aviso prévio.",
+      "Todos os visitantes são escaneados discretamente em busca de armas, explosivos e equipamentos de hacking."
+    ],
+    "accentColor": "blue"
+  },
+  {
+    "id": "praca-se",
+    "name": "Praça da Sé",
+    "type": "público",
+    "district": "Centro Histórico",
+    "security": "Variável",
+    "imageUrl": "/images/locations/praca-se.jpg",
+    "description": "Outrora centro cultural da antiga São Paulo, a Praça da Sé tornou-se um símbolo da resistência contra o controle corporativo e palco de frequentes confrontos entre manifestantes e forças da Guardian.",
+    "detailedDescription": "Esta ampla praça mantém alguns elementos de sua arquitetura histórica, mas agora está marcada por monumentos vandalizados, barricadas improvisadas e grafites políticos. Drones de vigilância pairam constantemente acima, enquanto o movimento de pessoas flui entre protestos organizados, mercados improvisados e zonas de conflito ocasionais.",
+    "contacts": [
+      { "name": "Pai Zeca", "role": "Líder comunitário", "note": "Conhece a história não oficial da cidade" },
+      { "name": "Rivera", "role": "Jornalista independente", "note": "Documentando abusos da Guardian" }
+    ],
+    "details": [
+      "A antiga catedral, parcialmente destruída durante a Guerra Civil, agora serve como abrigo improvisado e centro comunitário.",
+      "Terminais de informação públicos, frequentemente hackeados, fornecem tanto propaganda oficial quanto mensagens de resistência.",
+      "Mercadores ambulantes vendem desde necessidades básicas até tecnologia contrabandeada e drogas sintéticas.",
+      "Uma estátua holográfica não oficial de Well aparece ocasionalmente, projetada por ativistas tecnológicos como símbolo de resistência."
+    ],
+    "secrets": [
+      "Uma rede de túneis subterrâneos, originalmente parte do antigo sistema de metrô, conecta vários pontos da praça e serve como rota de fuga para manifestantes.",
+      "Células de resistência se reúnem em porões abandonados ao redor da praça para planejar ações contra a Guardian.",
+      "Diversos agentes disfarçados da Guardian e das corporações misturam-se entre os civis, monitorando conversas e identificando possíveis dissidentes."
+    ],
+    "warnings": [
+      "A tensão na área pode escalar rapidamente, com confrontos violentos surgindo com pouco ou nenhum aviso.",
+      "As forças da Guardian realizam varreduras periódicas, prendendo indivíduos suspeitos e dissolvendo aglomerações.",
+      "Mercenários contratados por corporações às vezes se infiltram em protestos para instigar violência e desacreditar os manifestantes."
+    ],
+    "accentColor": "purple"
+  }
+]

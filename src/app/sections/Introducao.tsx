@@ -60,7 +60,7 @@ const Introducao: React.FC = () => {
           <h2
             className={`text-2xl font-bold mb-4 text-${theme.primary} flex items-center`}
           >
-            <span className="mr-2">💊</span> Bem-vindo a Nova São Paulo
+            <span className="mr-2">👋</span> Bem-vindo a Nova São Paulo
           </h2>
 
           <div className="mb-4 text-lg text-gray-300">
@@ -92,6 +92,7 @@ const Introducao: React.FC = () => {
               Ler Capítulo Inicial →
             </Link>
           </div>
+
         </div>
       </div>
 
