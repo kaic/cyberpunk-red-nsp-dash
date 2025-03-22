@@ -11,6 +11,7 @@ import Corps from "./sections/Corps";
 import NPCs from "./sections/NPCs";
 import ScreamsheetsViewer from "./sections/Screensheets";
 import LocationsSection from "./sections/Localizations";
+import PlayersSection from "./sections/Players";
 
 export default function Home() {
   const [activeSection, setActiveSection] = React.useState("introducao");
@@ -52,6 +53,8 @@ export default function Home() {
         return <Corps />;
       case "rules":
         return <Rules />;
+      case "players":
+        return <PlayersSection />;
       case "npcs":
         return <NPCs />;
       case "locais":
