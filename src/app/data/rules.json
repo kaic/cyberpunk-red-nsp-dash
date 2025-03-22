@@ -250,6 +250,7 @@
       "content": [
         {
           "title": "Sistema de Combate",
+          "description": "Combate em Cyberpunk RED é rápido, letal e estratégico. Cada decisão pode significar vida ou morte.",
           "subsections": [
             {
               "title": "Ordem de iniciativa",
@@ -266,14 +267,56 @@
               ]
             },
             {
+              "title": "Movimento",
+              "icon": "🏃",
+              "description": "A distância que um personagem pode se mover é baseada em seu atributo MOVE.",
+              "formula": "Distância = MOVE x 2 metros",
+              "note": "Terrenos difíceis podem reduzir a velocidade de movimento."
+            },
+            {
               "title": "Ataques",
               "formula": "1d10 + Stat + Skill vs. DV ou Defesa ativa",
-              "example": "Ex: REF + Handgun"
+              "example": "Ex: REF + Handgun",
+              "parts": [
+                {
+                  "title": "ROF (Rate of Fire)",
+                  "description": "Número de vezes que você pode atirar no turno.",
+                  "steps": [
+                    "Single Shot - Um tiro por vez",
+                    "Auto Fire - Rajada de tiros automáticos, aumentando chance de acerto",
+                    "Suppressive Fire - Força inimigos a se cobrirem ou rolarem WILL save para não fugir"
+                  ]
+                },
+                {
+                  "title": "Called Shots",
+                  "description": "Ataques direcionados a partes específicas do corpo.",
+                  "steps": [
+                    "Penalidade de -8 para acertar",
+                    "Apenas 1 de ROF, independente da arma",
+                    "Efeitos possíveis: desarmar, dano na cabeça (dobro), quebrar perna, etc."
+                  ]
+                }
+              ]
             },
             {
               "title": "Defesa",
               "icon": "🛡️",
               "description": "Você pode tentar Esquivar ou Parar se estiver em espera ou com certas habilidades."
+            },
+            {
+              "title": "Cobertura (Cover)",
+              "icon": "🧱",
+              "description": "A cobertura em Cyberpunk RED funciona de forma binária:",
+              "parts": [
+                {
+                  "title": "Regras",
+                  "description": "Ou você está completamente em cover, ou não está.",
+                  "steps": [
+                    "Você está em cover apenas se terminar seu movimento em cover",
+                    "Cobertura oferece proteção significativa contra ataques à distância"
+                  ]
+                }
+              ]
             },
             {
               "title": "Ação em espera",
@@ -296,6 +339,18 @@
               "description": [
                 "SP (Stopping Power) reduz dano",
                 "Se tomar dano maior que metade do SP, a armadura degrada 1 ponto"
+              ],
+              "parts": [
+                {
+                  "title": "Funcionamento",
+                  "description": "Armadura funciona como barreira total para certos ataques:",
+                  "steps": [
+                    "Balas não penetram armadura se o dano for menor que o SP",
+                    "Exemplo: 10 de dano vs 11SP = nenhum dano",
+                    "Ataques corpo-a-corpo ignoram metade da armadura",
+                    "Exemplo: 10 de dano vs 11SP = 5 de dano para melee"
+                  ]
+                }
               ]
             },
             {
@@ -304,6 +359,17 @@
               "description": [
                 "Se causar 8+ de dano após armadura, role na tabela de ferimentos",
                 "Pode gerar: cegueira, membros quebrados, sangramento..."
+              ],
+              "parts": [
+                {
+                  "title": "Como funcionam",
+                  "description": "Ferimentos críticos ocorrem em duas situações:",
+                  "steps": [
+                    "Ao rolar 2d6 no dado, aplicando tabela específica",
+                    "Quando acertos na cabeça causam ferimentos críticos",
+                    "Critical injuries sempre causam +5 de dano adicional"
+                  ]
+                }
               ]
             },
             {
@@ -324,33 +390,159 @@
         {
           "title": "Regras para Netrunners",
           "icon": "💻",
+          "description": "Netrunning é a arte de hackear e navegar redes digitais. Um Netrunner utiliza hardware especializado para entrar em sistemas e manipulá-los virtualmente.",
           "subsections": [
+            {
+              "title": "Equipamento Necessário",
+              "icon": "🔌",
+              "description": "Para realizar operações de Netrunning, você precisa de:",
+              "list": [
+                "Cyberdeck - Um dispositivo modular similar a um smartphone avançado",
+                "Virtuality Googles - Óculos de VR para visualizar a rede",
+                "Neuralink - Interface neural para conexão digital",
+                "Interfaceplug - Conector físico para acesso às redes"
+              ],
+              "note": "Sem este equipamento básico, não é possível realizar operações de Netrunning."
+            },
             {
               "title": "Interface e rede",
               "icon": "🌐",
               "description": "Netrunners usam Decks para invadir redes.",
               "notes": [
                 "Executam 3 ações de Interface por turno",
-                "As redes têm camadas (níveis de firewall)"
+                "As redes têm camadas (níveis de firewall)",
+                "O nível de Interface determina sua eficácia nas operações"
+              ]
+            },
+            {
+              "title": "Processo de Acesso",
+              "icon": "🔓",
+              "description": "Para acessar uma rede, siga estes passos:",
+              "parts": [
+                {
+                  "title": "1. Escanear",
+                  "description": "Localize pontos de acesso no ambiente",
+                  "steps": [
+                    "Gasta 1 ponto de ação normal",
+                    "Identifica pontos de acesso disponíveis na área"
+                  ]
+                },
+                {
+                  "title": "2. Jack In (Conectar)",
+                  "description": "Conecte-se à rede identificada",
+                  "steps": [
+                    "Gasta 1 ponto de ação de rede",
+                    "Deve permanecer a 6 metros (3 tiles) do ponto de acesso",
+                    "Paredes podem bloquear a conexão",
+                    "Se mover para fora do alcance, será desconectado"
+                  ]
+                },
+                {
+                  "title": "3. Ações na Rede",
+                  "description": "Operações dentro da rede virtual",
+                  "steps": [
+                    "Cada ação na rede gasta 1 ponto de ação NET",
+                    "Pode usar quantas ações NET quiser no seu turno",
+                    "Ainda pode usar ações normais para movimento, ataque, etc."
+                  ]
+                },
+                {
+                  "title": "4. Jack Out (Desconectar)",
+                  "description": "Saída segura da rede",
+                  "steps": [
+                    "Gasta 1 ponto de ação NET para sair de forma segura",
+                    "Se não fizer isso, entrará em estado de Dor Profunda",
+                    "Ao sair, perde todo progresso na rede",
+                    "Programas e efeitos terminam, exceto vírus instalados"
+                  ]
+                }
               ]
             },
             {
               "title": "Principais ações",
               "actions": [
                 { "name": "Scanner", "description": "Detecta redes próximas" },
-                { "name": "Pathfinder", "description": "Revela camadas" },
-                { "name": "Backdoor", "description": "Quebra senhas" },
+                {
+                  "name": "Pathfinder",
+                  "description": "Revela parcialmente o mapa da rede - quanto maior o resultado do dado, mais informações obtém"
+                },
+                {
+                  "name": "Backdoor",
+                  "description": "Quebra senhas para entrar na rede ou acessar áreas protegidas"
+                },
+                {
+                  "name": "Cloak",
+                  "description": "Esconde rastros e atividades do Netrunner na rede"
+                },
                 {
                   "name": "Control",
-                  "description": "Assumir controle de dispositivos"
+                  "description": "Assume controle de dispositivos como câmeras, drones, elevadores, portas"
                 },
-                { "name": "Zap", "description": "Ataca ICEs" }
+                {
+                  "name": "Eye-Dee",
+                  "description": "Identifica dados e arquivos encontrados, revelando seu valor"
+                },
+                {
+                  "name": "Slide",
+                  "description": "Permite escapar de Black ICE e outras ameaças"
+                },
+                {
+                  "name": "Zap",
+                  "description": "Ataca ICEs e outros runners na rede"
+                },
+                {
+                  "name": "Virus",
+                  "description": "Deixa um programa malicioso na rede que permanece após sua saída"
+                }
+              ],
+              "note": "Toda habilidade usada na rede será 1D10 + rank de interface (não o status do player para aquela ação)"
+            },
+            {
+              "title": "Black ICE",
+              "icon": "⚠️",
+              "description": "Programas de defesa que protegem redes e atacam invasores.",
+              "parts": [
+                {
+                  "title": "Características",
+                  "description": "Black ICE é um programa hostil de defesa",
+                  "steps": [
+                    "Pode ter várias formas na rede",
+                    "Ataca runners que invadem sistemas",
+                    "Pode causar dano cerebral real e até matar",
+                    "Na primeira vez que um runner encontra um Black ICE, ele recebe um ataque gratuito"
+                  ]
+                },
+                {
+                  "title": "Combate",
+                  "description": "Para derrotar ICE, use programas ofensivos",
+                  "formula": "1d10 + Interface + valor de ataque do programa"
+                }
               ]
             },
             {
-              "title": "Perigo",
-              "icon": "⚠️",
-              "description": "ICEs atacam com dano cerebral. Netrunners podem morrer online se não forem cuidadosos."
+              "title": "Programas",
+              "icon": "📟",
+              "description": "Netrunners usam programas especializados para suas operações.",
+              "parts": [
+                {
+                  "title": "Tipos de Programas",
+                  "description": "Existem três categorias principais:",
+                  "steps": [
+                    "Support - Fornecem bônus em rolagens específicas",
+                    "Defense - Protegem contra ICE e outros runners",
+                    "Attack - Permitem atacar ICE e outros runners"
+                  ]
+                },
+                {
+                  "title": "Utilização",
+                  "description": "Programas são executados do Cyberdeck",
+                  "steps": [
+                    "Um Cyberdeck tem slots limitados para programas",
+                    "Quando desconectado, todos os efeitos dos programas terminam"
+                  ],
+                  "formula": "Ataque = 1D10 + rank de interface + program atk"
+                }
+              ]
             }
           ]
         }
@@ -606,6 +798,33 @@
                   "treatment": "Cirurgia DV17"
                 }
               ]
+            },
+            {
+              "title": "Mundo de Dor",
+              "icon": "🩸",
+              "description": "O sistema de ferimentos críticos adiciona realismo ao jogo, representando as consequências graves de ferimentos significativos.",
+              "parts": [
+                {
+                  "title": "Impacto no Jogo",
+                  "description": "Os ferimentos críticos têm consequências duradouras:",
+                  "steps": [
+                    "Aumenta as consequências em combate, incentivando jogo mais estratégico",
+                    "Exige gestão de recursos médicos e tratamento adequado",
+                    "Adiciona realismo, lembrando que personagens não são invencíveis",
+                    "Oferece oportunidades para desenvolvimento de personagem"
+                  ]
+                },
+                {
+                  "title": "Recuperação",
+                  "description": "Ferimentos críticos não se curam facilmente:",
+                  "steps": [
+                    "Requerem tempo, recursos e muitas vezes assistência médica especializada",
+                    "Podem deixar cicatrizes permanentes ou traumas psicológicos",
+                    "O tratamento pode exigir encontrar um Medtech habilidoso ou equipamento raro"
+                  ]
+                }
+              ],
+              "note": "Ferimentos críticos podem definir momentos marcantes na história do personagem."
             }
           ]
         },

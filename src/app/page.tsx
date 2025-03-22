@@ -35,7 +35,7 @@ export default function Home() {
     { id: "npcs", name: "NPCs", icon: "👤" },
     { id: "gangues", name: "Gangues", icon: "💀" },
     { id: "corps", name: "Corps", icon: "🏢" },
-    { id: "loot", name: "Equipamentos", icon: "🖥️" },
+    //{ id: "loot", name: "Equipamentos", icon: "🖥️" },
     { id: "screamsheets", name: "Screamsheets", icon: "📰" },
   ];
 
