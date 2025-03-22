@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import GlitchText from "../components/GlitchText";
+import CyberpunkText from "../components/CyberpunkText";
 
 import npcsData from "../data/npcs.json";
 
@@ -58,8 +58,7 @@ const NPCs: React.FC = () => {
   return (
     <div className="relative z-10">
       <h1 className="text-4xl font-bold mb-6 text-purple-400 flex items-center border-b border-purple-900 pb-2">
-        <span className="mr-2">👤</span>
-        <GlitchText>NPCs</GlitchText>
+        <CyberpunkText>👤 NPCs</CyberpunkText>
       </h1>
 
       {/* Barra de busca */}

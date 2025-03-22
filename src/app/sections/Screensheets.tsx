@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Calendar, Search, ArrowUpDown, Clock, ChevronDown, ChevronUp, X } from 'lucide-react';
-import GlitchText from "../components/GlitchText";
+import CyberpunkText from "../components/CyberpunkText";
 
 // Importe seus dados - presumindo este formato
 import screamsheetData from "../data/screensheets.json";
@@ -209,7 +209,7 @@ const ScreamsheetsViewer = () => {
       <div className="relative z-10">
         <h1 className="text-4xl font-bold mb-6 text-purple-400 flex items-center border-b border-purple-900 pb-2">
           <span className="mr-2">📰</span>
-          <GlitchText variant="primary">Screamsheets</GlitchText>
+          <CyberpunkText variant="primary">Screamsheets</CyberpunkText>
         </h1>
         
         <div className="p-6  shadow-lg bg-black border border-purple-900 relative">
@@ -255,8 +255,7 @@ const ScreamsheetsViewer = () => {
   return (
     <div className="relative z-10">
       <h1 className="text-4xl font-bold mb-6 text-purple-400 flex items-center border-b border-purple-900 pb-2">
-        <span className="mr-2">📰</span>
-        <GlitchText variant="primary">Screamsheets</GlitchText>
+        <CyberpunkText variant="primary">📰 Screamsheets</CyberpunkText>
       </h1>
       
       <div className="p-6  shadow-lg bg-black border border-purple-900 relative">

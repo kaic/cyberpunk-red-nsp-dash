@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Search, Zap, Cpu, GitBranch, Shield, X, ChevronDown, ChevronUp, Users, BriefcaseMedical, Computer, Mic2, Wrench, Crosshair, FileText, Award, UserCircle2, DollarSign, Skull } from 'lucide-react';
-import GlitchText from "../components/GlitchText";
+import CyberpunkText from "../components/CyberpunkText";
 
 // Dados mockados para jogadores - substituir por importação de arquivo JSON real
 const playersData = [
@@ -523,8 +523,7 @@ const PlayersSection = () => {
   return (
     <div className="relative z-10">
       <h1 className="text-4xl font-bold mb-6 text-pink-400 flex items-center border-b border-pink-900 pb-2">
-        <span className="mr-2">🎮</span>
-        <GlitchText variant="accent1">Players</GlitchText>
+        <CyberpunkText>🎮 Players</CyberpunkText>
       </h1>
       
       <div className="mb-6">

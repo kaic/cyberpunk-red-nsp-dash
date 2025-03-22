@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Search, X, ChevronDown, ChevronUp, Zap, Shield, Crosshair, Package, Cpu, ShoppingBag, Percent, PlusCircle, DollarSign, Info } from 'lucide-react';
-import GlitchText from "../components/GlitchText";
+import CyberpunkText from "../components/CyberpunkText";
 
 // Dados mockados de equipamentos - substituir por importação de arquivo JSON real
 const equipmentData = {
@@ -472,7 +472,7 @@ const EquipmentSection = () => {
     <div className="relative z-10">
       <h1 className="text-4xl font-bold mb-6 text-orange-400 flex items-center border-b border-orange-900 pb-2">
         <span className="mr-2">🔫</span>
-        <GlitchText variant="accent2">Equipamentos</GlitchText>
+        <CyberpunkText>Equipamentos</CyberpunkText>
       </h1>
       
       {/* Guia de Preços e Compras */}

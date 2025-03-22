@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import GlitchText from "../components/GlitchText";
+import CyberpunkText from "../components/CyberpunkText";
 import { neonTheme as theme } from "../theme";
 
 const CapituloUmIntroducao = () => {
@@ -12,7 +12,7 @@ const CapituloUmIntroducao = () => {
       <div className="flex justify-between items-center mb-8">
         <h1 className={`text-5xl font-bold text-${theme.primary} flex items-center`}>
           <span className="mr-3">📚</span>
-          <GlitchText variant="primary">Introdução</GlitchText>
+          <CyberpunkText>Introdução</CyberpunkText>
         </h1>
         <Link
           href="/"

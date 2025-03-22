@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import GlitchText from "../components/GlitchText";
+import CyberpunkText from "../components/CyberpunkText";
 import Link from "next/link";
 import { neonTheme as theme } from "../theme";
 
@@ -21,7 +21,7 @@ const Introducao: React.FC = () => {
       <h1
         className={`text-4xl font-bold mb-6 text-${theme.primary} flex items-center pb-2`}
       >
-        <GlitchText variant="primary">Nova São Paulo</GlitchText>
+        <CyberpunkText>Nova São Paulo</CyberpunkText>
       </h1>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">

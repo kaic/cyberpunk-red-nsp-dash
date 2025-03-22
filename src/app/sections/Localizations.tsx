@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Search, MapPin, Users, Info, X, Layers, ChevronDown, ChevronUp, Building, AlertTriangle } from 'lucide-react';
-import GlitchText from "../components/GlitchText";
+import CyberpunkText from "../components/CyberpunkText";
 
 import locationsData from "../data/locations.json";
 
@@ -72,8 +72,8 @@ const LocationsSection = () => {
   return (
     <div className="relative z-10">
       <h1 className="text-4xl font-bold mb-6 text-cyan-400 flex items-center border-b border-cyan-900 pb-2">
-        <span className="mr-2">📍</span>
-        <GlitchText variant="secondary">Locais</GlitchText>
+
+        <CyberpunkText>📍 Locais</CyberpunkText>
       </h1>
       
       <div className="mb-6">

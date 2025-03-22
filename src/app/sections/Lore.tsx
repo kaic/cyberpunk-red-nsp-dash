@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import GlitchText from "../components/GlitchText";
+import CyberpunkText from "../components/CyberpunkText";
 import { ChevronDown, ChevronUp, AlertTriangle, History, Users, Command, Radio, Skull, Zap, Eye, X, Filter } from 'lucide-react';
 
 const Lore = () => {
@@ -46,8 +46,7 @@ const Lore = () => {
   return (
     <div className="relative z-10">
       <h1 className="text-4xl font-bold mb-6 text-green-400 flex items-center border-b border-green-900 pb-2">
-        <span className="mr-2">📜</span>
-        <GlitchText>Lore</GlitchText>
+        <CyberpunkText>📜 Lore</CyberpunkText>
       </h1>
 
       {/* História de Nova São Paulo */}

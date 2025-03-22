@@ -154,7 +154,7 @@ export default function Home() {
 
         {/* Mobile menu */}
         {menuOpen && (
-          <div className="md:hidden absolute w-full bg-black/90 border-b border-cyan-900 shadow-lg z-50">
+          <div className="md:hidden absolute w-full bg-black border-b border-cyan-900 shadow-lg z-50">
             <div className="container mx-auto px-4 py-2">
               <nav className="grid grid-cols-2 gap-2 py-4">
                 {sections.map((section) => (
@@ -221,21 +221,6 @@ export default function Home() {
               </div>
             ))}
           </nav>
-
-          <div className="mt-8 pt-6 border-t border-purple-900/50">
-            <div className="p-4  bg-black shadow-inner border border-purple-900 relative overflow-hidden group">
-              {/* Add subtle glowing border effect on hover */}
-              <div className="absolute inset-0 bg-purple-900/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-              <h3 className="font-orbitron font-bold text-sm uppercase tracking-wider mb-2 text-pink-500 opacity-80">
-                Mensagem do Mestre
-              </h3>
-              <p className="text-sm italic text-gray-400">
-                "A verdade está obscurecida pelos neons. Confie em poucos,
-                questione tudo, sobreviva."
-              </p>
-            </div>
-          </div>
         </aside>
 
         {/* Main Content */}

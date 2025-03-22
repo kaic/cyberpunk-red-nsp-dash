@@ -1,5 +1,5 @@
 import React from "react";
-import GlitchText from "../components/GlitchText";
+import CyberpunkText from "../components/CyberpunkText";
 
 const DefaultSection: React.FC<{ icon: string; name: string }> = ({
   icon,
@@ -9,7 +9,7 @@ const DefaultSection: React.FC<{ icon: string; name: string }> = ({
     <div className="relative z-10">
       <h1 className="text-4xl font-bold mb-6 text-green-400 flex items-center border-b border-green-900 pb-2">
         <span className="mr-2">{icon}</span>
-        <GlitchText>{name}</GlitchText>
+        <CyberpunkText>{name}</CyberpunkText>
       </h1>
       <div className="p-6  shadow-lg bg-black border border-green-900 mb-8 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full opacity-5 bg-cover bg-center"></div>
